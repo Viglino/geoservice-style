@@ -2,13 +2,12 @@
   "name": "geoservice-style",
   "version": "0.0.1",
   "description": "Style for MVT IGN's geoservices.",
-  "main": "index.js",
   "source": "./index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel --dist-dir ./.dist",
-    "build": "parcel build --dist-dir ./doc"
+    "start": "parcel --dist-dir ./.dist index.html",
+    "build": "parcel build --dist-dir ./doc index.html"
   },
   "repository": {
     "type": "git",
@@ -25,7 +24,8 @@
   "homepage": "https://github.com/Viglino/geoservice-style#,",
   "dependencies": {
     "ol": "^6.15.1",
-    "ol-ext": "^3.2.28"
+    "ol-ext": "^3.2.28",
+    "ol-mapbox-style": "^8.0.5"
   },
   "devDependencies": {
     "parcel": "^2.6.2",
