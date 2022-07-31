@@ -31,7 +31,10 @@ map.addLayer(mvt)
 
 Feature.prototype.getStyle = () => {}
 Feature.prototype.setStyle = () => {}
-const select = new Select();
+const select = new Select({
+  hitTolerance: 2,
+  condition: click
+});
 select.on('select', e => {
   const f = e.selected[0];
   if (f) {
@@ -39,6 +42,28 @@ select.on('select', e => {
   }
 })
 map.addInteraction(select);
+
+// Hover interaction
+import Hover from 'ol-ext/interaction/Hover'
+import { click } from 'ol/events/condition'
+import Popup from 'ol-ext/overlay/Popup'
+const popup = new Popup({
+  positioning: 'bottom-center'
+})
+map.addOverlay(popup)
+const hover = new Hover({
+  cursor: 'pointer',
+  hitTolerance: 2
+})
+hover.on('hover', e => {
+  const f = e.feature
+  if (f) {
+    popup.show(e.coordinate, f.get('layer')+'<br/>'+(f.get('symbo') || ''))
+  } else {
+    popup.hide()
+  }
+})
+map.addInteraction(hover)
 
 export { mvt }
 
