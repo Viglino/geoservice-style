@@ -1,7 +1,7 @@
 {
 "Gare" :{"x":213,"y":285,"width":24,"height":24,"pixelRatio":1},
 "Cimetiere" :{"x":440,"y":610,"width":24,"height":24,"pixelRatio":1},
-"Aerodrome" :{"x":272,"y":141,"width":45,"height":44,"pixelRatio":1},
+"Aerodrome" :{"x":272,"y":141,"width":44,"height":44,"pixelRatio":1},
 "Aeroport" :{"x":484,"y":400,"width":44,"height":44,"pixelRatio":1},
 "Hopital" :{"x":227,"y":153,"width":36,"height":36,"pixelRatio":1},
 "Eau" :{"x":484,"y":0,"width":200,"height":200,"pixelRatio":1},

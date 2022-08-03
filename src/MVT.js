@@ -21,9 +21,11 @@ class MVT extends VectorTileLayer {
       title: options.title || 'MVT',
       type: 'MVT',
       // renderMode: 'hybrid',
+      /*
       source: new VectorTileSource({
         format: new MVTFormat,
       }),
+      */
       declutter: true
     }
     super(opt);
@@ -53,7 +55,7 @@ VectorTileLayer.prototype.loadMapboxStyle = function(options) {
       // Get first tile source
       if (!options.source) options.source = Object.keys(style.sources)[0];
       this.applyStyle(style, options.source);
-      this.getSource().setUrl(style.sources[options.source].tiles[0]);
+      // this.getSource().setUrl(style.sources[options.source].tiles[0]);
       // New style loaded
       this.dispatchEvent({ type: 'style:load', source: options.source, style: style });
     }
