@@ -7,5 +7,5 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
     <img align="center" src="https://img.youtube.com/vi/6AKe70SX8OM/0.jpg" />
   </a>
   <br/>
-  <i>You know the difference between you and me? 😎 I make this look good.</i>
+  <i>You know the difference is between you and me? 😎 I make this look good.</i>
 </p>
