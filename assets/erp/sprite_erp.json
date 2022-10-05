@@ -1,0 +1,93 @@
+{
+    "administratif_ou_militaire": {
+      "height": 10,
+      "pixelRatio": 1,
+      "width": 10,
+      "x": 0,
+      "y": 0
+    },
+    "culture_et_loisirs": {
+        "height": 10,
+        "pixelRatio": 1,
+        "width": 10,
+        "x": 15,
+        "y": 0
+    },
+    "gestion_des_eaux": {
+        "height": 10,
+        "pixelRatio": 1,
+        "width": 10,
+        "x": 30,
+        "y": 0
+    },
+    "industriel_et_commercial": {
+        "height": 10,
+        "pixelRatio": 1,
+        "width": 10,
+        "x": 45,
+        "y": 0
+    },
+    "religieux": {
+        "height": 10,
+        "pixelRatio": 1,
+        "width": 10,
+        "x": 0,
+        "y": 15
+    },
+    "sante": {
+        "height": 10,
+        "pixelRatio": 1,
+        "width": 10,
+        "x": 15,
+        "y": 15
+    },
+    "science_et_enseignement": {
+        "height": 10,
+        "pixelRatio": 1,
+        "width": 10,
+        "x": 30,
+        "y": 15
+    },
+    "sport": {
+        "height": 10,
+        "pixelRatio": 1,
+        "width": 10,
+        "x": 45,
+        "y": 15
+    },
+    "cimetiere": {
+        "height": 10,
+        "pixelRatio": 1,
+        "width": 10,
+        "x": 0,
+        "y": 30
+    },
+    "pylone": {
+        "height": 20,
+        "pixelRatio": 1,
+        "width": 20,
+        "x": 60,
+        "y": 0
+    },
+    "construction_ponctuelle": {
+        "height": 20,
+        "pixelRatio": 1,
+        "width": 20,
+        "x": 80,
+        "y": 0
+    },
+    "erp": {
+        "height": 20,
+        "pixelRatio": 1,
+        "width": 20,
+        "x": 100,
+        "y": 0
+    },
+    "frontiere_dept": {
+        "height": 10,
+        "pixelRatio": 1,
+        "width": 50,
+        "x": 0,
+        "y": 45
+    }
+  }

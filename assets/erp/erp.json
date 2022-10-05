@@ -1,0 +1,56 @@
+{
+    "version": 8,
+    "name": "BDTOPO",
+    "glyphs": "https://wxs.ign.fr/static/vectorTiles/fonts/{fontstack}/{range}.pbf",
+    "sprite": "./erp/sprite_erp",
+    "metadata": {
+      "maputnik:renderer": "ol",
+      "geoportail:tooltip": "BDTOPO/bdtopo_tooltip"
+    },
+    "sources": {
+        "bdtopo": {
+          "type": "vector",
+          "tiles": [
+          "https://wxs.ign.fr/latuile/geoportail/tms/1.0.0/BDTOPO/{z}/{x}/{y}.pbf"
+          ],
+          "scheme": "tms",
+          "url":"https://wxs.ign.fr/latuile/geoportail/tms/1.0.0/BDTOPO/metadata.json"
+        }
+    },
+    "transition": {
+        "duration": 300,
+        "delay": 0
+    },
+    "layers": [
+ 
+      {
+        "id": "erp",
+        "type": "symbol",
+        "source": "bdtopo",
+        "source-layer": "erp",
+        "minzoom": 15,
+        "layout": {
+          "icon-image": "erp",
+          "icon-size": 1.5
+        }
+      },
+      {
+      "id": "hotel",
+      "type": "symbol",
+      "source": "bdtopo",
+      "source-layer": "erp",
+      "minzoom": 15,
+      "layout": {
+        "icon-image": "construction_ponctuelle",
+        "icon-size": 1.5
+      },
+      "filter": [
+        "in",
+        "type_principal",
+        "O",
+        "O,L"
+      ]
+    }
+
+    ]
+}

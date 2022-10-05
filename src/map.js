@@ -8,6 +8,8 @@ import ol_ext_element from 'ol-ext/util/element'
 import Permalink from 'ol-ext/control/Permalink'
 import Select from 'ol/interaction/Select'
 import Feature from 'ol/render/Feature'
+import Geoportail from 'ol-ext/layer/Geoportail'
+import LayerSwitcher from 'ol-ext/control/LayerSwitcher'
 
 import MVT from './MVT'
 
@@ -23,11 +25,15 @@ const map = new Map({
   })
 })
 map.addControl(new Permalink({ visible: false }))
+
+map.addLayer(new Geoportail({ layer: 'GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2' }))
 // Layer
 const mvt = new MVT({
-  url: './space/space.json'
+  url: './erp/erp.json'
 })
 map.addLayer(mvt)
+
+map.addControl(new LayerSwitcher)
 
 Feature.prototype.getStyle = () => {}
 Feature.prototype.setStyle = () => {}
@@ -55,10 +61,16 @@ const hover = new Hover({
   cursor: 'pointer',
   hitTolerance: 2
 })
+
+hover.on('leave', () => {
+  popup.hide()
+});
+
+
 hover.on('hover', e => {
   const f = e.feature
   if (f) {
-    popup.show(e.coordinate, f.get('layer')+'<br/>'+(f.get('symbo') || ''))
+    popup.show(e.coordinate, f.get('layer')+ ' ' + (f.get('type_principal') || '') + '<br/>'+(f.get('symbo') || f.get('libelle') || ''))
   } else {
     popup.hide()
   }
