@@ -1,0 +1,107 @@
+{
+  "erp": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 0,
+    "y": 0
+  },
+  "hotel": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 20,
+    "y": 0
+  },
+  "commerce": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 40,
+    "y": 0
+  },
+  "admin": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 60,
+    "y": 0
+  },
+  "resto": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 80,
+    "y": 0
+  },
+  "ecole": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 100,
+    "y": 0
+  },
+  "biblio": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 0,
+    "y": 20
+  },
+  "spectacle": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 20,
+    "y": 20
+  },
+  "hopital": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 40,
+    "y": 20
+  },
+  "sport": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 60,
+    "y": 20
+  },
+  "accueil": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 80,
+    "y": 20
+  },
+  "gare": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 100,
+    "y": 20
+  },
+  "chapiteau": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 0,
+    "y": 40
+  },
+  "musee": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 20,
+    "y": 40
+  },
+  "culte": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 40,
+    "y": 40
+  }
+}

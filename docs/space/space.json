@@ -403,7 +403,8 @@
    ],
    "paint": {
     "fill-color": "#D0D0D0",
-    "fill-opacity": 0.3
+    "fill-opacity": 0.3,
+    "fill-pattern": "Rocher"
    }
   },
   {
@@ -589,7 +590,31 @@
     "ZONE_INDUS_ACTI"
    ],
    "paint": {
-    "fill-color": "#D9D9D9"
+    "fill-color": "#555"
+   }
+  },
+  {
+   "id": "zone d'activité - lin",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "bati_zone_surf",
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "butt",
+    "line-join": "round"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "ZONE_INDUS_ACTI"
+   ],
+   "paint": {
+    "line-color": "#ff0",
+    "line-width": 5,
+    "line-dasharray": [
+      1.5,
+      1.5
+     ]
    }
   },
   {
@@ -610,7 +635,7 @@
     "CUVETTE_MAITRESSE"
    ],
    "paint": {
-    "line-color": "#D9C8A9",
+    "line-color": "#ccc",
     "line-width": {
      "stops": [
       [
@@ -643,7 +668,8 @@
     "CUVETTE_NORMALE"
    ],
    "paint": {
-    "line-color": "#D9C8A9",
+    "line-color": "#ccc",
+    "line-opacity": 0.5,
     "line-width": {
      "stops": [
       [
@@ -677,7 +703,7 @@
     "CNV_SS_INTERCALAIRE"
    ],
    "paint": {
-    "line-color": "#D9C8A9",
+    "line-color": "#eee",
     "line-width": 0.7,
     "line-dasharray": [
      20,
@@ -703,7 +729,7 @@
     "CUV_GLACIER_MAITRESSE"
    ],
    "paint": {
-    "line-color": "#A4BFD9",
+    "line-color": "#eef",
     "line-width": {
      "stops": [
       [
@@ -736,7 +762,7 @@
     "CUV_GLACIER_NORMALE"
    ],
    "paint": {
-    "line-color": "#A4BFD9",
+    "line-color": "#eef",
     "line-width": {
      "stops": [
       [
@@ -769,7 +795,7 @@
     "CUV_GLACIER_INTERCAL"
    ],
    "paint": {
-    "line-color": "#A4BFD9",
+    "line-color": "#eef",
     "line-width": {
      "stops": [
       [
@@ -806,7 +832,7 @@
     "CUV_ROCHER_MAITRESSE"
    ],
    "paint": {
-    "line-color": "#AAAAAA",
+    "line-color": "#eee",
     "line-width": 1.7
    }
   },
@@ -828,7 +854,7 @@
     "CUV_ROCHER_NORMALE"
    ],
    "paint": {
-    "line-color": "#AAAAAA",
+    "line-color": "#eee",
     "line-width": 1
    }
   },
@@ -850,7 +876,7 @@
     "CUV_ROCHER_INTERCAL"
    ],
    "paint": {
-    "line-color": "#AAAAAA",
+    "line-color": "#eee",
     "line-width": {
      "stops": [
       [
@@ -887,7 +913,7 @@
     "CUV_BATHYMETRIQUE"
    ],
    "paint": {
-    "line-color": "#0000FF",
+    "line-color": "#ff0",
     "line-width": 1
    }
   },
@@ -3148,7 +3174,7 @@
     "COURS_D_EAU_TEMP_MOY"
    ],
    "paint": {
-    "line-color": "#AAD5E9",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -3184,7 +3210,7 @@
     "COURS_D_EAU"
    ],
    "paint": {
-    "line-color": "#AAD5E9",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -3223,7 +3249,7 @@
     "CANAL"
    ],
    "paint": {
-    "line-color": "#AAD5E9",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -3255,7 +3281,7 @@
     "AQUEDUC_AU_SOL"
    ],
    "paint": {
-    "line-color": "#AAD5E9",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -3291,7 +3317,7 @@
     "AQUEDUC_AU_SOL"
    ],
    "paint": {
-    "line-color": "#AAD5E9",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -3330,7 +3356,7 @@
     "COURS_D_EAU_MOY"
    ],
    "paint": {
-    "line-color": "#AAD5E9",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -3361,7 +3387,7 @@
     "COURS_D_EAU_LAR"
    ],
    "paint": {
-    "line-color": "#AAD5E9",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -9669,7 +9695,7 @@
     "LIM_ARRONDISSEMENT"
    ],
    "paint": {
-    "line-color": "rgba(126, 119, 184, 0.5)",
+    "line-color": "rgba(255,255, 0, 0.5)",
     "line-width": {
      "stops": [
       [
@@ -9712,7 +9738,7 @@
     "LIM_DEPARTEMENT"
    ],
    "paint": {
-    "line-color": "rgba(178, 175, 219, 0.4)",
+    "line-color": "rgba(255,255,0, 0.4)",
     "line-width": {
      "stops": [
       [
@@ -9745,7 +9771,7 @@
     "LIM_DEPARTEMENT"
    ],
    "paint": {
-    "line-color": "rgba(126, 119, 184, 0.5)",
+    "line-color": "rgba(255,255,0, 0.5)",
     "line-width": {
      "stops": [
       [
@@ -9786,7 +9812,7 @@
     "LIM_REGION"
    ],
    "paint": {
-    "line-color": "rgba(178, 175, 219, 0.5)",
+    "line-color": "rgba(255,255,0, 0.5)",
     "line-width": {
      "stops": [
       [
@@ -9819,7 +9845,7 @@
     "LIM_REGION"
    ],
    "paint": {
-    "line-color": "rgba(126, 119, 184, 0.5)",
+    "line-color": "rgba(255,255,0, 0.5)",
     "line-width": {
      "stops": [
       [
@@ -9858,7 +9884,7 @@
     "LIM_ETAT_ETRANGER"
    ],
    "paint": {
-    "line-color": "rgba(178, 175, 219, 0.6)",
+    "line-color": "rgba(255,255,0, 0.6)",
     "line-width": {
      "stops": [
       [
@@ -10869,7 +10895,7 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Aeroport",
-    "icon-size": 0.5
+    "icon-size": 0.8
    },
    "filter": [
     "all",
@@ -10885,7 +10911,6 @@
     ]
    ],
    "paint": {
-    "icon-color": "#646464"
    }
   },
   {
