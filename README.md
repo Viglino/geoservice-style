@@ -4,8 +4,8 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=6AKe70SX8OM">
-    <img align="center" src="https://img.youtube.com/vi/6AKe70SX8OM/0.jpg" />
+    <img align="center" src="https://c.tenor.com/d-Ki-Y0envsAAAAC/i-make-this-look-good-will-smith.gif" />
   </a>
   <br/>
-  <i>You know the difference between you and me? 😎 I make this look good.</i>
+  <i>You know the difference is between you and me? 😎 I make this look good.</i>
 </p>
