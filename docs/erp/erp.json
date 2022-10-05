@@ -2,7 +2,7 @@
   "version": 8,
   "name": "ERP",
   "glyphs": "https://wxs.ign.fr/static/vectorTiles/fonts/{fontstack}/{range}.pbf",
-  "sprite": "./erp/sprite_erp",
+  "sprite": "https://viglino.github.io/geoservice-style/erp/sprite_erp",
   "metadata": {
     "maputnik:renderer": "ol",
     "geoportail:tooltip": "BDTOPO/bdtopo_tooltip"
