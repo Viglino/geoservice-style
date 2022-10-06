@@ -103,5 +103,54 @@
     "pixelRatio": 1,
     "x": 40,
     "y": 40
+  },
+  "bateau": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 60,
+    "y": 40
+  },
+  "bar": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 80,
+    "y": 40
+  },
+  "metro": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 0,
+    "y": 60
+  },
+  "pompier": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 20,
+    "y": 60
+  },
+  "police": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 40,
+    "y": 60
+  },
+  "cimetiere": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 60,
+    "y": 60
+  },
+  "chateau": {
+    "height": 20,
+    "width": 20,
+    "pixelRatio": 1,
+    "x": 80,
+    "y": 60
   }
 }
