@@ -2,6 +2,7 @@
   "version": 8,
   "name": "ERP",
   "glyphs": "https://wxs.ign.fr/static/vectorTiles/fonts/{fontstack}/{range}.pbf",
+  "sprite": "./erp/sprite_erp",
   "sprite": "https://viglino.github.io/geoservice-style/erp/sprite_erp",
   "metadata": {
     "maputnik:renderer": "ol",
@@ -63,6 +64,22 @@
       },
       "filter": [
         "in", "N", ["string", ["get", "type_principal"]]
+      ]
+    },
+    {
+      "id": "bar",
+      "type": "symbol",
+      "source": "bdtopo",
+      "source-layer": "erp",
+      "minzoom": 10,
+      "layout": {
+        "icon-image": "bar",
+        "icon-size": 1
+      },
+      "filter": [
+        "all",
+        ["in", "N", ["string", ["get", "type_principal"]]],
+        ["in", "BAR", ["string", ["get", "libelle"]]]
       ]
     },
     {
@@ -231,6 +248,103 @@
       },
       "filter": [
         "in", "V", ["string", ["get", "type_principal"]]
+      ]
+    },
+    {
+      "id": "bateau",
+      "type": "symbol",
+      "source": "bdtopo",
+      "source-layer": "erp",
+      "minzoom": 10,
+      "layout": {
+        "icon-image": "bateau",
+        "icon-size": 1
+      },
+      "filter": [
+        "in", "EF", ["string", ["get", "type_principal"]]
+      ]
+    },
+    {
+      "id": "metro",
+      "type": "symbol",
+      "source": "bdtopo",
+      "source-layer": "toponymie_transport",
+      "minzoom": 10,
+      "layout": {
+        "icon-image": "metro",
+        "icon-size": 1
+      },
+      "filter": [
+        "in", "métro", ["string", ["get", "nature_de_l_objet"]]
+      ]
+    },
+    {
+      "id": "cimetiere",
+      "type": "symbol",
+      "source": "bdtopo",
+      "source-layer": "toponymie_bati",
+      "minzoom": 10,
+      "layout": {
+        "icon-image": "cimetiere",
+        "icon-size": 1
+      },
+      "filter": [
+        "in", "Cimetière", ["string", ["get", "classe_de_l_objet"]]
+      ]
+    },{
+      "id": "chateau",
+      "type": "symbol",
+      "source": "bdtopo",
+      "source-layer": "toponymie_lieux_nommes",
+      "minzoom": 10,
+      "layout": {
+        "icon-image": "chateau",
+        "icon-size": 1
+      },
+      "filter": [
+        "in", "Château", ["string", ["get", "nature_de_l_objet"]]
+      ]
+    },
+    {
+      "id": "pompier",
+      "type": "symbol",
+      "source": "bdtopo",
+      "source-layer": "toponymie_services_et_activites",
+      "minzoom": 10,
+      "layout": {
+        "icon-image": "pompier",
+        "icon-size": 1
+      },
+      "filter": [
+        "in", "pompier", ["string", ["get", "nature_de_l_objet"]]
+      ]
+    },
+    {
+      "id": "thopital",
+      "type": "symbol",
+      "source": "bdtopo",
+      "source-layer": "toponymie_services_et_activites",
+      "minzoom": 10,
+      "layout": {
+        "icon-image": "hopital",
+        "icon-size": 1
+      },
+      "filter": [
+        "in", "Hôpital", ["string", ["get", "nature_de_l_objet"]]
+      ]
+    },
+    {
+      "id": "police",
+      "type": "symbol",
+      "source": "bdtopo",
+      "source-layer": "toponymie_services_et_activites",
+      "minzoom": 10,
+      "layout": {
+        "icon-image": "police",
+        "icon-size": 1
+      },
+      "filter": [
+        "in", "Police", ["string", ["get", "nature_de_l_objet"]]
       ]
     }
   ]
