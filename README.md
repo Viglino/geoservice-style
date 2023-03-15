@@ -11,10 +11,27 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 </p>
 
 
-<ul>
-  <li>
-    <h2>ERP</h2>
-    <a href="https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=erp">View online</a>
-    <a href="https://viglino.github.io/geoservice-style/erp/erp.json">JSON</a>
-  </li>
-</ul>
+## ERP
+
+*A style to dsiplay ERP (establishment open to the public) in the French BDTopo*    
+<img src="https://user-images.githubusercontent.com/7868217/225317620-cd0f324a-c2da-439c-8ddb-1c711193f2f8.png" width=500 />
+
+* [JSON style](https://viglino.github.io/geoservice-style/erp/erp.json)
+* [View online](https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=erp)
+
+## MapArt
+
+*A style for buildings (orignal idea: [Aman Bhargava](https://mobile.twitter.com/thedivtagguy/status/1635836283628179456))*    
+<img src="https://user-images.githubusercontent.com/7868217/225316574-71c6aa68-6fa6-420b-991f-91a3ef02b37b.png" width=500 />
+
+* [JSON style](https://viglino.github.io/geoservice-style/erp/mapart.json)
+* [View online](https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=mapart)
+
+## Space
+
+*Spacestation style*
+* [JSON style](https://viglino.github.io/geoservice-style/erp/space.json)
+* [View online](https://viglino.github.io/geoservice-style/?lon=4.844&lat=45.75&z=16&layer=space)
+
+
+
