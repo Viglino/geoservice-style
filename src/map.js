@@ -24,12 +24,15 @@ const map = new Map({
     parent: document.body
   })
 })
-map.addControl(new Permalink({ visible: false }))
+const plink = new Permalink({ visible: false })
+map.addControl(plink)
 
 map.addLayer(new Geoportail({ layer: 'GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2' }))
-// Layer
+
+// MVT Layer
+const layer = plink.getUrlParam('layer') || 'erp'
 const mvt = new MVT({
-  url: './erp/erp.json'
+  url: './' + layer + '/' + layer + '.json'
 })
 map.addLayer(mvt)
 

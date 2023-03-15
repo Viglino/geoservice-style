@@ -1,0 +1,1882 @@
+﻿{
+  "version": 8,
+  "name": "PLAN IGN",
+  "glyphs": "https://wxs.ign.fr/static/vectorTiles/fonts/{fontstack}/{range}.pbf",
+  "sprite": "https://wxs.ign.fr/static/vectorTiles/styles/PLAN.IGN/sprite/PlanIgn",
+  "sources": {
+   "plan_ign": {
+    "type": "vector",
+    "tiles": [
+     "https://wxs.ign.fr/essentiels/geoportail/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"
+    ],
+    "scheme": "tms"
+   }
+  },
+  "transition": {
+   "duration": 300,
+   "delay": 0
+  },
+  "layers": [
+   {
+    "id": "bckgrd",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "fond_opaque",
+    "minzoom": 0,
+    "layout": {
+     "visibility": "visible"
+    },
+    "paint": {
+     "fill-color": "#fed7b0",
+     "fill-opacity": 1
+    }
+   },
+   {
+    "id": "hydro surfacique - Estran",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "hydro_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "ZONE_D_ESTRAN"
+    ],
+    "paint": {
+     "fill-color": "#174883",
+     "fill-outline-color": "#174883"
+    }
+   },
+   {
+    "id": "hydro surfacique - marais",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "hydro_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "ZONE_MARAIS"
+    ],
+    "paint": {
+     "fill-color": "#174883",
+     "fill-outline-color": "#174883"
+    }
+   },
+   {
+    "id": "hydro surfacique",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "hydro_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "SURFACE_D_EAU",
+     "BASSIN",
+     "ZONE_MARINE"
+    ],
+    "paint": {
+     "fill-color": "#174883",
+     "fill-outline-color": "#174883"
+    }
+   },
+   {
+    "id": "hydro surfacique temporaire",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "hydro_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "SURFACE_D_EAU_TEMP"
+    ],
+    "paint": {
+     "fill-color": "#174883",
+     "fill-outline-color": "#174883"
+    }
+   },
+   {
+    "id": "Ferre souterrain - voie normale",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sou",
+    "minzoom": 10,
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "VF_1_SOU",
+     "VF_2_SOU",
+     "VF_3_SOU",
+     "VF_4_SOU",
+     "VF_ELEC_1_SOU",
+     "VF_ELEC_2_SOU",
+     "VF_ELEC_3_SOU",
+     "VF_ELEC_4_SOU",
+     "VF_FERRO_ROUTIER_SOU"
+    ],
+    "paint": {
+     "line-color": "#B4B4B4",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        0.8
+       ],
+       [
+        17,
+        2.5
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Ferre souterrain - trait perpendic épais",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sou",
+    "minzoom": 10,
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "VF_1_SOU",
+     "VF_2_SOU",
+     "VF_3_SOU",
+     "VF_4_SOU",
+     "VF_ELEC_1_SOU",
+     "VF_ELEC_2_SOU",
+     "VF_ELEC_3_SOU",
+     "VF_ELEC_4_SOU",
+     "VF_FERRO_ROUTIER_SOU"
+    ],
+    "paint": {
+     "line-color": "#B4B4B4",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        3.5
+       ],
+       [
+        17,
+        14.7
+       ]
+      ]
+     },
+     "line-dasharray": [
+      0.1,
+      10
+     ]
+    }
+   },
+   {
+    "id": "Ferre souterrain - voie etroite",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sou",
+    "minzoom": 10,
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "VF_ETROITE_1_SOU",
+     "VF_ETROITE_2_SOU",
+     "VF_ETROITE_SOU"
+    ],
+    "paint": {
+     "line-color": "#B4B4B4",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        0.3
+       ],
+       [
+        17,
+        1.8
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Ferre souterrain - trait perpendic fin",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sou",
+    "minzoom": 10,
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "VF_ETROITE_1_SOU",
+     "VF_ETROITE_2_SOU",
+     "VF_ETROITE_SOU"
+    ],
+    "paint": {
+     "line-color": "#B4B4B4",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        3.5
+       ],
+       [
+        17,
+        14.7
+       ]
+      ]
+     },
+     "line-dasharray": [
+      0.1,
+      10
+     ]
+    }
+   },
+   {
+    "id": "Ferre souterrain - voie service",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sou",
+    "minzoom": 14,
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "VF_SERVICE_SOU",
+     "VF_NON_EXPLOITEE_SOU"
+    ],
+    "paint": {
+     "line-color": "#B4B4B4",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        0.3
+       ],
+       [
+        17,
+        1.8
+       ]
+      ]
+     },
+     "line-dasharray": [
+      5,
+      2,
+      1,
+      2
+     ]
+    }
+   },
+   {
+    "id": "Ferre souterrain - funic/urbain",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sou",
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "FUNI_CREMAILLERE_SOU",
+     "TRANSPORT_URBAIN_SOU"
+    ],
+    "paint": {
+     "line-color": "#B4B4B4",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        0.3
+       ],
+       [
+        17,
+        1.8
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Ferre souterrain - 2 trait perpendic - funic/urbain",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sou",
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "FUNI_CREMAILLERE_SOU",
+     "TRANSPORT_URBAIN_SOU"
+    ],
+    "paint": {
+     "line-color": "#B4B4B4",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        3.5
+       ],
+       [
+        17,
+        17
+       ]
+      ]
+     },
+     "line-dasharray": [
+      0.1,
+      0.2,
+      0.1,
+      10
+     ]
+    }
+   },
+   {
+    "id": "Chemin souterrain - piste cyclable",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_chemin_sou",
+    "minzoom": 13,
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "paint": {
+     "line-color": "#684b2b",
+     "line-width": 1
+    }
+   },
+   {
+    "id": "Routier souterrain - filet extérieur - route non revetu carrosable",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route_sou",
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "paint": {
+     "line-color": "#684b2b",
+     "line-width": 1
+    }
+   },
+   {
+    "id": "réseau hydro",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "hydro_reseau",
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "paint": {
+     "line-color": "#1b4d82",
+     "line-width": 1
+    }
+   },
+   {
+    "id": "cimetiere surfacique 1",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "CIMETIERE_SURF",
+     "CIMETIERE_MILI_SURF",
+     "NECROPOLE_NATIONALE"
+    ],
+    "paint": {
+      "line-color": "#195f79",
+      "line-width": 1
+    }
+   },
+   {
+    "id": "cimetiere surfacique 2",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "CIMETIERE_SURF",
+     "CIMETIERE_MILI_SURF",
+     "NECROPOLE_NATIONALE"
+    ],
+    "paint": {
+     "fill-pattern": "Cimetiere"
+    }
+   },
+   {
+    "id": "bati surfacique mairie - Zoom 14",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "maxzoom": 14,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "MAIRIE",
+     "MAIRIE_ANNEXE"
+    ],
+    "paint": {
+     "fill-color": "#f12c02"
+    }
+   },
+   {
+    "id": "bati surfacique mairie - Zoom 15,16,17,18",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "minzoom": 14,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "MAIRIE",
+     "MAIRIE_ANNEXE"
+    ],
+    "paint": {
+     "fill-color": "#f12c02",
+     "fill-outline-color": "#f12c02"
+    }
+   },
+   {
+    "id": "bati surfacique fonctionnel industriel ou commercial - Zoom 14,15",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "maxzoom": 15,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "BATI_COMMERCIAL",
+     "BATI_INDUSTRIEL",
+     "HANGAR",
+     "HANGAR_COMMERCIAL",
+     "HANGAR_INDUSTRIEL"
+    ],
+    "paint": {
+     "fill-color": "#cd8b1d"
+    }
+   },
+   {
+    "id": "bati surfacique fonctionnel industriel ou commercial - Zoom 16,17,18",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "minzoom": 15,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "BATI_COMMERCIAL",
+     "BATI_INDUSTRIEL",
+     "HANGAR",
+     "HANGAR_COMMERCIAL",
+     "HANGAR_INDUSTRIEL"
+    ],
+    "paint": {
+     "fill-color": "#cd8b1d",
+     "fill-outline-color": "#cd8b1d"
+    }
+   },
+   {
+    "id": "bati surfacique fonctionnel public - Zoom 14,15",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "maxzoom": 15,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "BATI_PUBLIC",
+     "HANGAR_PUBLIC"
+    ],
+    "paint": {
+     "fill-color": "#618a7b"
+    }
+   },
+   {
+    "id": "bati surfacique fonctionnel public - Zoom 16,17,18",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "minzoom": 15,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "BATI_PUBLIC",
+     "HANGAR_PUBLIC"
+    ],
+    "paint": {
+     "fill-color": "#618a7b",
+     "fill-outline-color": "#618a7b"
+    }
+   },
+   {
+    "id": "bati surfacique fonctionnel sportif - bordure",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "minzoom": 15,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "BATI_SPORTIF"
+    ],
+    "paint": {
+     "line-color": "#195f79",
+     "line-width": 4
+    }
+   },
+   {
+    "id": "bati surfacique fonctionnel sportif",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "minzoom": 13,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "BATI_SPORTIF"
+    ],
+    "paint": {
+     "fill-color": "#195f79"
+    }
+   },
+   {
+    "id": "bati surfacique fonctionnel gare - Zoom 14,15",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "maxzoom": 15,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "BATI_GARE"
+    ],
+    "paint": {
+     "fill-color": "#f32b02"
+    }
+   },
+   {
+    "id": "bati surfacique fonctionnel gare - Zoom 16,17,18",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "minzoom": 15,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "BATI_GARE"
+    ],
+    "paint": {
+     "fill-color": "#f32b02",
+     "fill-outline-color": "#f32b02"
+    }
+   },
+   {
+    "id": "bati surfacique quelconque - Zoom 15",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "minzoom": 14,
+    "maxzoom": 15,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "BATI_QQUE"
+    ],
+    "paint": {
+     "fill-color": "#ff950f"
+    }
+   },
+   {
+    "id": "bati surfacique quelconque - Zoom 16,17,18",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "minzoom": 15,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "BATI_QQUE"
+    ],
+    "paint": {
+     "fill-color": "#ff950f",
+     "fill-outline-color": "#ff950f"
+    }
+   },
+   {
+    "id": "bati hydro surfacique - Autre",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "ECLUSE_SURF",
+     "RESERVOIR_EAU_SURF"
+    ],
+    "paint": {
+     "fill-color": "#195f7b",
+     "fill-outline-color": "#195f7b"
+    }
+   },
+   {
+    "id": "bati hydro surfacique - Pecherie",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "PECHERIE_SURF"
+    ],
+    "paint": {
+     "fill-color": "#BFE2F0",
+     "fill-outline-color": "#509FEF"
+    }
+   },
+   {
+    "id": "bati hydro surfacique - Barrage",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "BARRAGE_SURF"
+    ],
+    "paint": {
+     "fill-color": "#FFFFFF",
+     "fill-outline-color": "#464646"
+    }
+   },
+   {
+    "id": "bati hydro surfacique - Chateau d'eau",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "CHATEAU_EAU_SURF"
+    ],
+    "paint": {
+     "fill-color": "#1466B2"
+    }
+   },
+   {
+    "id": "bati infra surfacique - Silo",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "minzoom": 15,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "SILO_SURF"
+    ],
+    "paint": {
+     "fill-color": "#C7A9AA",
+     "fill-outline-color": "#696969"
+    }
+   },
+   {
+    "id": "bati infra surfacique - Reservoir indus",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "minzoom": 14,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "RESERVOIR_INDUS_SURF"
+    ],
+    "paint": {
+     "fill-color": "#195f7b",
+     "fill-outline-color": "#195f7b"
+    }
+   },
+   {
+    "id": "bati infra surfacique - Serre",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "minzoom": 13,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "SERRE_SURF"
+    ],
+    "paint": {
+     "fill-color": "#708e8c",
+     "fill-outline-color": "#708e8c"
+    }
+   },
+   {
+    "id": "bati infra surfacique - poste electrique bord",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "POSTE_ELEC_SURF"
+    ],
+    "paint": {
+     "line-color": "#195f79",
+     "line-width": 1.2
+    }
+   },
+   {
+    "id": "bati religieux surfacique - Zoom 14",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "maxzoom": 14,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "CHAPELLE_SURF",
+     "EGLISE_SURF",
+     "CHRETIEN_SURF",
+     "SYNAGOGUE_SURF",
+     "MOSQUEE_SURF",
+     "AUTRE_CULTE_SURF",
+     "RELIGIEUX_QQUE"
+    ],
+    "paint": {
+     "fill-color": "#f32b02"
+    }
+   },
+   {
+    "id": "bati religieux surfacique - Zoom 15,16,17,18",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "minzoom": 14,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "CHAPELLE_SURF",
+     "EGLISE_SURF",
+     "CHRETIEN_SURF",
+     "SYNAGOGUE_SURF",
+     "MOSQUEE_SURF",
+     "AUTRE_CULTE_SURF",
+     "RELIGIEUX_QQUE"
+    ],
+    "paint": {
+     "fill-color": "#f32b02",
+     "fill-outline-color": "#f32b02"
+    }
+   },
+   {
+    "id": "bati remarquable surfacique",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "minzoom": 13,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "FORTIF_SURF",
+     "CHATEAU_SURF",
+     "TOUR_MOULIN_SURF",
+     "ARENE_THEATRE",
+     "ARC_TRIOMPHE_SURF",
+     "MONUMENT_SURF"
+    ],
+    "paint": {
+     "fill-color": "#195f79",
+     "fill-outline-color": "#195f79"
+    }
+   },
+   {
+    "id": "bati sportif surfacique",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "TENNIS_SURF",
+     "SPORT_INDIF_SURF",
+     "FOOT_SURF",
+     "MULTI_SPORT_SURF",
+     "PISTE_SPORT_SURF",
+     "NATATION_SURF"
+    ],
+    "paint": {
+     "line-color": "#195f79",
+     "line-width": 2
+    }
+   },
+   {
+    "id": "bati transport surfacique - piste",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "PISTE_DUR",
+     "PISTE_HERBE"
+    ],
+    "paint": {
+     "fill-color": "#DBDBDB",
+     "fill-outline-color": "#808080"
+    }
+   },
+   {
+    "id": "Chemin a niveau - piste cyclable",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_chemin",
+    "minzoom": 13,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "paint": {
+     "line-color": "#684b2b",
+     "line-width": 1
+    }
+   },
+   {
+    "id": "Routier a niveau - filet extérieur - route non revetu carrosable",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route",
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "paint": {
+     "line-color": "#684b2b",
+     "line-width": 1
+    }
+   },
+   {
+    "id": "Ferre a niveau - voie normale",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre",
+    "minzoom": 10,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "VF_1",
+     "VF_2",
+     "VF_3",
+     "VF_4",
+     "VF_ELEC_1",
+     "VF_ELEC_2",
+     "VF_ELEC_3",
+     "VF_ELEC_4"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        0.8
+       ],
+       [
+        17,
+        2.5
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Ferre a niveau - voie normale trait perpendic",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre",
+    "minzoom": 10,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "VF_1",
+     "VF_2",
+     "VF_3",
+     "VF_4",
+     "VF_ELEC_1",
+     "VF_ELEC_2",
+     "VF_ELEC_3",
+     "VF_ELEC_4"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        3.5
+       ],
+       [
+        17,
+        14.7
+       ]
+      ]
+     },
+     "line-dasharray": [
+      0.1,
+      10
+     ]
+    }
+   },
+   {
+    "id": "Ferre a niveau - voie etroite",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre",
+    "minzoom": 10,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "VF_ETROITE_1",
+     "VF_ETROITE_2",
+     "VF_ETROITE"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        0.3
+       ],
+       [
+        17,
+        1.8
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Ferre a niveau - voie etroite trait perpendic",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre",
+    "minzoom": 10,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "VF_ETROITE_1",
+     "VF_ETROITE_2",
+     "VF_ETROITE"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        3.5
+       ],
+       [
+        17,
+        14.7
+       ]
+      ]
+     },
+     "line-dasharray": [
+      0.1,
+      10
+     ]
+    }
+   },
+   {
+    "id": "Ferre a niveau - voie service",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre",
+    "minzoom": 14,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "VF_SERVICE",
+     "VF_NON_EXPLOITEE"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        0.3
+       ],
+       [
+        17,
+        1.8
+       ]
+      ]
+     },
+     "line-dasharray": [
+      5,
+      2,
+      1,
+      2
+     ]
+    }
+   },
+   {
+    "id": "Ferre a niveau - voie en construction",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre",
+    "minzoom": 10,
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "VF_EN_CONSTR"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        0.3
+       ],
+       [
+        17,
+        1.8
+       ]
+      ]
+     },
+     "line-dasharray": [
+      2,
+      2
+     ]
+    }
+   },
+   {
+    "id": "Ferre a niveau - voie en construction trait perpendic",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre",
+    "minzoom": 10,
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "VF_EN_CONSTR"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        3.5
+       ],
+       [
+        17,
+        14.7
+       ]
+      ]
+     },
+     "line-dasharray": [
+      0.1,
+      10
+     ]
+    }
+   },
+   {
+    "id": "Ferre a niveau - funic/urbain",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre",
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "FUNI_CREMAILLERE",
+     "TRANSPORT_URBAIN"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        0.3
+       ],
+       [
+        17,
+        1.8
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Ferre a niveau - 2 trait perpendic - funic/urbain",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre",
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "FUNI_CREMAILLERE",
+     "TRANSPORT_URBAIN"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        3.5
+       ],
+       [
+        17,
+        17
+       ]
+      ]
+     },
+     "line-dasharray": [
+      0.1,
+      0.2,
+      0.1,
+      10
+     ]
+    }
+   },
+   {
+    "id": "liaison routiere - Bac Liaison Maritime",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_liaison",
+    "minzoom": 8,
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "paint": {
+     "line-color": "#684b2b",
+     "line-width": 1
+    }
+   },
+   {
+    "id": "bati transport surfacique - bati peage",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_surf",
+    "minzoom": 13,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "BATI_PEAGE"
+    ],
+    "paint": {
+     "fill-color": "#DCDCDC",
+     "fill-outline-color": "#808080"
+    }
+   },
+   {
+    "id": "réseau hydro  - cours d'eau superieur",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "hydro_reseau_sup",
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "COURS_D_EAU_SUP",
+     "COURS_D_EAU_MOY_SUP"
+    ],
+    "paint": {
+     "line-color": "#799fbd",
+     "line-width": {
+      "stops": [
+       [
+        12,
+        1.5
+       ],
+       [
+        17,
+        6.5
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "réseau hydro - canal superieur",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "hydro_reseau_sup",
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "CANAL_SUP"
+    ],
+    "paint": {
+     "line-color": "#799fbd",
+     "line-width": {
+      "stops": [
+       [
+        12,
+        1.4
+       ],
+       [
+        17,
+        5.9
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "réseau hydro - filet interieur - aqueduc superieur",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "hydro_reseau_sup",
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "AQUEDUC_SUP"
+    ],
+    "paint": {
+     "line-color": "#799fbd",
+     "line-width": {
+      "stops": [
+       [
+        12,
+        1.4
+       ],
+       [
+        16,
+        3.5
+       ],
+       [
+        17,
+        5.9
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "réseau hydro - carre - aqueduc superieur",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "hydro_reseau_sup",
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "AQUEDUC_SUP"
+    ],
+    "paint": {
+     "line-color": "#799fbd",
+     "line-width": {
+      "stops": [
+       [
+        12,
+        3.5
+       ],
+       [
+        16,
+        8.7
+       ],
+       [
+        17,
+        14.7
+       ]
+      ]
+     },
+     "line-dasharray": [
+      1,
+      5
+     ]
+    }
+   },
+   {
+    "id": "Chemin superieur - piste cyclable",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_chemin_sup",
+    "minzoom": 13,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "paint": {
+     "line-color": "#684b2b",
+     "line-width": 1
+    }
+   },
+   {
+    "id": "Routier superieur - filet extérieur - route non revetu carrosable",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route_sup",
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "paint": {
+     "line-color": "#684b2b",
+     "line-width": 1
+    }
+   },
+   {
+    "id": "Ferre superieur - voie normale",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sup",
+    "minzoom": 10,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "VF_1_SUP",
+     "VF_2_SUP",
+     "VF_3_SUP",
+     "VF_4_SUP",
+     "VF_ELEC_1_SUP",
+     "VF_ELEC_2_SUP",
+     "VF_ELEC_3_SUP",
+     "VF_ELEC_4_SUP"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        0.8
+       ],
+       [
+        17,
+        2.5
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Ferre superieur - voie normale trait perpendic",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sup",
+    "minzoom": 10,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "VF_1_SUP",
+     "VF_2_SUP",
+     "VF_3_SUP",
+     "VF_4_SUP",
+     "VF_ELEC_1_SUP",
+     "VF_ELEC_2_SUP",
+     "VF_ELEC_3_SUP",
+     "VF_ELEC_4_SUP"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        3.5
+       ],
+       [
+        17,
+        14.7
+       ]
+      ]
+     },
+     "line-dasharray": [
+      0.1,
+      10
+     ]
+    }
+   },
+   {
+    "id": "Ferre superieur - voie etroite",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sup",
+    "minzoom": 10,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "VF_ETROITE_1_SUP",
+     "VF_ETROITE_2_SUP",
+     "VF_ETROITE_SUP"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        0.3
+       ],
+       [
+        17,
+        1.8
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Ferre superieur - voie etroite trait perpendic",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sup",
+    "minzoom": 10,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "VF_ETROITE_1_SUP",
+     "VF_ETROITE_2_SUP",
+     "VF_ETROITE_SUP"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        3.5
+       ],
+       [
+        17,
+        14.7
+       ]
+      ]
+     },
+     "line-dasharray": [
+      0.1,
+      10
+     ]
+    }
+   },
+   {
+    "id": "Ferre superieur - voie service",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sup",
+    "minzoom": 14,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "VF_SERVICE_SUP",
+     "VF_NON_EXPLOITEE_SUP"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        0.3
+       ],
+       [
+        17,
+        1.8
+       ]
+      ]
+     },
+     "line-dasharray": [
+      5,
+      2,
+      1,
+      2
+     ]
+    }
+   },
+   {
+    "id": "Ferre superieur - voie en construction",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sup",
+    "minzoom": 10,
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "VF_EN_CONSTR_SUP"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        0.3
+       ],
+       [
+        17,
+        1.8
+       ]
+      ]
+     },
+     "line-dasharray": [
+      2,
+      2
+     ]
+    }
+   },
+   {
+    "id": "Ferre superieur - voie en construction trait perpendic",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sup",
+    "minzoom": 10,
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "VF_EN_CONSTR_SUP"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        3.5
+       ],
+       [
+        17,
+        14.7
+       ]
+      ]
+     },
+     "line-dasharray": [
+      0.1,
+      10
+     ]
+    }
+   },
+   {
+    "id": "Ferre superieur - funic/urbain",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sup",
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "FUNI_CREMAILLERE_SUP",
+     "TRANSPORT_URBAIN_SUP"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        0.3
+       ],
+       [
+        17,
+        1.8
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Ferre superieur - 2 trait perpendic - funic/urbain",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "ferre_sup",
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "FUNI_CREMAILLERE_SUP",
+     "TRANSPORT_URBAIN_SUP"
+    ],
+    "paint": {
+     "line-color": "#787878",
+     "line-width": {
+      "stops": [
+       [
+        10,
+        3.5
+       ],
+       [
+        17,
+        17
+       ]
+      ]
+     },
+     "line-dasharray": [
+      0.1,
+      0.2,
+      0.1,
+      10
+     ]
+    }
+   }
+  ]
+ }
