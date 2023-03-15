@@ -80,6 +80,16 @@ hover.on('hover', e => {
 })
 map.addInteraction(hover)
 
+// Print
+import PrintDialog from 'ol-ext/control/PrintDialog'
+map.addControl(new PrintDialog)
+
+// Search tools
+import SearchGeoportail from 'ol-ext/control/SearchGeoportail'
+map.addControl(new SearchGeoportail({
+  centerOnSelect: true
+}))
+
 export { mvt }
 
 export default map
