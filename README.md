@@ -24,13 +24,13 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 *A style for buildings (orignal idea: [Aman Bhargava](https://mobile.twitter.com/thedivtagguy/status/1635836283628179456))*    
 <img src="https://user-images.githubusercontent.com/7868217/225316574-71c6aa68-6fa6-420b-991f-91a3ef02b37b.png" width=500 />
 
-* [JSON style](https://viglino.github.io/geoservice-style/erp/mapart.json)
+* [JSON style](https://viglino.github.io/geoservice-style/mapart/mapart.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=mapart)
 
 ## Space
 
 *Spacestation style*
-* [JSON style](https://viglino.github.io/geoservice-style/erp/space.json)
+* [JSON style](https://viglino.github.io/geoservice-style/space/space.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=4.844&lat=45.75&z=16&layer=space)
 
 
