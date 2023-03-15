@@ -32,6 +32,42 @@
     }
    },
    {
+    "id": "zone batie",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_zone_surf",
+    "minzoom": 7,
+    "maxzoom": 14,
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "ZONE_BATI"
+    ],
+    "paint": {
+     "fill-color": "#cf862a"
+    }
+   },
+   {
+    "id": "zone d'activité",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "bati_zone_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "ZONE_INDUS_ACTI"
+    ],
+    "paint": {
+     "fill-color": "#6c8c7f"
+    }
+   },
+   {
     "id": "hydro surfacique - Estran",
     "type": "fill",
     "source": "plan_ign",
