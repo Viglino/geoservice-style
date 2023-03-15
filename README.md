@@ -9,3 +9,12 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
   <br/>
   <i>You know the difference is between you and me? 😎 I make this look good.</i>
 </p>
+
+
+<ul>
+  <li>
+    <h2>ERP</h2>
+    <a href="https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=erp">View online</a>
+    <a href="https://viglino.github.io/geoservice-style/erp/erp.json">JSON</a>
+  </li>
+</ul>
