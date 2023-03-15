@@ -2,8 +2,8 @@
   "version": 8,
   "name": "PLAN IGN",
   "glyphs": "https://wxs.ign.fr/static/vectorTiles/fonts/{fontstack}/{range}.pbf",
-  "sprite": "./cyanotype/sprite",
   "sprite": "https://viglino.github.io/geoservice-style/cyanotype/sprite",
+  "sprite": "./cyanotype/sprite",
   "sources": {
    "plan_ign": {
     "type": "vector",
@@ -47,6 +47,175 @@
       "line-width": 1.3
     }
    },
+   {
+    "id": "ocs - vegetation - marais",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "ocs_vegetation_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "ZONE_MARAIS"
+    ],
+    "paint": {
+     "fill-pattern": "Marais"
+    }
+   },
+   {
+    "id": "ocs - vegetation - marais salant",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "ocs_vegetation_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "ZONE_MARAIS_SALANT"
+    ],
+    "paint": {
+     "fill-pattern": "MaraisSalant"
+    }
+   },
+   {
+    "id": "ocs - Zone",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "ocs_nature_sol_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "ZONE_ROCHEUSE"
+    ],
+    "paint": {
+     "fill-color": "#D0D0D0",
+     "fill-opacity": 0.3,
+     "fill-pattern": "Rocher"
+    }
+   },
+   {
+    "id": "ocs - Zone sable sec",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "ocs_nature_sol_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "ZONE_SABLE_SEC"
+    ],
+    "paint": {
+     "fill-pattern": "Sable"
+    }
+   },
+   {
+    "id": "ocs - Zone sable humide",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "ocs_nature_sol_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "ZONE_SABLE_HUMIDE",
+     "FOND_CUVETTE_HUMIDE"
+    ],
+    "paint": {
+     "fill-pattern": "SableHumide"
+    }
+   },
+   {
+   "id": "ocs - Zone graviers galets secs",
+   "type": "fill",
+   "source": "plan_ign",
+   "source-layer": "ocs_nature_sol_surf",
+   "layout": {
+    "visibility": "visible"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "GRAVIERS_GALETS_SEC"
+   ],
+   "paint": {
+    "fill-pattern": "GravierSec"
+   }
+  },
+  {
+   "id": "ocs - Zone graviers galets humides",
+   "type": "fill",
+   "source": "plan_ign",
+   "source-layer": "ocs_nature_sol_surf",
+   "layout": {
+    "visibility": "visible"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "GRAVIERS_GALETS_HUM"
+   ],
+   "paint": {
+    "fill-pattern": "Gravier"
+   }
+  },
+  {
+   "id": "ocs - Zone rocher hydro",
+   "type": "fill",
+   "source": "plan_ign",
+   "source-layer": "ocs_nature_sol_surf",
+   "layout": {
+    "visibility": "visible"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "ZONE_ROCHER_HYDRO"
+   ],
+   "paint": {
+    "fill-pattern": "RocherHydro"
+   }
+  },
+  {
+    "id": "ocs - Zone glacier",
+    "type": "fill",
+    "source": "plan_ign",
+    "source-layer": "ocs_nature_sol_surf",
+    "layout": {
+     "visibility": "visible"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "ZONE_GLACIER"
+    ],
+    "paint": {
+     "fill-pattern": "Glacier",
+     "fill-opacity": {
+      "stops": [
+       [
+        10,
+        0.5
+       ],
+       [
+        12,
+        0.3
+       ]
+      ]
+     }
+    }
+   },
+  
    {
     "id": "bati surfacique quelconque - Zoom 16,17,18",
     "type": "fill",
