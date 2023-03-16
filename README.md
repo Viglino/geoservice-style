@@ -27,6 +27,14 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 * [JSON style](https://viglino.github.io/geoservice-style/mapart/mapart.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=mapart)
 
+## Cyanotype
+
+*A [cyanotype](https://en.wikipedia.org/wiki/Cyanotype) map: a cyan-blue print that replicates an ancient slow-reacting photographic printing process (ultraviolet and blue light spectrum).*    
+<img src="https://user-images.githubusercontent.com/7868217/225561804-74190d3d-6236-414f-895e-f4b7174174dc.png" width=500 />
+
+* [JSON style](https://viglino.github.io/geoservice-style/cyanotype/cyanotype.json)
+* [View online](https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=cyanotype)
+
 ## Space
 
 *Spacestation style*
