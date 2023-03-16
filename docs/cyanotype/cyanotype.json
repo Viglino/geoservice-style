@@ -2,8 +2,8 @@
   "version": 8,
   "name": "PLAN IGN",
   "glyphs": "https://wxs.ign.fr/static/vectorTiles/fonts/{fontstack}/{range}.pbf",
-  "sprite": "https://viglino.github.io/geoservice-style/cyanotype/sprite",
   "sprite": "./cyanotype/sprite",
+  "sprite": "https://viglino.github.io/geoservice-style/cyanotype/sprite",
   "sources": {
    "plan_ign": {
     "type": "vector",
@@ -6999,7 +6999,7 @@
      "visibility": "visible",
      "symbol-placement": "point",
      "icon-image": "Localite",
-     "icon-size": 0.17,
+     "icon-size": 0.34,
      "text-field": "{texte}",
      "text-size": 11,
      "text-allow-overlap": false,
@@ -7036,7 +7036,7 @@
      "visibility": "visible",
      "symbol-placement": "point",
      "icon-image": "Localite",
-     "icon-size": 0.21,
+     "icon-size": 0.42,
      "text-field": "{texte}",
      "text-size": 12.5,
      "text-allow-overlap": false,
@@ -7082,7 +7082,7 @@
      "visibility": "visible",
      "symbol-placement": "point",
      "icon-image": "Localite",
-     "icon-size": 0.21,
+     "icon-size": 0.42,
      "text-field": "{texte}",
      "text-size": 11.5,
      "text-allow-overlap": false,
@@ -7594,7 +7594,7 @@
      "visibility": "visible",
      "symbol-placement": "point",
      "icon-image": "Localite",
-     "icon-size": 0.21,
+     "icon-size": 0.42,
      "text-field": "{texte}",
      "text-size": 13,
      "text-allow-overlap": false,
@@ -8157,7 +8157,7 @@
      "visibility": "visible",
      "symbol-placement": "point",
      "icon-image": "Localite",
-     "icon-size": 0.21,
+     "icon-size": 0.42,
      "text-field": "{texte}",
      "text-size": {
       "stops": [
@@ -8724,7 +8724,7 @@
      "visibility": "visible",
      "symbol-placement": "point",
      "icon-image": "Localite",
-     "icon-size": 0.25,
+     "icon-size": 0.5,
      "text-field": "{texte}",
      "text-size": {
       "stops": [
@@ -9197,7 +9197,7 @@
      "visibility": "visible",
      "symbol-placement": "point",
      "icon-image": "Localite",
-     "icon-size": 0.3,
+     "icon-size": 0.6,
      "text-field": "{texte}",
      "text-size": {
       "stops": [
