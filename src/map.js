@@ -85,7 +85,7 @@ import PrintDialog from 'ol-ext/control/PrintDialog'
 import { jsPDF } from 'jspdf';
 import { saveAs } from 'file-saver';
 
-printControl = new PrintDialog;
+const printControl = new PrintDialog;
 map.addControl(printControl)
 printControl.on(['print', 'error'], function(e) {
   // Print success
