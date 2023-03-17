@@ -2,8 +2,8 @@
   "version": 8,
   "name": "PLAN IGN",
   "glyphs": "https://wxs.ign.fr/static/vectorTiles/fonts/{fontstack}/{range}.pbf",
-  "sprite": "https://viglino.github.io/geoservice-style/mono/sprite-yellow",
   "sprite": "./mono/sprite-yellow",
+  "sprite": "https://viglino.github.io/geoservice-style/mono/sprite-yellow",
   "sources": {
    "plan_ign": {
     "type": "vector",
