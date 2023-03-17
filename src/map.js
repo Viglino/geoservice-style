@@ -30,7 +30,7 @@ map.addControl(plink)
 // MVT Layer
 const layer = plink.getUrlParam('layer') || 'cyanotype'
 const mvt = new MVT({
-  url: './' + layer + '/' + layer + '.json'
+  url: './' + layer.split('_').shift() + '/' + layer + '.json'
 })
 
 map.addLayer(new Geoportail({ layer: 'GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2', visible: /^erp/.test(layer) }))

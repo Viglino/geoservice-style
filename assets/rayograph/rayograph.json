@@ -1,0 +1,138 @@
+{
+  "version": 8,
+  "name": "PCI",
+  "metadata": {
+    "maputnik:renderer": "ol",
+    "geoportail:tooltip": "PCI/PCI"
+  },
+  "sources": {
+    "pci": {
+      "type": "vector",
+      "tiles": [
+      "https://wxs.ign.fr/latuile/geoportail/tms/1.0.0/PCI/{z}/{x}/{y}.pbf"
+      ],
+      "scheme": "xyz",
+      "url": "https://wxs.ign.fr/latuile/geoportail/tms/1.0.0/PCI/metadata.json"
+      }
+  },
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
+  "transition": {"duration": 300, "delay": 0},
+  "layers": [
+    {
+      "id": "departement_fill",
+      "type": "fill",
+      "source": "pci",
+      "source-layer": "departement",
+      "minzoom": 5,
+      "layout": { "visibility": "visible"},
+      "paint": {"fill-color": "#04436f", "fill-opacity": 1}
+    },
+    {
+      "id": "departement_line",
+      "type": "line",
+      "source": "pci",
+      "source-layer": "departement",
+      "minzoom": 5,
+      "layout": {"line-join": "bevel", "visibility": "visible"},
+      "paint": {"line-color": "#fff"}
+    },
+    {
+      "id": "parcelle_fill",
+      "type": "fill",
+      "source": "pci",
+      "source-layer": "parcelle",
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "#04436f", "fill-opacity": 1}
+    },
+    {
+      "id": "parcelle_line",
+      "type": "line",
+      "source": "pci",
+      "source-layer": "parcelle",
+      "layout": {"visibility": "visible"},
+      "paint": {"line-color": "#fff" }
+    },
+    {
+      "id": "batiment-dur",
+      "type": "fill",
+      "source": "pci",
+      "source-layer": "batiment",
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "#d72c28", "fill-opacity": 1}
+    },
+    {
+      "id": "borne",
+      "type": "circle",
+      "source": "pci",
+      "source-layer": "borne_limite_propriete",
+      "minzoom": 17,
+      "paint": {
+        "circle-color": "#fff",
+        "circle-radius": 4.5,
+        "circle-stroke-color": "#04436f",
+        "circle-stroke-width": 3
+      }
+    },
+    {
+      "id": "commune_fill",
+      "type": "fill",
+      "source": "pci",
+      "source-layer": "commune",
+      "layout": {"visibility": "visible"},
+      "maxzoom": 16,
+      "paint": {"fill-color": "#04436f", "fill-opacity": 1}
+    },
+    {
+      "id": "commune",
+      "type": "line",
+      "source": "pci",
+      "source-layer": "commune",
+      "layout": {"visibility": "visible"},
+      "maxzoom": 16,
+      "paint": {
+        "line-color": "#fff",
+        "line-width": 1.5
+      }
+    },
+    {
+      "id": "nom_com",
+      "type": "symbol",
+      "source": "pci",
+      "source-layer": "commune",
+      "maxzoom": 16,
+      "layout": {
+        "text-field": "{nom_com}",
+        "text-size": 15,
+        "text-anchor": "center",
+        "text-keep-upright": true,
+        "text-max-angle": 45,
+        "text-padding": 1,
+        "text-font": ["Vollkorn Black"],
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "rgba(0, 0, 0, 1)",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "departement_label",
+      "type": "symbol",
+      "source": "pci",
+      "source-layer": "departement",
+      "minzoom": 6,
+      "maxzoom": 11,
+      "layout": {
+        "text-field": "{insee_dep}",
+        "text-font": ["Vollkorn Black"],
+        "text-size": 19
+      },
+      "paint": {
+        "text-color": "rgba(0, 0, 0, 1)",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 2
+      }
+    }
+  ]
+}
