@@ -13,7 +13,7 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 
 ## ERP
 
-*A style to dsiplay ERP (establishment open to the public) in the French BDTopo*    
+*A style to display ERP (establishment open to the public) in the French BDTopo*    
 <img src="https://user-images.githubusercontent.com/7868217/225317620-cd0f324a-c2da-439c-8ddb-1c711193f2f8.png" width=500 />
 
 * [JSON style](https://viglino.github.io/geoservice-style/erp/erp.json)
