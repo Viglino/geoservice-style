@@ -189,7 +189,7 @@
     "source": "plan_ign",
     "source-layer": "ocs_vegetation_surf",
     "layout": {
-     "visibility": "none"
+     "visibility": "visible"
     },
     "filter": [
      "in",
@@ -211,7 +211,7 @@
     "source": "plan_ign",
     "source-layer": "ocs_vegetation_surf",
     "layout": {
-     "visibility": "none"
+     "visibility": "visible"
     },
     "filter": [
      "in",
@@ -229,7 +229,7 @@
     "source": "plan_ign",
     "source-layer": "ocs_vegetation_surf",
     "layout": {
-     "visibility": "none"
+     "visibility": "visible"
     },
     "filter": [
      "==",
@@ -246,7 +246,7 @@
     "source": "plan_ign",
     "source-layer": "ocs_vegetation_surf",
     "layout": {
-     "visibility": "none"
+     "visibility": "visible"
     },
     "filter": [
      "==",
@@ -263,7 +263,7 @@
     "source": "plan_ign",
     "source-layer": "ocs_vegetation_surf",
     "layout": {
-     "visibility": "none"
+     "visibility": "visible"
     },
     "filter": [
      "==",
@@ -280,7 +280,7 @@
     "source": "plan_ign",
     "source-layer": "ocs_vegetation_surf",
     "layout": {
-     "visibility": "none"
+     "visibility": "visible"
     },
     "filter": [
      "==",
@@ -315,7 +315,7 @@
     "source": "plan_ign",
     "source-layer": "ocs_vegetation_surf",
     "layout": {
-     "visibility": "none"
+     "visibility": "visible"
     },
     "filter": [
      "==",
@@ -343,7 +343,7 @@
     "source": "plan_ign",
     "source-layer": "ocs_vegetation_surf",
     "layout": {
-     "visibility": "none"
+     "visibility": "visible"
     },
     "filter": [
      "==",
@@ -2545,7 +2545,7 @@
     "source": "plan_ign",
     "source-layer": "bati_surf",
     "layout": {
-     "visibility": "none"
+     "visibility": "visible"
     },
     "filter": [
      "in",
@@ -2556,8 +2556,7 @@
     ],
     "paint": {
      "fill-color": "#F0F0F0",
-     "fill-opacity": 0.5,
-     "fill-outline-color": "#818181"
+     "fill-opacity": 0.5
     }
    },
    {
@@ -2566,7 +2565,7 @@
     "source": "plan_ign",
     "source-layer": "bati_surf",
     "layout": {
-     "visibility": "none"
+     "visibility": "visible"
     },
     "filter": [
      "in",
@@ -2636,7 +2635,7 @@
     "source-layer": "bati_surf",
     "maxzoom": 15,
     "layout": {
-     "visibility": "none"
+     "visibility": "visible"
     },
     "filter": [
      "in",
@@ -2648,7 +2647,7 @@
      "HANGAR_INDUSTRIEL"
     ],
     "paint": {
-     "fill-color": "#C8C8C8"
+     "fill-color": "#D6C6B8"
     }
    },
    {
@@ -2692,7 +2691,7 @@
     "source-layer": "bati_surf",
     "maxzoom": 15,
     "layout": {
-     "visibility": "none"
+     "visibility": "visible"
     },
     "filter": [
      "in",
@@ -2701,7 +2700,7 @@
      "HANGAR_PUBLIC"
     ],
     "paint": {
-     "fill-color": "#B9B6D6"
+     "fill-color": "#D6C6B8"
     }
    },
    {
@@ -2742,7 +2741,7 @@
     "source-layer": "bati_surf",
     "minzoom": 15,
     "layout": {
-     "visibility": "none",
+     "visibility": "visible",
      "line-cap": "round",
      "line-join": "round"
     },
@@ -2763,7 +2762,7 @@
     "source-layer": "bati_surf",
     "minzoom": 13,
     "layout": {
-     "visibility": "none"
+     "visibility": "visible"
     },
     "filter": [
      "==",
@@ -3067,7 +3066,7 @@
     "source-layer": "bati_surf",
     "maxzoom": 14,
     "layout": {
-     "visibility": "none"
+     "visibility": "visible"
     },
     "filter": [
      "in",
@@ -3081,7 +3080,7 @@
      "RELIGIEUX_QQUE"
     ],
     "paint": {
-     "fill-color": "#F7CBCB"
+     "fill-color": "#D6C6B8"
     }
    },
    {
@@ -3161,7 +3160,7 @@
     "source": "plan_ign",
     "source-layer": "bati_surf",
     "layout": {
-     "visibility": "none"
+     "visibility": "visible"
     },
     "filter": [
      "in",
@@ -3184,7 +3183,7 @@
     "source": "plan_ign",
     "source-layer": "bati_surf",
     "layout": {
-     "visibility": "none",
+     "visibility": "visible",
      "line-cap": "round",
      "line-join": "round"
     },
