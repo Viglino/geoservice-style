@@ -16,15 +16,14 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 
 <img src="https://user-images.githubusercontent.com/7868217/225907457-ce3c4339-c830-4b98-ba54-167d7e43d153.png" width=500 />
 
-- [Mono red](https://viglino.github.io/geoservice-style/?lon=-0.569053&lat=44.840377&z=16.3&layer=mono_red) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_red.json)
-- [Mono green](https://viglino.github.io/geoservice-style/?lon=-1.67&lat=48.10&z=16.5&layer=mono_green) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_greeb.json)
-- [Mono blue](https://viglino.github.io/geoservice-style/?lon=7.268985&lat=43.696243&z=16.5&layer=mono_blue) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_blue.json)
-- [Mono purple](https://viglino.github.io/geoservice-style/?lon=8.741828&lat=41.932591&z=16.3&layer=mono_purple) - [JSON style](https://viglino.github.io/geoservice-style/mono/purple.json)
-- [Mono orange](https://viglino.github.io/geoservice-style/?lon=4.805819&lat=44.135443&z=15.9&layer=mono_orange) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_orange.json)
-- [Mono yellow](https://viglino.github.io/geoservice-style/?lon=6.175476&lat=48.685832&z=16.7&layer=mono_yellow) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_yellow.json)
--[Mono black](https://viglino.github.io/geoservice-style/?lon=7.746699&lat=48.582777&z=15.7&layer=mono_black) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_black.json)
-- [Mono gray](https://viglino.github.io/geoservice-style/?lon=3.044646&lat=50.640889&z=15.9&layer=mono_gray) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_gray.json)
-- [Mono black](https://viglino.github.io/geoservice-style/?lon=7.743716&lat=48.574589&z=16.4&layer=mono_black) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_black.json)
+<img src="https://placehold.co/15x15/912626/912626.png" /> [Mono red](https://viglino.github.io/geoservice-style/?lon=-0.569053&lat=44.840377&z=16.3&layer=mono_red) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_red.json)   
+<img src="https://placehold.co/15x15/6d8e30/6d8e30.png" />  [Mono green](https://viglino.github.io/geoservice-style/?lon=-1.67&lat=48.10&z=16.5&layer=mono_green) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_green.json)   
+<img src="https://placehold.co/15x15/265791/265791.png" />  [Mono blue](https://viglino.github.io/geoservice-style/?lon=7.268985&lat=43.696243&z=16.5&layer=mono_blue) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_blue.json)   
+<img src="https://placehold.co/15x15/583c77/583c77.png" />  [Mono purple](https://viglino.github.io/geoservice-style/?lon=8.741828&lat=41.932591&z=16.3&layer=mono_purple) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_purple.json)   
+<img src="https://placehold.co/15x15/c26518/c26518.png" />  [Mono orange](https://viglino.github.io/geoservice-style/?lon=4.805819&lat=44.135443&z=15.9&layer=mono_orange) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_orange.json)   
+<img src="https://placehold.co/15x15/ff0/ff0.png" />  [Mono yellow](https://viglino.github.io/geoservice-style/?lon=6.175476&lat=48.685832&z=16.7&layer=mono_yellow) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_yellow.json)  
+<img src="https://placehold.co/15x15/111/111.png" /> [Mono black](https://viglino.github.io/geoservice-style/?lon=7.746699&lat=48.582777&z=15.7&layer=mono_black) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_black.json)   
+<img src="https://placehold.co/15x15/333/333.png" />  [Mono gray](https://viglino.github.io/geoservice-style/?lon=3.044646&lat=50.640889&z=15.9&layer=mono_gray) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_gray.json)   
 
 ## ERP
 
@@ -52,6 +51,15 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 
 * [JSON style](https://viglino.github.io/geoservice-style/cyanotype/cyanotype.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=cyanotype)
+
+## Roads
+
+*A style of roads pedestrian-friendly*
+
+<img src="https://user-images.githubusercontent.com/7868217/225927972-cccfae95-6799-4f41-b2f7-f82fe353a5e3.png" width=500 />
+
+* [JSON style](https://viglino.github.io/geoservice-style/roads/roads.json)
+* [View online](https://viglino.github.io/geoservice-style/?lon=1.907046&lat=47.898146&z=15.7&layer=roads)
 
 ## Space
 
