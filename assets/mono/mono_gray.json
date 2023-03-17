@@ -7526,7 +7526,7 @@
      },
      "circle-color": "#333",
      "circle-stroke-width": 1,
-     "circle-stroke-color": "#808080"
+     "circle-stroke-color": "#fff"
     }
    },
    {
@@ -7603,7 +7603,7 @@
        ]
       ]
      },
-     "circle-color": "#333",
+     "circle-color": "#fff",
      "circle-opacity": 1,
      "circle-stroke-width": {
       "stops": [
@@ -7617,7 +7617,7 @@
        ]
       ]
      },
-     "circle-stroke-color": "#1466B2"
+     "circle-stroke-color": "#333"
     }
    },
    {
@@ -7755,7 +7755,7 @@
        ]
       ]
      },
-     "circle-stroke-color": "#1466B2"
+     "circle-stroke-color": "#fff"
     }
    },
    {
@@ -7967,7 +7967,7 @@
        ]
       ]
      },
-     "circle-stroke-color": "#1466B2"
+     "circle-stroke-color": "#fff"
     }
    },
    {
