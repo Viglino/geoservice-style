@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Viglino/geoservice-style#,",
   "dependencies": {
+    "iconicss": "^0.3.0",
     "ol": "^6.15.1",
     "ol-ext": "^3.2.28",
     "ol-mapbox-style": "^8.0.5"

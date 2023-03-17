@@ -1,4 +1,5 @@
 import map, { mvt } from './map'
+import './github'
 
 import './index.css'
 

@@ -7,5 +7,19 @@
 }
 
 .ol-search {
-  top: 2.5em;
+  top: 3em;
+  left: 3.5em;
+}
+.ol-print {
+  left: 3.5em!important;
+}
+
+.ol-control button {
+  font-size: 1.5em;
+}
+.ol-rotate {
+  right: 4em;
+}
+.ol-layerswitcher > button {
+  font-size: 2.5em;
 }
