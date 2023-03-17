@@ -53,6 +53,15 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 * [JSON style](https://viglino.github.io/geoservice-style/cyanotype/cyanotype.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=cyanotype)
 
+## Roads
+
+*A style of roads pedestrian-friendly*
+
+<img src="https://user-images.githubusercontent.com/7868217/225927972-cccfae95-6799-4f41-b2f7-f82fe353a5e3.png" width=500 />
+
+* [JSON style](https://viglino.github.io/geoservice-style/roads/roads.json)
+* [View online](https://viglino.github.io/geoservice-style/?lon=1.907046&lat=47.898146&z=15.7&layer=roads)
+
 ## Space
 
 *Spacestation style*
