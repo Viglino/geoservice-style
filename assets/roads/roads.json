@@ -1576,7 +1576,7 @@
      "ESCALIER_SOU"
     ],
     "paint": {
-     "line-color": "#FFFFFF",
+     "line-color": "#426427",
      "line-width": {
       "stops": [
        [
@@ -3472,7 +3472,7 @@
      "ESCALIER"
     ],
     "paint": {
-     "line-color": "#FFFFFF",
+     "line-color": "#426427",
      "line-width": {
       "stops": [
        [
@@ -4679,7 +4679,7 @@
      "PONT_MOBILE_LIN"
     ],
     "paint": {
-     "line-color": "#FFFFFF",
+     "line-color": "#426427",
      "line-width": {
       "stops": [
        [
@@ -4759,7 +4759,7 @@
     ],
     "paint": {
      "fill-opacity": 0.8,
-     "fill-color": "#FFFFFF",
+     "fill-color": "#426427",
      "fill-outline-color": "#918091"
     }
    },
@@ -4976,7 +4976,7 @@
      "ESCALIER_SUP"
     ],
     "paint": {
-     "line-color": "#FFFFFF",
+     "line-color": "#426427",
      "line-width": {
       "stops": [
        [
