@@ -29,7 +29,7 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 
 *A style to display ERP (establishment open to the public) in the French BDTopo*
 
-<img src="https://user-images.githubusercontent.com/7868217/225317620-cd0f324a-c2da-439c-8ddb-1c711193f2f8.png" width=500 />
+[<img src="https://user-images.githubusercontent.com/7868217/225317620-cd0f324a-c2da-439c-8ddb-1c711193f2f8.png" width=500 />](https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=erp)
 
 * [JSON style](https://viglino.github.io/geoservice-style/erp/erp.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=erp)
@@ -38,7 +38,7 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 
 *A style for buildings (orignal idea: [Aman Bhargava](https://mobile.twitter.com/thedivtagguy/status/1635836283628179456))*
 
-<img src="https://user-images.githubusercontent.com/7868217/225316574-71c6aa68-6fa6-420b-991f-91a3ef02b37b.png" width=500 />
+[<img src="https://user-images.githubusercontent.com/7868217/225316574-71c6aa68-6fa6-420b-991f-91a3ef02b37b.png" width=500 />](https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=mapart)
 
 * [JSON style](https://viglino.github.io/geoservice-style/mapart/mapart.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=mapart)
@@ -47,7 +47,7 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 
 *A [cyanotype](https://en.wikipedia.org/wiki/Cyanotype) map: a cyan-blue print that replicates an ancient slow-reacting photographic printing process (ultraviolet and blue light spectrum).*
 
-<img src="https://user-images.githubusercontent.com/7868217/225561804-74190d3d-6236-414f-895e-f4b7174174dc.png" width=500 />
+[<img src="https://user-images.githubusercontent.com/7868217/225561804-74190d3d-6236-414f-895e-f4b7174174dc.png" width=500 />](https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=cyanotype)
 
 * [JSON style](https://viglino.github.io/geoservice-style/cyanotype/cyanotype.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=cyanotype)
@@ -56,7 +56,7 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 
 *A style of roads pedestrian-friendly*
 
-<img src="https://user-images.githubusercontent.com/7868217/225927972-cccfae95-6799-4f41-b2f7-f82fe353a5e3.png" width=500 />
+[<img src="https://user-images.githubusercontent.com/7868217/225927972-cccfae95-6799-4f41-b2f7-f82fe353a5e3.png" width=500 />](https://viglino.github.io/geoservice-style/?lon=1.907046&lat=47.898146&z=15.7&layer=roads)
 
 * [JSON style](https://viglino.github.io/geoservice-style/roads/roads.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=1.907046&lat=47.898146&z=15.7&layer=roads)
