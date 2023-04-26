@@ -52,6 +52,15 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 * [JSON style](https://viglino.github.io/geoservice-style/cyanotype/cyanotype.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=cyanotype)
 
+## Guide book
+
+*Early twentieth-century guidebook maps style*
+
+[<img src="https://user-images.githubusercontent.com/7868217/234608025-01ff1c23-adaf-4f82-b0e9-2372a3137f7c.png" width=500 />](https://viglino.github.io/geoservice-style/?lon=2.361318&lat=48.840633&z=17&layer=guidebook)
+
+* [JSON style](https://viglino.github.io/geoservice-style/roads/guidebook.json)
+* [View online](https://viglino.github.io/geoservice-style/?lon=1.907046&lat=47.898146&z=15.7&layer=guidebook)
+
 ## Roads
 
 *A style of roads pedestrian-friendly*
