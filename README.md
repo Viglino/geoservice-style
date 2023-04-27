@@ -54,7 +54,7 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 
 ## Retro map
 
-*Retro map style*
+*Vintage road atlas map style*
 
 [<img src="https://user-images.githubusercontent.com/7868217/234884991-aaa7f3c9-76c8-4c36-a014-015014ff8f54.png" width=500 />](https://viglino.github.io/geoservice-style/?lon=5.924606&lat=43.126143&z=16.4&layer=retro)
 
