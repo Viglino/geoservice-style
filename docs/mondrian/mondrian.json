@@ -26,16 +26,167 @@
         "paint": {
           "fill-color": "#000"
         }
-      },
+      },{
+        "id": "departement_red",
+        "type": "fill",
+        "source": "pci",
+        "source-layer": "departement",
+        "minzoom": 5,
+        "max-zoom": 12,
+        "filter": [
+          "==",
+          ["%", ["get", "gid"], 5],
+          0
+         ],       
+        "paint": {
+          "fill-color": "#e8161b"
+        }
+    },{
+      "id": "departement_yelow",
+      "type": "fill",
+      "source": "pci",
+      "source-layer": "departement",
+      "minzoom": 5,
+      "max-zoom": 12,
+      "filter": [
+        "==",
+        ["%", ["get", "gid"], 5],
+        1
+      ],       
+     "paint": {
+       "fill-color": "#ffeb4e"
+     }
+    },{
+    "id": "departement_blue",
+    "type": "fill",
+    "source": "pci",
+    "source-layer": "departement",
+    "minzoom": 5,
+    "max-zoom": 12,
+    "filter": [
+      "==",
+      ["%", ["get", "gid"], 5],
+      2
+           ],       
+          "paint": {
+            "fill-color": "#0001df"
+          }
+},{
+  "id": "departement_white",
+  "type": "fill",
+  "source": "pci",
+  "source-layer": "departement",
+  "minzoom": 5,
+  "max-zoom": 12,
+  "filter": [
+    "==",
+    ["%", ["get", "gid"], 5],
+    3
+   ],       
+  "paint": {
+    "fill-color": "#fff"
+  }
+},{
+  "id": "departement_black",
+  "type": "fill",
+  "source": "pci",
+  "source-layer": "departement",
+  "minzoom": 5,
+  "max-zoom": 12,
+  "filter": [
+    "==",
+    ["%", ["get", "gid"], 5],
+    4
+   ],       
+  "paint": {
+    "fill-color": "#000"
+  }
+},
     {
         "id": "departement_line",
         "type": "line",
         "source": "pci",
         "source-layer": "departement",
-        "paint": {"line-color": "#6a00ff"},
         "minzoom": 5,
-        "layout": {"line-join": "bevel"}
+        "max-zoom": 12,
+        "paint": {
+          "line-color": "#000",
+          "line-width": 5
+        },
+        "layout": {"line-join": "round"}
       },
+      {
+        "id": "commune_red",
+        "type": "fill",
+        "source": "pci",
+        "source-layer": "commune",
+        "maxzoom": 15,
+      "filter": [
+        "==",
+        ["%", ["get", "gid"], 4],
+        0
+       ],       
+      "paint": {
+        "fill-color": "#e8161b"
+      }
+    },{
+      "id": "commune_yellow",
+      "type": "fill",
+      "source": "pci",
+      "source-layer": "commune",
+      "maxzoom": 15,
+    "filter": [
+      "==",
+      ["%", ["get", "gid"], 4],
+      1
+    ],       
+   "paint": {
+     "fill-color": "#ffeb4e"
+   }
+},{
+  "id": "commune_blue",
+  "type": "fill",
+  "source": "pci",
+  "source-layer": "commune",
+  "maxzoom": 15,
+"filter": [
+  "==",
+  ["%", ["get", "gid"], 4],
+  2
+],       
+"paint": {
+ "fill-color": "#0001df"
+}
+},{
+  "id": "commune_white",
+  "type": "fill",
+  "source": "pci",
+  "source-layer": "commune",
+  "maxzoom": 15,
+"filter": [
+  "==",
+  ["%", ["get", "gid"], 4],
+  3
+],       
+"paint": {
+ "fill-color": "#fff"
+}
+},{
+  "id": "commune_black",
+  "type": "fill",
+  "source": "pci",
+  "source-layer": "commune",
+  "maxzoom": 15,
+"filter": [
+  "==",
+  ["%", ["get", "gid"], 15],
+  0
+],       
+"paint": {
+ "fill-color": "#000"
+}
+},
+
         {
             "id": "commune",
             "type": "line",
@@ -43,7 +194,8 @@
             "source-layer": "commune",
             "maxzoom": 15,
             "paint": {
-              "line-color": "#6a00ff"
+              "line-color": "#000",
+              "line-width": 5
             }
         },
         {
