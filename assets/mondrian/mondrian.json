@@ -1,0 +1,164 @@
+{
+  "version": 8,
+  "name": "PCI",
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
+  "metadata": {"maputnik:renderer": "ol"},
+  "sources": {
+    "pci": {
+      "type": "vector",
+      "tiles": [
+      "https://wxs.ign.fr/parcellaire/geoportail/tms/1.0.0/PCI/{z}/{x}/{y}.pbf"
+      ],
+      "scheme": "tms",
+      "url": "https://wxs.ign.fr/parcellaire/geoportail/tms/1.0.0/PCI/metadata.json"
+      }
+    },
+    "transition": {
+      "duration": 300,
+      "delay": 0
+    },
+    "layers": [
+      {
+        "id": "feuille",
+        "type": "fill",
+        "source": "pci",
+        "source-layer": "feuille",
+        "paint": {
+          "fill-color": "#000"
+        }
+      },
+    {
+        "id": "departement_line",
+        "type": "line",
+        "source": "pci",
+        "source-layer": "departement",
+        "paint": {"line-color": "#6a00ff"},
+        "minzoom": 5,
+        "layout": {"line-join": "bevel"}
+      },
+        {
+            "id": "commune",
+            "type": "line",
+            "source": "pci",
+            "source-layer": "commune",
+            "maxzoom": 15,
+            "paint": {
+              "line-color": "#6a00ff"
+            }
+        },
+        {
+          "id": "parcelle_red",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "filter": [
+            "==",
+            ["%", ["get", "gid"], 4],
+            0
+           ],       
+          "paint": {
+            "fill-color": "#e8161b"
+          }
+        },{
+          "id": "parcelle_yellow",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "filter": [
+            "==",
+            ["%", ["get", "gid"], 4],
+            1
+           ],       
+          "paint": {
+            "fill-color": "#ffeb4e"
+          }
+        },{
+          "id": "parcelle_blue",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "filter": [
+            "==",
+            ["%", ["get", "gid"], 4],
+            2
+           ],       
+          "paint": {
+            "fill-color": "#0001df"
+          }
+        },{
+          "id": "parcelle_white",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "filter": [
+            "==",
+            ["%", ["get", "gid"], 4],
+            3
+           ],       
+          "paint": {
+            "fill-color": "#fff"
+          }
+        },{
+          "id": "parcelle_line",
+          "type": "line",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "paint": {
+            "line-color": "#000",
+            "line-width": 3
+          }
+        },
+        {
+          "id": "batiment",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "batiment",
+          "minzoom": 17,
+          "paint": {
+            "fill-color": "#dfccff",
+            "fill-opacity": 0.4
+          },
+          "layout": {
+            "visibility": "none"
+           }       
+        },
+        {
+          "id": "batiment-leger",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "batiment",
+          "minzoom": 17,
+          "filter": [
+            "==",
+            "type",
+            "Construction légère"
+          ],
+          "paint": {
+            "fill-color": "#DFCCFF",
+            "fill-opacity": 0.4
+          },
+          "layout": {
+            "visibility": "none"
+           }       
+        },
+        {
+          "id": "batiment-dur",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "batiment",
+          "minzoom": 17,
+          "paint": {
+            "fill-color": "#C17C74",
+            "fill-opacity": 0.4
+          },
+          "filter": [
+            "==",
+            "type",
+            "Bâtiment en dur"
+          ],
+          "layout": {
+            "visibility": "none"
+           }  
+        }
+    ]
+}
