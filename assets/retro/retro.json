@@ -205,7 +205,6 @@
     "fill-color": "#cad2b7",
     "fill-outline-color": "#cad2b7",
     "fill-pattern": "Bois"
-
    }
   },
   {
@@ -11448,9 +11447,9 @@
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "#3d7ba9",
+    "text-color": "#224966",
     "text-halo-width": 5,
-    "text-halo-color": "#AAD5E9"
+    "text-halo-color": "#85a7bf"
    }
   },
   {
@@ -12320,8 +12319,8 @@
     ]
    },
    "paint": {
-    "text-color": "#4a749f",
-    "text-halo-color": "#FFFFFF",
+    "text-color": "#224966",
+    "text-halo-color": "rgba(255,255,255,0.6)",
     "text-halo-width": 1
    }
   },
@@ -12348,7 +12347,7 @@
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "#4a749f",
+    "text-color": "#224966",
     "text-halo-width": 2,
     "text-halo-color": "rgba(255, 255, 255, 0.5)"
    }
@@ -12376,7 +12375,7 @@
     ]
    },
    "paint": {
-    "text-color": "#a6ab99",
+    "text-color": "#595e4a",
     "text-halo-color": "rgba(255, 255, 255, 0.5)",
     "text-halo-width": 1
    }
@@ -12405,7 +12404,7 @@
     ]
    },
    "paint": {
-    "text-color": "#a9be99",
+    "text-color": "#595e4a",
     "text-halo-color": "rgba(255, 255, 255, 0.5)",
     "text-halo-width": 1
    }
@@ -12743,8 +12742,8 @@
     ]
    },
    "paint": {
-    "text-color": "#4a749f",
-    "text-halo-color": "#FFFFFF",
+    "text-color": "#224966",
+    "text-halo-color": "rgba(255, 255, 255, 0.5)",
     "text-halo-width": 1
    }
   },
@@ -13524,7 +13523,7 @@
     ]
    },
    "paint": {
-    "text-color": "#4a749f",
+    "text-color": "#224966",
     "text-halo-color": "#FFFFFF",
     "text-halo-width": 2
    }
@@ -13737,7 +13736,7 @@
     ]
    },
    "paint": {
-    "text-color": "#a6ab99",
+    "text-color": "#595e4a",
     "text-halo-color": "rgba(255, 255, 255, 0.5)",
     "text-halo-width": 2
    }
@@ -13767,7 +13766,7 @@
     ]
    },
    "paint": {
-    "text-color": "#a9c0bf",
+    "text-color": "#595e4a",
     "text-halo-color": "rgba(255, 255, 255, 0.5)",
     "text-halo-width": 2
    }
@@ -13799,7 +13798,7 @@
     ]
    },
    "paint": {
-    "text-color": "#a9be99",
+    "text-color": "#595e4a",
     "text-halo-color": "rgba(255, 255, 255, 0.5)",
     "text-halo-width": 2
    }
@@ -14096,8 +14095,8 @@
     ]
    },
    "paint": {
-    "text-color": "#4a749f",
-    "text-halo-color": "#FFFFFF",
+    "text-color": "#224966",
+    "text-halo-color": "rgba(255, 255, 255, 0.5)",
     "text-halo-width": 2
    }
   },
@@ -14139,8 +14138,8 @@
     ]
    },
    "paint": {
-    "text-color": "#4a749f",
-    "text-halo-color": "#FFFFFF",
+    "text-color": "#224966",
+    "text-halo-color": "rgba(255, 255, 255, 0.5)",
     "text-halo-width": 2
    }
   },
@@ -14659,10 +14658,10 @@
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "#4a749f",
-    "text-halo-width": 4,
-    "text-halo-color": "rgba(255, 255, 255, 0.5)"
-   }
+    "text-color": "rgba(255, 255, 255, 0.1)",
+    "text-halo-width": 0.5,
+   "text-halo-color": "#1b1c17"
+ }
   },
   {
    "id": "toponyme - hydro ponc 1",
@@ -14705,9 +14704,10 @@
     ]
    },
    "paint": {
-    "text-color": "#4a749f",
-    "text-halo-color": "rgba(255, 255, 255, 0.5)",
-    "text-halo-width": 4
+    "text-color": "rgba(255, 255, 255, 0.1)",
+    "text-halo-color": "#1b1c17",
+    "text-halo-width": 0.5
+
    }
   },
   {
@@ -14736,18 +14736,18 @@
      "stops": [
       [
        4,
-       10
+       15
       ],
       [
        6,
-       17
+       30
       ]
      ]
     },
     "text-allow-overlap": true,
     "text-anchor": "bottom-left",
     "text-offset": [
-     0.3,
+     0,
      0.2
     ],
     "text-padding": 1,
@@ -14776,10 +14776,10 @@
     }
    },
    "paint": {
-    "text-color": "#666958",
-    "text-halo-color": "rgba(255, 255, 255, 0.5)",
-    "text-halo-width": 3
-   }
+    "text-color": "rgba(255, 255, 255, 0.1)",
+    "text-halo-color": "#1b1c17",
+    "text-halo-width": 0.5
+  }
   },
   {
    "id": "toponyme localite n0 typoA3 non commune",
@@ -15209,19 +15209,19 @@
      "stops": [
       [
        3,
-       10
+       30
       ],
       [
        6,
-       20
+       40
       ]
      ]
     },
     "text-allow-overlap": false,
     "text-anchor": "bottom-left",
     "text-offset": [
-     0.25,
-     -0.1
+     0,
+     0.2
     ],
     "text-padding": 1,
     "text-transform": "uppercase",
@@ -15249,10 +15249,10 @@
     }
    },
    "paint": {
-    "text-color": "#666958",
-    "text-halo-color": "rgba(255, 255, 255, 0.5)",
-    "text-halo-width": 4
-   }
+    "text-color": "rgba(255, 255, 255, 0.1)",
+    "text-halo-color": "#1b1c17",
+    "text-halo-width": 0.5
+ }
   },
   {
    "id": "toponyme localite n0 typoA1 commune",
@@ -15279,7 +15279,7 @@
     "visibility": "visible",
     "symbol-placement": "point",
     "text-field": "{texte}",
-    "text-size": 23,
+    "text-size": 50,
     "text-allow-overlap": true,
     "text-anchor": "center",
     "text-padding": 1,
@@ -15289,10 +15289,10 @@
     ]
    },
    "paint": {
-    "text-color": "#666958",
-    "text-halo-color": "rgba(255, 255, 255, 0.5)",
-    "text-halo-width": 4
-   }
+    "text-color": "rgba(255, 255, 255, 0.1)",
+    "text-halo-color": "#1b1c17",
+    "text-halo-width": 0.5
+ }
   },
   {
    "id": "toponyme - hydro ponc ocean",
@@ -15329,10 +15329,10 @@
     ]
    },
    "paint": {
-    "text-color": "#4a749f",
-    "text-halo-color": "rgba(255, 255, 255, 0.5)",
-    "text-halo-width": 4
-   }
+    "text-color": "rgba(255, 255, 255, 0.1)",
+    "text-halo-color": "#224966",
+    "text-halo-width": 0.5
+  }
   },
   {
    "id": "toponyme pays 3",
