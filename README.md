@@ -88,11 +88,12 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 * [JSON style](https://viglino.github.io/geoservice-style/roads/roads.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=1.907046&lat=47.898146&z=15.7&layer=roads)
 
+<!--
 ## Space
 
 *Spacestation style*
 * [JSON style](https://viglino.github.io/geoservice-style/space/space.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=4.844&lat=45.75&z=16&layer=space)
 
-
+-->
 
