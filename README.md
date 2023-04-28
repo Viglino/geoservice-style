@@ -7,7 +7,9 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
     <img align="center" src="https://c.tenor.com/d-Ki-Y0envsAAAAC/i-make-this-look-good-will-smith.gif" />
   </a>
   <br/>
-  <i>You know the difference is between you and me? 😎 I make this look good.</i>
+  <i>You know the difference is between you and me?
+  <br/>
+  😎 I make this look good.</i>
 </p>
 
 ## Monochrome
