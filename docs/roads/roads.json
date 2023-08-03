@@ -5,11 +5,8 @@
   "sprite": "https://wxs.ign.fr/static/vectorTiles/styles/PLAN.IGN/sprite/PlanIgn",
   "sources": {
    "plan_ign": {
-    "type": "vector",
-    "tiles": [
-     "https://wxs.ign.fr/essentiels/geoportail/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"
-    ],
-    "scheme": "tms"
+    "type":"vector",
+    "url":"https://wxs.ign.fr/essentiels/geoportail/tms/1.0.0/PLAN.IGN/metadata.json"
    }
   },
   "transition": {

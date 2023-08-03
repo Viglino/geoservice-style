@@ -8,11 +8,7 @@
   "sources": {
     "pci": {
       "type": "vector",
-      "tiles": [
-      "https://wxs.ign.fr/latuile/geoportail/tms/1.0.0/PCI/{z}/{x}/{y}.pbf"
-      ],
-      "scheme": "xyz",
-      "url": "https://wxs.ign.fr/latuile/geoportail/tms/1.0.0/PCI/metadata.json"
+      "url": "https://wxs.ign.fr/parcellaire/geoportail/tms/1.0.0/PCI/metadata.json"
       }
   },
   "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
