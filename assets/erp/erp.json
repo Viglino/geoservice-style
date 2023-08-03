@@ -11,11 +11,7 @@
   "sources": {
       "bdtopo": {
         "type": "vector",
-        "tiles": [
-        "https://wxs.ign.fr/latuile/geoportail/tms/1.0.0/BDTOPO/{z}/{x}/{y}.pbf"
-        ],
-        "scheme": "tms",
-        "url":"https://wxs.ign.fr/latuile/geoportail/tms/1.0.0/BDTOPO/metadata.json"
+        "url":"https://wxs.ign.fr/topographie/geoportail/tms/1.0.0/BDTOPO/metadata.json"
       }
   },
   "transition": {
