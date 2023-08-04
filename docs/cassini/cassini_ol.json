@@ -12721,7 +12721,7 @@
     "layout": {
      "visibility": "visible",
      "symbol-placement": "point",
-     "icon-image": "Localite",
+     "icon-image": "Paroisse",
      "icon-size": 1,
      "text-field": "{texte}",
      "text-size": 12.5,
@@ -13311,7 +13311,7 @@
     "layout": {
      "visibility": "visible",
      "symbol-placement": "point",
-     "icon-image": "Localite",
+     "icon-image": "Paroisse",
      "icon-size": 1,
      "text-field": "{texte}",
      "text-size": 13,
@@ -13901,7 +13901,7 @@
     "layout": {
      "visibility": "visible",
      "symbol-placement": "point",
-     "icon-image": "Localite",
+     "icon-image": "Paroisse",
      "icon-size": 1,
      "text-field": "{texte}",
      "text-size": {
@@ -14491,7 +14491,7 @@
     "layout": {
      "visibility": "visible",
      "symbol-placement": "point",
-     "icon-image": "Localite",
+     "icon-image": "Paroisse",
      "icon-size": 1,
      "text-field": "{texte}",
      "text-size": {
@@ -14535,7 +14535,7 @@
     "layout": {
      "visibility": "visible",
      "symbol-placement": "point",
-     "icon-image": "Localite",
+     "icon-image": "Paroisse",
      "icon-size": 1.2,
      "text-field": "{texte}",
      "text-size": {
@@ -15003,7 +15003,7 @@
     "layout": {
      "visibility": "visible",
      "symbol-placement": "point",
-     "icon-image": "Localite",
+     "icon-image": "Paroisse",
      "icon-size": 1.2,
      "text-field": "{texte}",
      "text-size": {
