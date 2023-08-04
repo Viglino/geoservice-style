@@ -54,6 +54,16 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 * [JSON style](https://viglino.github.io/geoservice-style/cyanotype/cyanotype.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=4.85&lat=45.75&z=16&layer=cyanotype)
 
+## Cassini map
+
+*Cassini academy's map style*
+
+[<img src="https://user-images.githubusercontent.com/7868217/258416579-152e2842-0761-43fa-9129-605e3b9fbbd2.png" width=500 />](https://viglino.github.io/geoservice-style/?lon=3.208175&lat=45.690750&z=12&layer=cassini_ol)
+
+* [JSON style](https://viglino.github.io/geoservice-style/retro/cassini.json)
+* [JSON style - Times font (ol only)](https://viglino.github.io/geoservice-style/retro/cassini_ol.json)
+* [View online](https://viglino.github.io/geoservice-style/?lon=3.208175&lat=45.690750&z=12&layer=cassini_ol)
+
 ## Retro map
 
 *Vintage road atlas map style*
