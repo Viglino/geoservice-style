@@ -3588,7 +3588,7 @@
     }
     },
     {
-     "id": "bati surfacique quelconque - Zoom 16,17,18",
+     "id": "bati surfacique quelconque - line - Zoom 16,17,18",
      "type": "line",
      "source": "plan_ign",
      "source-layer": "bati_surf",
@@ -5857,7 +5857,7 @@
     }
    },
    {
-    "id": "bati surfacique fonctionnel gare - Zoom 14,15",
+    "id": "bati surfacique fonctionnel gare - line - Zoom 14,15",
     "type": "line",
     "source": "plan_ign",
     "source-layer": "bati_surf",
