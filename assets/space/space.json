@@ -3,10 +3,17 @@
  "name": "PLAN IGN",
  "glyphs": "https://wxs.ign.fr/static/vectorTiles/fonts/{fontstack}/{range}.pbf",
  "sprite": "./space/space_sprite",
+ "sprite": "https://viglino.github.io/geoservice-style/space/space_sprite",
  "sources": {
   "plan_ign": {
-   "type": "vector",
-   "url": "https://wxs.ign.fr/essentiels/geoportail/tms/1.0.0/PLAN.IGN/metadata.json"
+    "type":"vector",
+    "name": "PLAN.IGN",
+    "description": "BDUni tuilée",
+    "minzoom": 0,
+    "maxzoom": 19,
+    "crs": "EPSG:3857",
+    "format": "pbf",
+    "tiles":["https://wxs.ign.fr/essentiels/geoportail/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"]
   }
  },
  "transition": {
@@ -422,7 +429,7 @@
    }
   },
   {
-   "id": "ocs - Zone sable humide",
+   "id": "ocs - Zone sable humide - line",
    "type": "line",
    "source": "plan_ign",
    "source-layer": "ocs_nature_sol_surf",
