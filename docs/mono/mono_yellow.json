@@ -5,10 +5,16 @@
   "sprite": "./mono/sprite-yellow",
   "sprite": "https://viglino.github.io/geoservice-style/mono/sprite-yellow",
   "sources": {
-   "plan_ign": {
-    "type":"vector",
-    "url":"https://wxs.ign.fr/essentiels/geoportail/tms/1.0.0/PLAN.IGN/metadata.json"
-   }
+    "plan_ign": {
+      "type":"vector",
+      "name": "PLAN.IGN",
+      "description": "BDUni tuilée",
+      "minzoom": 0,
+      "maxzoom": 19,
+      "crs": "EPSG:3857",
+      "format": "pbf",
+      "tiles":["https://wxs.ign.fr/essentiels/geoportail/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"]
+     }
   },
   "transition": {
    "duration": 300,
