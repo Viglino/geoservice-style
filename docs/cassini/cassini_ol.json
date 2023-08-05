@@ -429,7 +429,8 @@
     ],
     "paint": {
      "fill-color": "#D0D0D0",
-     "fill-opacity": 0.3
+     "fill-pattern": "Rocher",
+     "fill-opacity": 0.7
     }
    },
    {
