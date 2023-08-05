@@ -257,7 +257,8 @@
      "ZONE_LANDE_LIGNEUSE"
     ],
     "paint": {
-     "fill-color": "#F2EECD"
+      "fill-pattern": "Lande",
+      "fill-opacity": 0.6
     }
    },
    {
@@ -274,7 +275,8 @@
      "ZONE_VIGNE"
     ],
     "paint": {
-     "fill-color": "#FFEDD9"
+      "fill-pattern": "Vigne",
+      "fill-opacity": 0.6
     }
    },
    {
@@ -291,7 +293,9 @@
      "ZONE_VERGER"
     ],
     "paint": {
-     "fill-color": "#FAE2C5"
+     "fill-color": "#FAE2C5",
+     "fill-pattern": "Verger",
+     "fill-opacity": 0.8
     }
    },
    {
@@ -479,7 +483,8 @@
      "GRAVIERS_GALETS_SEC"
     ],
     "paint": {
-     "fill-pattern": "GravierSec"
+     "fill-pattern": "GravierSec",
+     "fill-opacity": 0.6
     }
    },
    {
@@ -3165,7 +3170,7 @@
      "COURS_D_EAU"
     ],
     "paint": {
-     "line-color": "#c7e9f5",
+     "line-color": "#678",
      "line-width": {
       "stops": [
        [
@@ -3204,7 +3209,7 @@
      "CANAL"
     ],
     "paint": {
-     "line-color": "#b9def0",
+     "line-color": "#678",
      "line-width": {
       "stops": [
        [
@@ -3236,7 +3241,7 @@
      "AQUEDUC_AU_SOL"
     ],
     "paint": {
-     "line-color": "#b9def0",
+     "line-color": "#678",
      "line-width": {
       "stops": [
        [
@@ -3272,7 +3277,7 @@
      "AQUEDUC_AU_SOL"
     ],
     "paint": {
-     "line-color": "#b9def0",
+     "line-color": "#678",
      "line-width": {
       "stops": [
        [
@@ -3311,7 +3316,7 @@
      "COURS_D_EAU_MOY"
     ],
     "paint": {
-     "line-color": "#b9def0",
+     "line-color": "#678",
      "line-width": {
       "stops": [
        [
@@ -3342,7 +3347,7 @@
      "COURS_D_EAU_LAR"
     ],
     "paint": {
-     "line-color": "#c7e9f5",
+     "line-color": "#678",
      "line-width": {
       "stops": [
        [
