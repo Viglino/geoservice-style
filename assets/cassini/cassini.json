@@ -4695,6 +4695,72 @@
     }
    },
    {
+    "id": "Routier a niveau - arbres",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route",
+    "minzoom": 7,
+    "maxzoom": 17.5,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "LOCALE_2"
+    ],
+    "paint": {
+     "line-color": {
+      "stops": [
+       [
+        12,
+        "#8f3700"
+       ],
+       [
+        13,
+        "#8f3700"
+       ],
+       [
+        17,
+        "#8f3700"
+       ],
+       [
+        18,
+        "#8f3700"
+       ]
+      ]
+     },
+     "line-width": {
+      "stops": [
+       [
+        9,
+        5
+       ],
+       [
+        14,
+        6.5
+       ],
+       [
+        15,
+        9
+       ],
+       [
+        16,
+        11.4
+       ],
+       [
+        17,
+        21.3
+       ]
+      ]
+     },
+     "line-gap-width": 0,
+     "line-dasharray": [0,1.5]
+    }
+   },
+   {
     "id": "Routier a niveau - filet extérieur - route locale en construction",
     "type": "line",
     "source": "plan_ign",
@@ -4737,6 +4803,77 @@
        ]
       ]
      }
+    }
+   },
+   {
+    "id": "Routier a niveau - route regionale - arbres",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route",
+    "minzoom": 7,
+    "maxzoom": 17.5,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "round",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "REGIONALE_1",
+     "REGIONALE_2"
+    ],
+    "paint": {
+     "line-color": {
+      "stops": [
+       [
+        12,
+        "#8f3700"
+       ],
+       [
+        13,
+        "#8f3700"
+       ],
+       [
+        17,
+        "#8f3700"
+       ],
+       [
+        18,
+        "#8f3700"
+       ]
+      ]
+     },
+     "line-width": {
+      "stops": [
+       [
+        6,
+        4.5
+       ],
+       [
+        9,
+        5.3
+       ],
+       [
+        14,
+        8
+       ],
+       [
+        15,
+        11.1
+       ],
+       [
+        16,
+        14.2
+       ],
+       [
+        17,
+        25
+       ]
+      ]
+     },
+     "line-gap-width": 0,
+     "line-dasharray": [0,1.5]
     }
    },
    {
