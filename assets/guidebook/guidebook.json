@@ -1,7 +1,7 @@
 ﻿{
   "version": 8,
   "name": "PLAN IGN",
-  "glyphs": "https://wxs.ign.fr/static/vectorTiles/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "https://viglino.github.io/geoservice-style/fonts/{fontstack}/{range}.pbf",
   "sprite": "./guidebook/sprite",
   "sprite": "https://viglino.github.io/geoservice-style/guidebook/sprite",
   "sources": {
@@ -983,7 +983,7 @@
      "text-max-angle": 20,
      "text-max-width": 100,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -1041,7 +1041,7 @@
      "text-max-angle": 20,
      "text-max-width": 100,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -1099,7 +1099,7 @@
      "text-max-angle": 20,
      "text-max-width": 100,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -3560,7 +3560,7 @@
     }
     },
     {
-     "id": "bati surfacique quelconque line - Zoom 16,17,18",
+     "id": "bati surfacique quelconque - Zoom 16,17,18",
      "type": "line",
      "source": "plan_ign",
      "source-layer": "bati_surf",
@@ -5827,7 +5827,7 @@
     }
    },
    {
-    "id": "bati surfacique fonctionnel gare line - Zoom 14,15",
+    "id": "bati surfacique fonctionnel gare - Zoom 14,15",
     "type": "line",
     "source": "plan_ign",
     "source-layer": "bati_surf",
@@ -8968,7 +8968,7 @@
      "text-keep-upright": true,
      "text-max-angle": 45,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -8994,7 +8994,7 @@
      "text-keep-upright": true,
      "text-max-angle": 45,
      "text-font": [
-      "Source Sans Pro Bold"
+      "Source Serif 4 Bold"
      ],
      "visibility": "visible"
     },
@@ -9026,7 +9026,7 @@
      "text-keep-upright": true,
      "text-max-angle": 45,
      "text-font": [
-      "Source Sans Pro Bold"
+      "Source Serif 4 Bold"
      ],
      "visibility": "visible"
     },
@@ -9661,7 +9661,7 @@
      ],
      "text-padding": 2,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -10414,7 +10414,7 @@
       -1
      ],
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -10455,7 +10455,7 @@
       -1.3
      ],
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -10501,7 +10501,7 @@
       -1.4
      ],
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -10545,7 +10545,7 @@
       -1.5
      ],
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -10590,7 +10590,7 @@
       -1.6
      ],
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -10636,7 +10636,7 @@
       1
      ],
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -10677,7 +10677,7 @@
       1.3
      ],
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -10723,7 +10723,7 @@
       1.4
      ],
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -10767,7 +10767,7 @@
       1.5
      ],
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -10812,7 +10812,7 @@
       1.6
      ],
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -10844,7 +10844,7 @@
       "property": "rotation"
      },
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -10875,7 +10875,7 @@
       "property": "rotation"
      },
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -10906,7 +10906,7 @@
       "property": "rotation"
      },
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -10937,7 +10937,7 @@
      "text-max-angle": 45,
      "text-padding": 10,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -10979,7 +10979,7 @@
      "text-padding": 3,
      "text-anchor": "bottom-left",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "icon-image": "Metro",
      "icon-size": {
@@ -11024,7 +11024,7 @@
       -1
      ],
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -11054,7 +11054,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11082,7 +11082,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11119,7 +11119,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11155,7 +11155,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11194,7 +11194,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11232,7 +11232,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11270,7 +11270,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11307,7 +11307,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11340,7 +11340,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11368,7 +11368,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11401,7 +11401,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11430,7 +11430,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11483,7 +11483,7 @@
      ],
      "text-padding": 3,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11512,7 +11512,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11561,7 +11561,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11595,7 +11595,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11629,7 +11629,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11678,7 +11678,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11712,7 +11712,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11747,7 +11747,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11796,7 +11796,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11836,7 +11836,7 @@
      "text-allow-overlap": true,
      "text-padding": 5,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11863,7 +11863,7 @@
      "text-allow-overlap": true,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -11892,7 +11892,7 @@
      "text-allow-overlap": false,
      "text-padding": 2,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11921,7 +11921,7 @@
      "text-allow-overlap": false,
      "text-padding": 2,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -11951,7 +11951,7 @@
      "text-padding": 2,
      "text-anchor": "center",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "text-rotation-alignment": "viewport"
     },
@@ -11982,7 +11982,7 @@
      "text-padding": 0,
      "text-anchor": "center",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "icon-image": "Ecluse",
      "icon-rotation-alignment": "viewport",
@@ -12018,7 +12018,7 @@
      "text-padding": 0,
      "text-anchor": "center",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "icon-image": "Ecluse",
      "icon-rotation-alignment": "viewport",
@@ -12047,7 +12047,7 @@
      "text-anchor": "center",
      "text-max-angle": 30,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -12070,7 +12070,7 @@
      "text-anchor": "center",
      "text-max-angle": 30,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -12107,7 +12107,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12143,7 +12143,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12172,7 +12172,7 @@
      "text-max-angle": 45,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -12216,7 +12216,7 @@
      "text-allow-overlap": true,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12259,7 +12259,7 @@
      "text-allow-overlap": true,
      "text-padding": 5,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12287,7 +12287,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12336,7 +12336,7 @@
      "text-anchor": "center",
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12385,7 +12385,7 @@
      "text-anchor": "center",
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12425,7 +12425,7 @@
      "text-anchor": "center",
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12462,7 +12462,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12499,7 +12499,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12536,7 +12536,7 @@
      ],
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12573,7 +12573,7 @@
      ],
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12619,7 +12619,7 @@
      ],
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12658,7 +12658,7 @@
      "text-max-angle": 45,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -12695,7 +12695,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12731,7 +12731,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12767,7 +12767,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12806,7 +12806,7 @@
      "text-padding": 1,
      "text-anchor": "center",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12844,7 +12844,7 @@
      "text-max-angle": 45,
      "text-padding": 10,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -12895,7 +12895,7 @@
      "text-allow-overlap": true,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -12946,7 +12946,7 @@
      "text-max-angle": 45,
      "text-padding": 10,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -12990,7 +12990,7 @@
      "text-max-angle": 45,
      "text-padding": 10,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -13040,7 +13040,7 @@
      "text-allow-overlap": true,
      "text-padding": 10,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13069,7 +13069,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13097,7 +13097,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13135,7 +13135,7 @@
      ],
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13175,7 +13175,7 @@
      "text-anchor": "center",
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13229,7 +13229,7 @@
      "text-anchor": "center",
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13257,7 +13257,7 @@
      "text-allow-overlap": false,
      "text-padding": 5,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13287,7 +13287,7 @@
      "text-padding": 10,
      "text-transform": "uppercase",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13319,7 +13319,7 @@
      "text-padding": 10,
      "text-transform": "uppercase",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13358,7 +13358,7 @@
      "text-max-angle": 45,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -13398,7 +13398,7 @@
      "text-padding": 1,
      "text-anchor": "center",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13430,7 +13430,7 @@
      "text-padding": 10,
      "text-max-angle": 45,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -13484,7 +13484,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13523,7 +13523,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13566,7 +13566,7 @@
      "text-max-angle": 45,
      "text-padding": 10,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -13616,7 +13616,7 @@
      "text-allow-overlap": false,
      "text-padding": 10,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13659,7 +13659,7 @@
      "text-allow-overlap": false,
      "text-padding": 10,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13709,7 +13709,7 @@
      ],
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13763,7 +13763,7 @@
      "text-anchor": "center",
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13818,7 +13818,7 @@
      "text-anchor": "center",
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13848,7 +13848,7 @@
      "text-padding": 5,
      "text-max-angle": 45,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -13892,7 +13892,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13935,7 +13935,7 @@
      "text-anchor": "center",
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -13974,7 +13974,7 @@
      "text-padding": 1,
      "text-max-angle": 45,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -14013,7 +14013,7 @@
      "text-allow-overlap": true,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -14044,7 +14044,7 @@
      "text-allow-overlap": true,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -14084,7 +14084,7 @@
      "text-allow-overlap": false,
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -14112,7 +14112,7 @@
      "text-keep-upright": true,
      "text-max-angle": 45,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -14149,7 +14149,7 @@
      "text-max-angle": 45,
      "text-padding": 10,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ],
      "visibility": "visible"
     },
@@ -14267,7 +14267,7 @@
       ]
      },
      "text-allow-overlap": true,
-     "text-anchor": "center",
+     "text-anchor": "center-center",
      "text-padding": 1,
      "text-transform": "uppercase",
      "text-font": [
@@ -14314,7 +14314,7 @@
      "text-anchor": "center",
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -14357,7 +14357,7 @@
      "text-anchor": "center",
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -14408,7 +14408,7 @@
      "text-padding": 1,
      "text-transform": "uppercase",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -14459,7 +14459,7 @@
      "text-padding": 1,
      "text-transform": "uppercase",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -14511,7 +14511,7 @@
      "text-padding": 1,
      "text-transform": "uppercase",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -14554,7 +14554,7 @@
      "text-anchor": "center",
      "text-padding": 1,
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -14594,7 +14594,7 @@
      "text-padding": 1,
      "text-transform": "uppercase",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -14634,7 +14634,7 @@
      "text-padding": 1,
      "text-transform": "uppercase",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -14674,7 +14674,7 @@
      "text-padding": 1,
      "text-transform": "uppercase",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -14715,7 +14715,7 @@
       ]
      },
      "text-allow-overlap": false,
-     "text-anchor": "center",
+     "text-anchor": "center-center",
      "text-padding": 1,
      "text-transform": "uppercase",
      "text-font": [
@@ -14829,7 +14829,7 @@
      "text-padding": 1,
      "text-transform": "uppercase",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -14859,7 +14859,7 @@
      "text-padding": 2,
      "text-transform": "uppercase",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -14889,7 +14889,7 @@
      "text-padding": 2,
      "text-transform": "uppercase",
      "text-font": [
-      "Source Sans Pro Regular"
+      "Source Serif 4"
      ]
     },
     "paint": {
@@ -14918,7 +14918,7 @@
      "text-padding": 1,
      "text-transform": "uppercase",
      "text-font": [
-      "Source Sans Pro Bold"
+      "Source Serif 4 Bold"
      ]
     },
     "paint": {
