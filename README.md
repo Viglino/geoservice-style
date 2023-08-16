@@ -60,7 +60,7 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 
 [<img src="https://user-images.githubusercontent.com/7868217/258416579-152e2842-0761-43fa-9129-605e3b9fbbd2.png" width=500 />](https://viglino.github.io/geoservice-style/?lon=3.208175&lat=45.690750&z=12&layer=cassini)
 
-* [JSON style](https://viglino.github.io/geoservice-style/retro/cassini.json)
+* [JSON style](https://viglino.github.io/geoservice-style/cassini/cassini.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=3.208175&lat=45.690750&z=12&layer=cassini)
 
 ## Retro map
