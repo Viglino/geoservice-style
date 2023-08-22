@@ -11536,7 +11536,7 @@
     "text-padding": 3,
     "text-anchor": "bottom-left",
     "text-font": [
-     "Source Sans Pro"
+     "Eater Regular"
     ],
     "icon-image": "Metro",
     "icon-size": {
@@ -11936,7 +11936,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Eater Regular"
     ]
    },
    "paint": {
@@ -11963,7 +11963,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Eater Regular"
     ]
    },
    "paint": {
@@ -12016,7 +12016,7 @@
     ],
     "text-padding": 3,
     "text-font": [
-     "Source Sans Pro"
+     "Eater Regular"
     ]
    },
    "paint": {
@@ -12045,7 +12045,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Eater Regular"
     ]
    },
    "paint": {
@@ -12096,7 +12096,7 @@
     ]
    },
    "paint": {
-    "text-color": "#b50034",
+    "text-color": "#b75700",
     "text-halo-color": "rgba(0,0,0, 0.8)",
     "text-halo-width": 1
    }
@@ -12126,11 +12126,11 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Eater Regular"
     ]
    },
    "paint": {
-    "text-color": "#b50034",
+    "text-color": "#b75700",
     "text-halo-color": "rgba(0,0,0, 0.8)",
     "text-halo-width": 2
    }
@@ -12160,11 +12160,11 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Eater Regular"
     ]
    },
    "paint": {
-    "text-color": "#b50034",
+    "text-color": "#b75700",
     "text-halo-color": "rgba(0,0,0, 0.8)",
     "text-halo-width": 2
    }
@@ -12209,11 +12209,11 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Eater Regular"
     ]
    },
    "paint": {
-    "text-color": "#b50034",
+    "text-color": "#b75700",
     "text-halo-color": "rgba(0,0,0, 0.8)",
     "text-halo-width": 2
    }
@@ -12243,11 +12243,11 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Eater Regular"
     ]
    },
    "paint": {
-    "text-color": "#b50034",
+    "text-color": "#b75700",
     "text-halo-color": "rgba(0,0,0, 0.8)",
     "text-halo-width": 2
    }
@@ -12278,11 +12278,11 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Eater Regular"
     ]
    },
    "paint": {
-    "text-color": "#b50034",
+    "text-color": "#b75700",
     "text-halo-color": "rgba(0,0,0, 0.8)",
     "text-halo-width": 2
    }
@@ -12327,11 +12327,11 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Eater Regular"
     ]
    },
    "paint": {
-    "text-color": "#b50034",
+    "text-color": "#b75700",
     "text-halo-color": "rgba(0,0,0, 0.8)",
     "text-halo-width": 2
    }
