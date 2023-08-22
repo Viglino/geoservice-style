@@ -3560,7 +3560,7 @@
     }
     },
     {
-     "id": "bati surfacique quelconque - Zoom 16,17,18",
+     "id": "bati surfacique quelconque - contour - Zoom 16,17,18",
      "type": "line",
      "source": "plan_ign",
      "source-layer": "bati_surf",
@@ -5827,7 +5827,7 @@
     }
    },
    {
-    "id": "bati surfacique fonctionnel gare - Zoom 14,15",
+    "id": "bati surfacique fonctionnel gare - contour - Zoom 14,15",
     "type": "line",
     "source": "plan_ign",
     "source-layer": "bati_surf",
@@ -14267,7 +14267,7 @@
       ]
      },
      "text-allow-overlap": true,
-     "text-anchor": "center-center",
+     "text-anchor": "center",
      "text-padding": 1,
      "text-transform": "uppercase",
      "text-font": [
@@ -14715,7 +14715,7 @@
       ]
      },
      "text-allow-overlap": false,
-     "text-anchor": "center-center",
+     "text-anchor": "center",
      "text-padding": 1,
      "text-transform": "uppercase",
      "text-font": [
