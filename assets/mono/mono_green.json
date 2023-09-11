@@ -7009,11 +7009,7 @@
     ],
     "layout": {
      "symbol-placement": "point",
-     "text-field": [
-      "concat",
-      "{numero}",
-      "{indice_de_repetition}"
-     ],
+     "text-field": "{numero}{indice_de_repetition}",
      "text-size": 11,
      "text-anchor": "center",
      "text-keep-upright": true,

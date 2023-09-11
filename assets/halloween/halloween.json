@@ -2,8 +2,8 @@
  "version": 8,
  "name": "PLAN IGN",
  "glyphs": "https://viglino.github.io/geoservice-style/fonts/{fontstack}/{range}.pbf",
- "sprite": "https://viglino.github.io/geoservice-style/halloween/sprite",
  "sprite": "./halloween/sprite",
+ "sprite": "https://viglino.github.io/geoservice-style/halloween/sprite",
  "sources": {
   "plan_ign": {
     "type":"vector",
@@ -9575,11 +9575,7 @@
    ],
    "layout": {
     "symbol-placement": "point",
-    "text-field": [
-     "concat",
-     "{numero}",
-     "{indice_de_repetition}"
-    ],
+    "text-field": "{numero}{indice_de_repetition}",
     "text-size": 11,
     "text-anchor": "center",
     "text-keep-upright": true,
