@@ -2,8 +2,8 @@
  "version": 8,
  "name": "PLAN IGN",
  "glyphs": "https://viglino.github.io/geoservice-style/fonts/{fontstack}/{range}.pbf",
- "sprite": "./halloween/sprite",
  "sprite": "https://viglino.github.io/geoservice-style/halloween/sprite",
+ "sprite": "./halloween/sprite",
  "sources": {
   "plan_ign": {
     "type":"vector",
@@ -10116,7 +10116,7 @@
       ],
       [
        17,
-       1.4
+       1
       ]
      ]
     },
@@ -10131,12 +10131,30 @@
   },
   {
    "id": "hydro ponctuel",
-   "type": "circle",
+   "type": "symbol",
    "source": "plan_ign",
    "source-layer": "hydro_ponc",
    "minzoom": 13,
    "layout": {
-    "visibility": "visible"
+    "visibility": "visible",
+    "icon-image": "Fontaine",
+    "icon-size": {
+     "stops": [
+      [
+       13,
+       0.5
+      ],
+      [
+       16,
+       0.9
+      ],
+      [
+       17,
+       1
+      ]
+     ]
+    },
+    "icon-allow-overlap": true
    },
    "filter": [
     "in",
@@ -10150,35 +10168,7 @@
     "CASCADE",
     "AUTRE_HYDRO_PONC"
    ],
-   "paint": {
-    "circle-radius": {
-     "stops": [
-      [
-       14,
-       3
-      ],
-      [
-       17,
-       7
-      ]
-     ]
-    },
-    "circle-color": "#413130",
-    "circle-opacity": 1,
-    "circle-stroke-width": {
-     "stops": [
-      [
-       14,
-       2
-      ],
-      [
-       17,
-       5
-      ]
-     ]
-    },
-    "circle-stroke-color": "#292120"
-   }
+   "paint": {}
   },
   {
    "id": "point coté",
@@ -10225,7 +10215,7 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Hopital",
-    "icon-size": 0.5
+    "icon-size": 0.7
    },
    "filter": [
     "==",
@@ -10730,21 +10720,22 @@
    "source": "plan_ign",
    "source-layer": "bati_ponc",
    "layout": {
+     "icon-allow-overlap": true,
     "visibility": "visible",
     "icon-image": "Refugegard",
     "icon-size": {
      "stops": [
       [
        13,
-       0.4
+       0.8
       ],
       [
        15,
-       0.6
+       1.2
       ],
       [
        17,
-       0.9
+       1.8
       ]
      ]
     }
@@ -10754,9 +10745,7 @@
     "symbo",
     "REFUGE_GARDE"
    ],
-   "paint": {
-    "icon-color": "#6e0000"
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel montagne - Refuge Non Garde",
@@ -10764,21 +10753,22 @@
    "source": "plan_ign",
    "source-layer": "bati_ponc",
    "layout": {
+     "icon-allow-overlap": true,
     "visibility": "visible",
     "icon-image": "Refugenongard",
     "icon-size": {
      "stops": [
       [
        13,
-       0.4
+       0.8
       ],
       [
        15,
-       0.6
+       1.2
       ],
       [
        17,
-       0.9
+       1.8
       ]
      ]
     }
@@ -10788,9 +10778,7 @@
     "symbo",
     "REFUGE"
    ],
-   "paint": {
-    "icon-color": "#6e0000"
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel transport aerien - Aeroport FXX",
@@ -10798,7 +10786,8 @@
    "source": "plan_ign",
    "source-layer": "bati_ponc",
    "layout": {
-    "visibility": "visible",
+   "icon-allow-overlap": true,
+   "visibility": "visible",
     "icon-image": "Aeroport",
     "icon-size": 0.5
    },
@@ -10827,7 +10816,8 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Aerodrome",
-    "icon-size": 0.8
+   "icon-allow-overlap": true,
+   "icon-size": 0.8
    },
    "filter": [
     "all",
@@ -10856,7 +10846,8 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Aeroport",
-    "icon-size": 0.5
+   "icon-allow-overlap": true,
+   "icon-size": 0.5
    },
    "filter": [
     "all",
@@ -10884,7 +10875,8 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Aerodrome",
-    "icon-size": 0.8
+   "icon-allow-overlap": true,
+   "icon-size": 0.8
    },
    "filter": [
     "all",
@@ -10911,16 +10903,26 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Gare",
-    "icon-size": 0.33
+   "icon-allow-overlap": true,
+   "icon-size": {
+    "stops": [
+     [
+      12,
+      0.5
+     ],
+     [
+      13,
+      0.8
+     ]
+    ]
+   }
    },
    "filter": [
     "==",
     "symbo",
     "GARE_VOYAGEURS"
    ],
-   "paint": {
-    "icon-color": "#740000"
-   }
+   "paint": {}
   },
   {
    "id": "toponyme - bornes postales haute - chemins",

@@ -6,12 +6,13 @@
   "ZoneBati" :{"x":90,"y":710,"width":16,"height":16,"pixelRatio":1},
   "Bati" :{"x":484,"y":64,"width":16,"height":16,"pixelRatio":1},
   "Hangar" :{"x":500,"y":64,"width":16,"height":16,"pixelRatio":1},
-  "Gare" :{"x":213,"y":285,"width":24,"height":24,"pixelRatio":1},
+  "Gare" :{"x":819,"y":960,"width":67,"height":90,"pixelRatio":1},
   "Cimetiere0" :{"x":242,"y":388,"width":32,"height":32,"pixelRatio":1},
   "Cimetiere" :{"x":0,"y":843,"width":128,"height":128,"pixelRatio":1},
   "Aerodrome" :{"x":306,"y":718,"width":64,"height":64,"pixelRatio":1},
   "Aeroport" :{"x":228,"y":712,"width":128,"height":128,"pixelRatio":1},
-  "Hopital" :{"x":227,"y":153,"width":36,"height":36,"pixelRatio":1},
+  "Fontaine" :{"x":112,"y":760,"width":34,"height":50,"pixelRatio":1},
+  "Hopital" :{"x":111,"y":711,"width":50,"height":45,"pixelRatio":1},
   "Sable" :{"x":739,"y":510,"width":92,"height":92,"pixelRatio":1},
   "SableHumide" :{"x":739,"y":638,"width":92,"height":92,"pixelRatio":1},
   "Marais" :{"x":484,"y":589,"width":255,"height":255,"pixelRatio":1},
@@ -41,6 +42,6 @@
   "Metro" :{"x":227,"y":0,"width":44,"height":44,"pixelRatio":1},
   "Barriere" :{"x":0,"y":972,"width":40,"height":45,"pixelRatio":1},
   "Abri" :{"x":227,"y":71,"width":35,"height":36,"pixelRatio":1},
-  "Refugegard" :{"x":440,"y":504,"width":35,"height":35,"pixelRatio":1},
-  "Refugenongard" :{"x":213,"y":310,"width":39,"height":36,"pixelRatio":1}
+  "Refugegard" :{"x":742,"y":953,"width":60,"height":97,"pixelRatio":1},
+  "Refugenongard" :{"x":742,"y":953,"width":60,"height":97,"pixelRatio":1}
   }
