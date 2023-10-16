@@ -5489,6 +5489,682 @@
     }
    },
    {
+    "id": "Routier superieur - filet extérieur - route non revetu carrosable",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route_sup",
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "NON_REVETUE_CARRO_SUP"
+    ],
+    "paint": {
+     "line-color": {
+      "stops": [
+       [
+        12,
+        "#666"
+       ],
+       [
+        17,
+        "#666"
+       ]
+      ]
+     },
+     "line-width": {
+      "stops": [
+       [
+        14,
+        3.2
+       ],
+       [
+        15,
+        5.4
+       ],
+       [
+        16,
+        7.7
+       ],
+       [
+        17,
+        16.8
+       ]
+      ]
+     },
+     "line-dasharray": [
+      2,
+      2
+     ]
+    }
+   },
+   {
+    "id": "Routier superieur - filet extérieur - bretelle autoroute",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route_sup",
+    "minzoom": 12,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "BRET_AUTO_PEAGE_3_SUP",
+     "BRET_AUTO_PEAGE_2_SUP",
+     "BRET_AUTO_PEAGE_1_SUP",
+     "BRET_AUTO_LIBRE_3_SUP",
+     "BRET_AUTO_LIBRE_2_SUP",
+     "BRET_AUTO_LIBRE_1_SUP"
+    ],
+    "paint": {
+     "line-color": {
+      "stops": [
+       [
+        9,
+        "#666"
+       ],
+       [
+        17,
+        "#666"
+       ],
+       [
+        18,
+        "#666"
+       ]
+      ]
+     },
+     "line-width": {
+      "stops": [
+       [
+        12,
+        2.5
+       ],
+       [
+        14,
+        3.7
+       ],
+       [
+        15,
+        6.8
+       ],
+       [
+        16,
+        8.4
+       ],
+       [
+        17,
+        14
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Routier superieur - filet extérieur - route non classee restreint",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route_sup",
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "NON_CLASSEE_RESTREINT_SUP"
+    ],
+    "paint": {
+     "line-color": {
+      "stops": [
+       [
+        17,
+        "#666"
+       ],
+       [
+        18,
+        "#666"
+       ]
+      ]
+     },
+     "line-width": {
+      "stops": [
+       [
+        14,
+        3.2
+       ],
+       [
+        15,
+        5.4
+       ],
+       [
+        16,
+        7.7
+       ],
+       [
+        17,
+        16.8
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Routier superieur - filet extérieur - route non classee",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route_sup",
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "NON_CLASSEE_4_SUP",
+     "NON_CLASSEE_SUP"
+    ],
+    "paint": {
+     "line-color": {
+      "stops": [
+       [
+        17,
+        "#666"
+       ],
+       [
+        18,
+        "#666"
+       ]
+      ]
+     },
+     "line-width": {
+      "stops": [
+       [
+        14,
+        3.2
+       ],
+       [
+        15,
+        5.4
+       ],
+       [
+        16,
+        7.7
+       ],
+       [
+        17,
+        16.8
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Routier superieur - filet extérieur - route locale",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route_sup",
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "BRET_LOCALE_SUP",
+     "LOCALE_4_SUP",
+     "LOCALE_3_SUP",
+     "LOCALE_2_SUP",
+     "LOCALE_1_SUP"
+    ],
+    "paint": {
+     "line-color": {
+      "stops": [
+       [
+        12,
+        "#666"
+       ],
+       [
+        13,
+        "#666"
+       ],
+       [
+        17,
+        "#666"
+       ],
+       [
+        18,
+        "#666"
+       ]
+      ]
+     },
+     "line-width": {
+      "stops": [
+       [
+        9,
+        2
+       ],
+       [
+        14,
+        3.5
+       ],
+       [
+        15,
+        6
+       ],
+       [
+        16,
+        8.4
+       ],
+       [
+        17,
+        18.3
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Routier superieur - filet extérieur - route locale en construction",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route_sup",
+    "minzoom": 11,
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "LOCALE_CONSTR_SUP"
+    ],
+    "paint": {
+     "line-color": "#666",
+     "line-width": {
+      "stops": [
+       [
+        9,
+        2
+       ],
+       [
+        14,
+        3.5
+       ],
+       [
+        15,
+        6
+       ],
+       [
+        16,
+        8.4
+       ],
+       [
+        17,
+        18.3
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Routier superieur - filet extérieur - route regionale",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route_sup",
+    "minzoom": 8,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "BRET_REGIONALE_SUP",
+     "REGIONALE_4_SUP",
+     "REGIONALE_3_SUP",
+     "REGIONALE_2_SUP",
+     "REGIONALE_1_SUP"
+    ],
+    "paint": {
+     "line-color": {
+      "stops": [
+       [
+        9,
+        "#666"
+       ],
+       [
+        10,
+        "#666"
+       ],
+       [
+        17,
+        "#666"
+       ],
+       [
+        18,
+        "#666"
+       ]
+      ]
+     },
+     "line-width": {
+      "stops": [
+       [
+        6,
+        1.5
+       ],
+       [
+        9,
+        2.3
+       ],
+       [
+        14,
+        5
+       ],
+       [
+        15,
+        8.1
+       ],
+       [
+        16,
+        11.2
+       ],
+       [
+        17,
+        22
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Routier superieur - filet extérieur - route regionale en construction",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route_sup",
+    "minzoom": 10,
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "REGIONALE_CONSTR_SUP"
+    ],
+    "paint": {
+     "line-color": "#666",
+     "line-width": {
+      "stops": [
+       [
+        6,
+        1.5
+       ],
+       [
+        9,
+        2.3
+       ],
+       [
+        14,
+        5
+       ],
+       [
+        15,
+        8.1
+       ],
+       [
+        16,
+        11.2
+       ],
+       [
+        17,
+        22
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Routier superieur - filet extérieur - route principale",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route_sup",
+    "minzoom": 8,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "BRET_PRINCIPALE_SUP",
+     "PRINCIPALE_4_SUP",
+     "PRINCIPALE_3_SUP",
+     "PRINCIPALE_2_SUP",
+     "PRINCIPALE_1_SUP"
+    ],
+    "paint": {
+     "line-color": {
+      "stops": [
+       [
+        17,
+        "#666"
+       ],
+       [
+        18,
+        "#666"
+       ]
+      ]
+     },
+     "line-width": {
+      "stops": [
+       [
+        6,
+        1.8
+       ],
+       [
+        9,
+        2.7
+       ],
+       [
+        14,
+        5.9
+       ],
+       [
+        15,
+        9
+       ],
+       [
+        16,
+        12.2
+       ],
+       [
+        17,
+        22.5
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Routier superieur - filet extérieur - route principale en construction",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route_sup",
+    "minzoom": 10,
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "PRINCIPALE_CONSTR_SUP"
+    ],
+    "paint": {
+     "line-color": "#666",
+     "line-width": {
+      "stops": [
+       [
+        6,
+        1.8
+       ],
+       [
+        9,
+        2.7
+       ],
+       [
+        14,
+        5.9
+       ],
+       [
+        15,
+        9
+       ],
+       [
+        16,
+        12.2
+       ],
+       [
+        17,
+        22.5
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Routier superieur - filet extérieur - autoroute",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route_sup",
+    "minzoom": 8,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "in",
+     "symbo",
+     "AUTOROU_PEAGE_SUP",
+     "AUTOROU_LIBRE_SUP"
+    ],
+    "paint": {
+     "line-color": {
+      "stops": [
+       [
+        9,
+        "#666"
+       ],
+       [
+        17,
+        "#666"
+       ],
+       [
+        18,
+        "#666"
+       ]
+      ]
+     },
+     "line-width": {
+      "stops": [
+       [
+        6,
+        2.5
+       ],
+       [
+        9,
+        3.5
+       ],
+       [
+        14,
+        7.5
+       ],
+       [
+        15,
+        11
+       ],
+       [
+        16,
+        15
+       ],
+       [
+        17,
+        26
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "id": "Routier superieur - filet extérieur - autoroute en construction",
+    "type": "line",
+    "source": "plan_ign",
+    "source-layer": "routier_route_sup",
+    "minzoom": 10,
+    "maxzoom": 18,
+    "layout": {
+     "visibility": "visible",
+     "line-cap": "butt",
+     "line-join": "round"
+    },
+    "filter": [
+     "==",
+     "symbo",
+     "AUTOROU_CONSTR_SUP"
+    ],
+    "paint": {
+     "line-color": "#666",
+     "line-width": {
+      "stops": [
+       [
+        6,
+        2.5
+       ],
+       [
+        9,
+        3.5
+       ],
+       [
+        14,
+        7.5
+       ],
+       [
+        15,
+        11
+       ],
+       [
+        16,
+        15
+       ],
+       [
+        17,
+        26
+       ]
+      ]
+     }
+    }
+   },
+   {
     "id": "Routier superieur - filet interieur - route non revetu carrosable",
     "type": "line",
     "source": "plan_ign",
