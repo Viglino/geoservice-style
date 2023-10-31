@@ -99,6 +99,15 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 * [JSON style](https://viglino.github.io/geoservice-style/roads/roads.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=1.907046&lat=47.898146&z=15.7&layer=roads)
 
+## Halloween
+
+*Spooky map style with ghosts and cauldrons*
+
+[<img src="https://github.com/Viglino/geoservice-style/assets/7868217/e22d66f6-722a-44cd-b966-59a95246476a" width=500 />](https://viglino.github.io/geoservice-style/?lon=1.808723&lat=49.089790&z=15.2&layer=halloween)
+
+* [JSON style](https://viglino.github.io/geoservice-style/halloween/halloween.json)
+* [View online](https://viglino.github.io/geoservice-style/?lon=1.808723&lat=49.089790&z=15.2&layer=halloween)
+
 <!--
 ## Space
 
