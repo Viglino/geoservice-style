@@ -1,7 +1,7 @@
 ﻿{
   "version": 8,
   "name": "PLAN IGN",
-  "glyphs": "https://wxs.ign.fr/static/vectorTiles/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "https://data.geopf.fr/annexes/ressources/vectorTiles/fonts/{fontstack}/{range}.pbf",
   "sprite": "./mono/sprite",
   "sprite": "https://viglino.github.io/geoservice-style/mono/sprite",
   "sources": {
@@ -14,7 +14,7 @@
     "maxzoom": 19,
     "crs": "EPSG:3857",
     "format": "pbf",
-    "tiles":["https://wxs.ign.fr/essentiels/geoportail/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"]
+    "tiles":["https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"]
    }
   },
   "transition": {

@@ -14,7 +14,7 @@
     "maxzoom": 19,
     "crs": "EPSG:3857",
     "format": "pbf",
-    "tiles":["https://wxs.ign.fr/essentiels/geoportail/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"]
+    "tiles":["https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"]
   }
  },
  "transition": {

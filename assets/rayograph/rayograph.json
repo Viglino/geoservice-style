@@ -9,10 +9,10 @@
     "pci": {
       "type": "vector",
       "attribution": "<a href=\"http://www.geoportail.gouv.fr/\">Géoportail</a> &copy; <a href=\"http://www.ign.fr/\">IGN-France</a>",
-      "url": "https://wxs.ign.fr/parcellaire/geoportail/tms/1.0.0/PCI/metadata.json"
+      "url": "https://data.geopf.fr/tms/1.0.0/PCI/metadata.json"
       }
   },
-  "glyphs": "https://wxs.ign.fr/static/vectorTiles/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "https://data.geopf.fr/annexes/ressources/vectorTiles/fonts/{fontstack}/{range}.pbf",
   "transition": {"duration": 300, "delay": 0},
   "layers": [
     {

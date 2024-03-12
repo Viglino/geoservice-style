@@ -1,7 +1,7 @@
 {
   "version": 8,
   "name": "ERP",
-  "glyphs": "https://wxs.ign.fr/static/vectorTiles/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "https://data.geopf.fr/annexes/ressources/vectorTiles/fonts/{fontstack}/{range}.pbf",
   "sprite": "./erp/sprite_erp",
   "sprite": "https://viglino.github.io/geoservice-style/erp/sprite_erp",
   "metadata": {
@@ -12,7 +12,7 @@
       "bdtopo": {
         "type": "vector",
         "attribution": "<a href=\"http://www.geoportail.gouv.fr/\">Géoportail</a> &copy; <a href=\"http://www.ign.fr/\">IGN-France</a>",
-        "url":"https://wxs.ign.fr/topographie/geoportail/tms/1.0.0/BDTOPO/metadata.json"
+        "url": "https://data.geopf.fr/tms/1.0.0/BDTOPO/metadata.json"
       }
   },
   "transition": {
