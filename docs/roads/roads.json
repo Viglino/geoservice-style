@@ -2,7 +2,7 @@
   "version": 8,
   "name": "PLAN IGN",
   "glyphs": "https://data.geopf.fr/annexes/ressources/vectorTiles/fonts/{fontstack}/{range}.pbf",
-  "sprite": "https://wxs.ign.fr/static/vectorTiles/styles/PLAN.IGN/sprite/PlanIgn",
+  "sprite": "https://viglino.github.io/geoservice-style/mono/sprite",
   "sources": {
    "plan_ign": {
     "type":"vector",
