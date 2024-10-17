@@ -73,7 +73,7 @@ hover.on('leave', () => {
 hover.on('hover', e => {
   const f = e.feature
   if (f) {
-    popup.show(e.coordinate, f.get('layer')+ ' ' + (f.get('type_principal') || '') + '<br/>'+(f.get('symbo') || f.get('libelle') || ''))
+    popup.show(e.coordinate, f.get('layer')+ ' ' + (f.get('type_principal') || '') + '<br/>'+(f.get('symbo') || f.get('libelle') || f.get('class') || ''))
   } else {
     popup.hide()
   }
