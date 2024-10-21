@@ -1,0 +1,339 @@
+{
+  "version": 8,
+  "name": "PCI",
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
+  "metadata": {"maputnik:renderer": "ol"},
+  "sources": {
+    "pci": {
+      "type": "vector",
+      "attribution": "<a href=\"http://www.geoportail.gouv.fr/\">Géoportail</a> &copy; <a href=\"http://www.ign.fr/\">IGN-France</a>",
+      "url": "https://data.geopf.fr/tms/1.0.0/PCI/metadata.json"
+      }
+    },
+    "transition": {
+      "duration": 300,
+      "delay": 0
+    },
+    "layers": [
+      {
+        "id": "feuille",
+        "type": "fill",
+        "source": "pci",
+        "source-layer": "feuille",
+        "paint": {
+          "fill-color": "#806f68"
+        }
+      },{
+        "id": "departement_red",
+        "type": "fill",
+        "source": "pci",
+        "source-layer": "departement",
+        "minzoom": 5,
+        "max-zoom": 12,
+        "filter": [
+          "==",
+          ["%", ["get", "gid"], 5],
+          0
+         ],       
+        "paint": {
+          "fill-color": "#dd8c9f"
+        }
+    },{
+      "id": "departement_yelow",
+      "type": "fill",
+      "source": "pci",
+      "source-layer": "departement",
+      "minzoom": 5,
+      "max-zoom": 12,
+      "filter": [
+        "==",
+        ["%", ["get", "gid"], 5],
+        1
+      ],       
+     "paint": {
+       "fill-color": "#6696a2"
+     }
+    },{
+    "id": "departement_blue",
+    "type": "fill",
+    "source": "pci",
+    "source-layer": "departement",
+    "minzoom": 5,
+    "max-zoom": 12,
+    "filter": [
+      "==",
+      ["%", ["get", "gid"], 5],
+      2
+           ],       
+          "paint": {
+            "fill-color": "#e97837"
+          }
+},{
+  "id": "departement_white",
+  "type": "fill",
+  "source": "pci",
+  "source-layer": "departement",
+  "minzoom": 5,
+  "max-zoom": 12,
+  "filter": [
+    "==",
+    ["%", ["get", "gid"], 5],
+    3
+   ],       
+  "paint": {
+    "fill-color": "#d6c7cc"
+  }
+},{
+  "id": "departement_black",
+  "type": "fill",
+  "source": "pci",
+  "source-layer": "departement",
+  "minzoom": 5,
+  "max-zoom": 12,
+  "filter": [
+    "==",
+    ["%", ["get", "gid"], 5],
+    4
+   ],       
+  "paint": {
+    "fill-color": "#806f68"
+  }
+},
+    {
+        "id": "departement_line",
+        "type": "line",
+        "source": "pci",
+        "source-layer": "departement",
+        "minzoom": 5,
+        "max-zoom": 12,
+        "paint": {
+          "line-color": "#806f68",
+          "line-width": 5
+        },
+        "layout": {"line-join": "round"}
+      },
+      {
+        "id": "commune_red",
+        "type": "fill",
+        "source": "pci",
+        "source-layer": "commune",
+        "maxzoom": 15,
+      "filter": [
+        "==",
+        ["%", ["get", "gid"], 4],
+        0
+       ],       
+      "paint": {
+        "fill-color": "#dd8c9f"
+      }
+    },{
+      "id": "commune_yellow",
+      "type": "fill",
+      "source": "pci",
+      "source-layer": "commune",
+      "maxzoom": 15,
+    "filter": [
+      "==",
+      ["%", ["get", "gid"], 4],
+      1
+    ],       
+   "paint": {
+     "fill-color": "#6696a2"
+   }
+},{
+  "id": "commune_blue",
+  "type": "fill",
+  "source": "pci",
+  "source-layer": "commune",
+  "maxzoom": 15,
+"filter": [
+  "==",
+  ["%", ["get", "gid"], 4],
+  2
+],       
+"paint": {
+ "fill-color": "#e97837"
+}
+},{
+  "id": "commune_white",
+  "type": "fill",
+  "source": "pci",
+  "source-layer": "commune",
+  "maxzoom": 15,
+"filter": [
+  "==",
+  ["%", ["get", "gid"], 4],
+  3
+],       
+"paint": {
+ "fill-color": "#d6c7cc"
+}
+},{
+  "id": "commune_black",
+  "type": "fill",
+  "source": "pci",
+  "source-layer": "commune",
+  "maxzoom": 15,
+"filter": [
+  "==",
+  ["%", ["get", "gid"], 15],
+  0
+],       
+"paint": {
+ "fill-color": "#806f68"
+}
+},
+
+        {
+            "id": "commune",
+            "type": "line",
+            "source": "pci",
+            "source-layer": "commune",
+            "maxzoom": 15,
+            "paint": {
+              "line-color": "#806f68",
+              "line-width": 5
+            }
+        },
+        {
+          "id": "parcelle_1",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "filter": [
+            "==",
+            ["%", ["get", "gid"], 10],
+            0
+           ],       
+          "paint": {
+            "fill-color": "#dd8c9f"
+          }
+        },{
+          "id": "parcelle_2",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "filter": [
+            "==",
+            ["%", ["get", "gid"], 10],
+            1
+           ],       
+          "paint": {
+            "fill-color": "#6696a2"
+          }
+        },{
+          "id": "parcelle_3",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "filter": [
+            "==",
+            ["%", ["get", "gid"], 10],
+            2
+           ],       
+          "paint": {
+            "fill-color": "#e97837"
+          }
+        },{
+          "id": "parcelle_4",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "filter": [
+            "==",
+            ["%", ["get", "gid"], 10],
+            3
+           ],       
+          "paint": {
+            "fill-color": "#d6c7cc"
+          }
+        },{
+          "id": "parcelle_5",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "filter": [
+            "==",
+            ["%", ["get", "gid"], 10],
+            4
+           ],       
+          "paint": {
+            "fill-color": "#82aeb1"
+          }
+        },{
+          "id": "parcelle_6",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "filter": [
+            "==",
+            ["%", ["get", "gid"], 10],
+            5
+           ],       
+          "paint": {
+            "fill-color": "#df8d42"
+          }
+        },{
+          "id": "parcelle_7",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "filter": [
+            "==",
+            ["%", ["get", "gid"], 10],
+            6
+           ],       
+          "paint": {
+            "fill-color": "#cd5756"
+          }
+        },{
+          "id": "parcelle_8",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "filter": [
+            "==",
+            ["%", ["get", "gid"], 10],
+            7
+           ],       
+          "paint": {
+            "fill-color": "#8c7188"
+          }
+        },{
+          "id": "parcelle_9",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "filter": [
+            "==",
+            ["%", ["get", "gid"], 10],
+            8
+           ],       
+          "paint": {
+            "fill-color": "#e6b4b7"
+          }
+        },{
+          "id": "parcelle_10",
+          "type": "fill",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "filter": [
+            "==",
+            ["%", ["get", "gid"], 10],
+            9
+           ],       
+          "paint": {
+            "fill-color": "#749089"
+          }
+        },{
+          "id": "parcelle_line",
+          "type": "line",
+          "source": "pci",
+          "source-layer": "parcelle",
+          "paint": {
+            "line-color": "#806f68",
+            "line-width": 3
+          }
+        }
+    ]
+}

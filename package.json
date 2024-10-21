@@ -27,7 +27,7 @@
     "iconicss": "^0.3.0",
     "jspdf": "^2.5.1",
     "ol": "^6.15.1",
-    "ol-ext": "^3.2.28",
+    "ol-ext": "^4.0.24",
     "ol-mapbox-style": "^8.0.5"
   },
   "devDependencies": {
