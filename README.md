@@ -119,7 +119,7 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 
 # Open Free Map
 
-[OpenFreeMap](https://openfreemap.org/) lets you display custom maps on your website and apps for free.
+Styles to use with [OpenFreeMap](https://openfreemap.org/) that lets you display custom maps on your website and apps for free.
 
 The map data comes from OpenStreetMap.
 
