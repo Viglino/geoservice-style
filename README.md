@@ -117,3 +117,18 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 
 -->
 
+# Open Free Map
+
+Styles to use with [OpenFreeMap](https://openfreemap.org/) that lets you display custom maps on your website and apps for free.
+
+The map data comes from OpenStreetMap.
+
+Using the public instance is completely free: there are no limits on the number of map views or requests.
+There's no registration, no user database, no API keys, and no cookies.
+
+## Cassini
+
+[<img src="https://github.com/user-attachments/assets/ea248ebe-4a0e-4a6e-b129-fe4a29c6b8a7" width=500 />](https://viglino.github.io/geoservice-style/?lon=13.397051&lat=52.506486&z=11.4&layer=openfreecassini)
+
+* [JSON style](https://viglino.github.io/geoservice-style/openfreecassini/openfreecassini.json)
+* [View online](https://viglino.github.io/geoservice-style/?lon=13.397051&lat=52.506486&z=11.4&layer=openfreecassini)
