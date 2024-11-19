@@ -5238,8 +5238,8 @@
 				"icon-optional": false,
 				"text-anchor": "bottom-left",
 				"text-offset": [
-					0.3,
-					0.1
+					0.8,
+					0
 				 ],
 				"text-padding": 0,
 				"text-field": [
@@ -5574,7 +5574,7 @@
 				]
 			],
 			"layout": {
-				"icon-allow-overlap": true,
+				"icon-allow-overlap": false,
 				"icon-image": "Paroisse",
 				"icon-optional": false,
 				"icon-size": 1.2,
