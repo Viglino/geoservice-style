@@ -10752,7 +10752,7 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Aeroport",
-    "icon-size": 0.8,
+    "icon-size": 1.2,
     "icon-allow-overlap": true
    },
    "filter": [
@@ -10808,7 +10808,7 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Aeroport",
-    "icon-size": 0.8,
+    "icon-size": 1.2,
     "icon-allow-overlap": true
    },
    "filter": [
