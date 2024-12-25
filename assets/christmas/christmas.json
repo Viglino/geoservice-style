@@ -2,8 +2,8 @@
  "version": 8,
  "name": "PLAN IGN",
  "glyphs": "https://viglino.github.io/geoservice-style/fonts/{fontstack}/{range}.pbf",
- "sprite": "https://viglino.github.io/geoservice-style/christmass/sprite",
- "sprite": "./christmass/sprite",
+ "sprite": "./christmas/sprite",
+ "sprite": "https://viglino.github.io/geoservice-style/christmas/sprite",
  "sources": {
   "plan_ign": {
    "type": "vector",
