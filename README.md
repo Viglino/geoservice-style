@@ -108,6 +108,14 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 * [JSON style](https://viglino.github.io/geoservice-style/halloween/halloween.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=1.808723&lat=49.089790&z=15.2&layer=halloween)
 
+## Christmas
+*🎅🏼 Christmas map*
+
+[<img src="https://github.com/user-attachments/assets/01fade17-60d6-4714-995c-a5d74f18a1ba" width=500 />](https://viglino.github.io/geoservice-style/?lon=2.495393&lat=48.980459&z=13.4&layer=christmas)
+
+* [JSON style](https://viglino.github.io/geoservice-style/christmas/christmas.json)
+* [View online](https://viglino.github.io/geoservice-style/?lon=2.495393&lat=48.980459&z=13.4&layer=christmas)
+
 <!--
 ## Space
 
