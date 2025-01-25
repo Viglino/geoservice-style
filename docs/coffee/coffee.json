@@ -2958,7 +2958,9 @@
      "HANGAR_PUBLIC"
     ],
     "paint": {
-     "fill-color": "#ece3d9"
+     "fill-color": "#ece3d9",
+     "text-halo-width": 1,
+    "text-halo-color": "#523535"
     }
    },
    {
@@ -8071,7 +8073,7 @@
        ]
       ]
      },
-     "circle-stroke-color": "#3a679e"
+     "circle-stroke-color": "#69858f"
     }
    },
    {
@@ -9795,7 +9797,9 @@
      ]
     },
     "paint": {
-     "text-color": "#ece3d9"
+     "text-color": "#ece3d9",
+     "text-halo-width": 1.5,
+     "text-halo-color": "#523535"
     }
    },
    {
@@ -10958,7 +10962,7 @@
     },
     "paint": {
      "text-color": "#ece3d9",
-     "text-halo-color": "##523535",
+     "text-halo-color": "#523535",
      "text-halo-width": 2
     }
    },
@@ -11490,7 +11494,9 @@
      ]
     },
     "paint": {
-     "text-color": "#ece3d9"
+     "text-color": "#ece3d9",
+     "text-halo-width": 1,
+     "text-halo-color": "#523535"
     }
    },
    {
@@ -11516,7 +11522,10 @@
      ]
     },
     "paint": {
-     "text-color": "#ece3d9"
+     "text-color": "#ece3d9",
+      "text-halo-width": 1,
+     "text-halo-color": "#523535"
+
     }
    },
    {
