@@ -544,8 +544,8 @@
      "ZONE_BATI"
     ],
     "paint": {
-     "fill-color": "#8d7a6b",
-     "fill-opacity": 1
+     "fill-color": "#5d473c",
+     "fill-opacity": 0.5
     }
    },
    {
@@ -583,16 +583,16 @@
      "CUVETTE_MAITRESSE"
     ],
     "paint": {
-     "line-color": "#e2dcc2",
+     "line-color": "rgba(226, 220, 194,0.5)",
      "line-width": {
       "stops": [
        [
         13,
-        1.7
+        1.2
        ],
        [
         15,
-        2
+        1.5
        ]
       ]
      }
@@ -616,16 +616,16 @@
      "CUVETTE_NORMALE"
     ],
     "paint": {
-     "line-color": "#e2dcc2",
+     "line-color": "rgba(226, 220, 194,0.5)",
      "line-width": {
       "stops": [
        [
         13,
-        1
+        0.8
        ],
        [
         15,
-        1.2
+        1
        ]
       ]
      }
@@ -650,7 +650,7 @@
      "CNV_SS_INTERCALAIRE"
     ],
     "paint": {
-     "line-color": "#e2dcc2",
+     "line-color": "rgba(226, 220, 194,0.5)",
      "line-width": 0.7,
      "line-dasharray": [
       20,
@@ -676,16 +676,16 @@
      "CUV_GLACIER_MAITRESSE"
     ],
     "paint": {
-     "line-color": "#cbd8d9",
+     "line-color": "rgba(226, 220, 194,0.5)",
      "line-width": {
       "stops": [
        [
         13,
-        1.7
+        1.2
        ],
        [
         15,
-        2
+        1.5
        ]
       ]
      }
@@ -709,7 +709,7 @@
      "CUV_GLACIER_NORMALE"
     ],
     "paint": {
-     "line-color": "#cbd8d9",
+     "line-color": "rgba(203, 216, 217, 0.5)",
      "line-width": {
       "stops": [
        [
@@ -742,7 +742,7 @@
      "CUV_GLACIER_INTERCAL"
     ],
     "paint": {
-     "line-color": "#cbd8d9",
+     "line-color": "rgba(203, 216, 217, 0.5)",
      "line-width": {
       "stops": [
        [
@@ -779,8 +779,8 @@
      "CUV_ROCHER_MAITRESSE"
     ],
     "paint": {
-     "line-color": "#cdcfc3",
-     "line-width": 1.7
+     "line-color": "rgba(205, 207, 195, 0.5)",
+     "line-width": 1.2
     }
    },
    {
@@ -801,7 +801,7 @@
      "CUV_ROCHER_NORMALE"
     ],
     "paint": {
-     "line-color": "#cdcfc3",
+     "line-color": "rgba(205, 207, 195, 0.5)",
      "line-width": 1
     }
    },
@@ -823,7 +823,7 @@
      "CUV_ROCHER_INTERCAL"
     ],
     "paint": {
-     "line-color": "#cdcfc3",
+     "line-color": "rgba(205, 207, 195, 0.5)",
      "line-width": {
       "stops": [
        [
@@ -860,7 +860,7 @@
      "CUV_BATHYMETRIQUE"
     ],
     "paint": {
-     "line-color": "#a6a9ed",
+     "line-color": "rgba(166, 169, 237,0.5)",
      "line-width": 1
     }
    },
@@ -882,7 +882,7 @@
      "TALUS"
     ],
     "paint": {
-     "line-color": "#e2dcc2",
+     "line-color": "rgba(226, 220, 194,0.5)",
      "line-width": 1
     }
    },
@@ -904,7 +904,7 @@
      "TALUS"
     ],
     "paint": {
-     "line-color": "#e2dcc2",
+     "line-color": "rgba(226, 220, 194,0.5)",
      "line-width": {
       "stops": [
        [
@@ -11561,10 +11561,10 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme localite n0 typoA9",
@@ -11601,10 +11601,10 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme localite n0 typoA8 non commune",
@@ -11655,10 +11655,10 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme - limite militaire ponc 1 et 2",
@@ -11683,10 +11683,10 @@
      ]
     },
     "paint": {
-     "text-color": "#595e4a",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme - limite parc marin",
@@ -11713,10 +11713,10 @@
      ]
     },
     "paint": {
-     "text-color": "#595e4a",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme - limite parc ponc 1 et 2",
@@ -11745,9 +11745,9 @@
      ]
     },
     "paint": {
-     "text-color": "#595e4a",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
     }
    },
    {
@@ -11785,10 +11785,10 @@
      "visibility": "visible"
     },
     "paint": {
-     "text-color": "#819e68",
-     "text-halo-width": 2,
-     "text-halo-color": "rgba(255, 255, 255, 0.5)"
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme - ocs ponc 2",
@@ -11824,10 +11824,10 @@
      ]
     },
     "paint": {
-     "text-color": "#819e68",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme - oro lineaire 2",
@@ -11857,10 +11857,10 @@
      "visibility": "visible"
     },
     "paint": {
-     "text-color": "#bfae9d",
-     "text-halo-width": 2,
-     "text-halo-color": "rgba(255, 255, 255, 0.5)"
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme - oro ponc 2",
@@ -11910,10 +11910,10 @@
      ]
     },
     "paint": {
-     "text-color": "#bfae9d",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme - oro ponc 2B",
@@ -11949,10 +11949,10 @@
      ]
     },
     "paint": {
-     "text-color": "#bfae9d",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme - hydro lineaire 2",
@@ -12135,10 +12135,10 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme localite n0 typoA7 non commune",
@@ -12189,10 +12189,10 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme localite n0 typoA5etA6 non commune",
@@ -12244,10 +12244,10 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme - oro lineaire 1",
@@ -12275,10 +12275,10 @@
      "visibility": "visible"
     },
     "paint": {
-     "text-color": "#bfae9d",
-     "text-halo-width": 2,
-     "text-halo-color": "rgba(255, 255, 255, 0.5)"
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme - oro ponc monde",
@@ -12318,10 +12318,10 @@
      ]
     },
     "paint": {
-     "text-color": "#bfae9d",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme localite n0 typoA4 non commune",
@@ -12361,10 +12361,10 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 3
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme - ocs lineaire 1",
@@ -12401,10 +12401,10 @@
      "visibility": "visible"
     },
     "paint": {
-     "text-color": "#819e68",
-     "text-halo-width": 2,
-     "text-halo-color": "rgba(255, 255, 255, 0.5)"
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme - ocs ponc 1",
@@ -12439,10 +12439,10 @@
      ]
     },
     "paint": {
-     "text-color": "#819e68",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme - oro ponc 1",
@@ -12470,10 +12470,10 @@
      ]
     },
     "paint": {
-     "text-color": "#bfae9d",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme - oro ponc 1B",
@@ -12510,10 +12510,10 @@
      ]
     },
     "paint": {
-     "text-color": "#bfae9d",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
-    }
+      "text-color": "#ece3d9",
+      "text-halo-color": "#214040",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme - hydro lineaire glacier",
@@ -12539,10 +12539,10 @@
      "visibility": "visible"
     },
     "paint": {
-     "text-color": "#4a749f",
-     "text-halo-width": 2,
-     "text-halo-color": "rgba(255, 255, 255, 0.5)"
-    }
+      "text-color": "#7a96a2",
+      "text-halo-width": 1,
+      "text-halo-color": "#214040"
+     }
    },
    {
     "id": "toponyme - hydro lineaire 1",
@@ -12576,10 +12576,10 @@
      "visibility": "visible"
     },
     "paint": {
-     "text-color": "#7a96a2",
-     "text-halo-width": 2,
-     "text-halo-color": "#214040"
-    }
+      "text-color": "#7a96a2",
+      "text-halo-width": 1,
+      "text-halo-color": "#214040"
+     }
    },
    {
     "id": "toponyme - hydro lineaire ocean",
@@ -12651,10 +12651,10 @@
      ]
     },
     "paint": {
-     "text-color": "rgba(255, 255, 255, 0.1)",
-     "text-halo-color": "#1b1c17",
-     "text-halo-width": 0.5
-    }
+      "text-color": "#7a96a2",
+      "text-halo-width": 1,
+      "text-halo-color": "#214040"
+     }
    },
    {
     "id": "toponyme localite importance 2",
@@ -12722,10 +12722,10 @@
      }
     },
     "paint": {
-     "text-color": "rgba(255, 255, 255, 0.1)",
-     "text-halo-color": "#1b1c17",
-     "text-halo-width": 0.5
-    }
+      "text-color": "rgba(236, 227, 217,0.5)",
+      "text-halo-color": "#523535",
+      "text-halo-width": 1
+     }
    },
    {
     "id": "toponyme localite n0 typoA3 non commune",
@@ -12765,9 +12765,9 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 3
+      "text-color": "#ece3d9",
+      "text-halo-color": "#523535",
+      "text-halo-width": 1
     }
    },
    {
@@ -12808,9 +12808,9 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 4
+      "text-color": "#ece3d9",
+      "text-halo-color": "#523535",
+      "text-halo-width": 1
     }
    },
    {
@@ -12859,9 +12859,9 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
+      "text-color": "#ece3d9",
+      "text-halo-color": "#523535",
+      "text-halo-width": 1
     }
    },
    {
@@ -12910,9 +12910,9 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
+      "text-color": "#ece3d9",
+      "text-halo-color": "#523535",
+      "text-halo-width": 1
     }
    },
    {
@@ -12962,9 +12962,9 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 2
+      "text-color": "#ece3d9",
+      "text-halo-color": "#523535",
+      "text-halo-width": 1
     }
    },
    {
@@ -13005,9 +13005,9 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 4
+      "text-color": "#ece3d9",
+      "text-halo-color": "#523535",
+      "text-halo-width": 1
     }
    },
    {
@@ -13045,9 +13045,9 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 3
+      "text-color": "#ece3d9",
+      "text-halo-color": "#523535",
+      "text-halo-width": 1
     }
    },
    {
@@ -13085,9 +13085,9 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 3
+      "text-color": "#ece3d9",
+      "text-halo-color": "#523535",
+      "text-halo-width": 1
     }
    },
    {
@@ -13125,9 +13125,9 @@
      ]
     },
     "paint": {
-     "text-color": "#666958",
-     "text-halo-color": "rgba(255, 255, 255, 0.5)",
-     "text-halo-width": 4
+      "text-color": "rgba(236, 227, 217,0.5)",
+      "text-halo-color": "#523535",
+      "text-halo-width": 1
     }
    },
    {
@@ -13195,9 +13195,9 @@
      }
     },
     "paint": {
-     "text-color": "rgba(255, 255, 255, 0.1)",
-     "text-halo-color": "#1b1c17",
-     "text-halo-width": 0.5
+      "text-color": "rgba(236, 227, 217,0.5)",
+      "text-halo-color": "#523535",
+      "text-halo-width": 2
     }
    },
    {
