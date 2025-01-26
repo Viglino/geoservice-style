@@ -2,7 +2,6 @@
   "version": 8,
   "name": "PLAN IGN",
   "glyphs": "https://data.geopf.fr/annexes/ressources/vectorTiles/fonts/{fontstack}/{range}.pbf",
-  "sprite": "../coffee/sprite",
   "sprite": "https://viglino.github.io/geoservice-style/coffee/sprite",
   "sources": {
    "plan_ign": {
@@ -1812,19 +1811,19 @@
       "stops": [
        [
         14,
-        2.3
+        1.15
        ],
        [
         15,
-        4.1
+        2.05
        ],
        [
         16,
-        6.3
+        3.15
        ],
        [
         17,
-        13.5
+        6.75
        ]
       ]
      }
@@ -1902,19 +1901,19 @@
       "stops": [
        [
         14,
-        2.3
+        1.15
        ],
        [
         15,
-        4.1
+        2.05
        ],
        [
         16,
-        6.3
+        3.15
        ],
        [
         17,
-        13.5
+        6.75
        ]
       ]
      }
@@ -1943,19 +1942,19 @@
       "stops": [
        [
         14,
-        2.3
+        1.15
        ],
        [
         15,
-        4.1
+        2.05
        ],
        [
         16,
-        6.3
+        3.15
        ],
        [
         17,
-        13.5
+        6.75
        ]
       ]
      }
@@ -1987,23 +1986,23 @@
       "stops": [
        [
         9,
-        1.3
+        0.65
        ],
        [
         14,
-        2.3
+        1.15
        ],
        [
         15,
-        4.1
+        2.05
        ],
        [
         16,
-        6.1
+        3.05
        ],
        [
         17,
-        13.1
+        6.55
        ]
       ]
      }
@@ -2047,23 +2046,23 @@
       "stops": [
        [
         9,
-        2
+        1
        ],
        [
         14,
-        3.5
+        1.75
        ],
        [
         15,
-        6
+        3
        ],
        [
         16,
-        8.4
+        4.2
        ],
        [
         17,
-        18.3
+        9.15
        ]
       ]
      },
@@ -2099,27 +2098,27 @@
       "stops": [
        [
         6,
-        1.4
+        0.7
        ],
        [
         9,
-        1.5
+        0.75
        ],
        [
         14,
-        3.2
+        1.6
        ],
        [
         15,
-        5.8
+        2.9
        ],
        [
         16,
-        8.3
+        4.15
        ],
        [
         17,
-        16.2
+        8.1
        ]
       ]
      }
@@ -2163,31 +2162,31 @@
       "stops": [
        [
         4,
-        0.4
+        0.2
        ],
        [
         6,
-        1.5
+        0.75
        ],
        [
         9,
-        2.3
+        1.15
        ],
        [
         14,
-        5
+        2.5
        ],
        [
         15,
-        8.1
+        4.05
        ],
        [
         16,
-        11.2
+        5.6
        ],
        [
         17,
-        22
+        11
        ]
       ]
      },
@@ -2223,31 +2222,31 @@
       "stops": [
        [
         4,
-        0.5
+        0.25
        ],
        [
         6,
-        1.8
+        0.9
        ],
        [
         9,
-        2.1
+        1.05
        ],
        [
         14,
-        4.4
+        2.2
        ],
        [
         15,
-        7.3
+        3.65
        ],
        [
         16,
-        10
+        5
        ],
        [
         17,
-        18.5
+        9.25
        ]
       ]
      }
@@ -2287,31 +2286,31 @@
       "stops": [
        [
         4,
-        0.5
+        0.25
        ],
        [
         6,
-        1.8
+        0.9
        ],
        [
         9,
-        2.7
+        1.35
        ],
        [
         14,
-        5.9
+        2.95
        ],
        [
         15,
-        9
+        4.5
        ],
        [
         16,
-        12.2
+        6.1
        ],
        [
         17,
-        22.5
+        11.25
        ]
       ]
      },
@@ -2960,7 +2959,7 @@
     "paint": {
      "fill-color": "#ece3d9",
      "text-halo-width": 1,
-    "text-halo-color": "#523535"
+     "text-halo-color": "#523535"
     }
    },
    {
@@ -3969,23 +3968,23 @@
       "stops": [
        [
         14,
-        2.3
+        1.15
        ],
        [
         15,
-        4.1
+        2.05
        ],
        [
         16,
-        6.3
+        3.15
        ],
        [
         17,
-        13.5
+        6.75
        ],
        [
         18,
-        16.8
+        8.4
        ]
       ]
      }
@@ -4074,19 +4073,19 @@
       "stops": [
        [
         14,
-        1.5
+        0.75
        ],
        [
         15,
-        2
+        1
        ],
        [
         16,
-        3
+        1.5
        ],
        [
         17,
-        10
+        5
        ]
       ]
      }
@@ -4115,19 +4114,19 @@
       "stops": [
        [
         14,
-        2.3
+        1.15
        ],
        [
         15,
-        4.1
+        2.05
        ],
        [
         16,
-        6.3
+        3.15
        ],
        [
         17,
-        13.5
+        6.75
        ]
       ]
      }
@@ -4159,23 +4158,23 @@
       "stops": [
        [
         9,
-        1.3
+        0.65
        ],
        [
         14,
-        2.3
+        1.15
        ],
        [
         15,
-        4.1
+        2.05
        ],
        [
         16,
-        6.1
+        3.05
        ],
        [
         17,
-        13.1
+        6.55
        ]
       ]
      }
@@ -4222,23 +4221,23 @@
       "stops": [
        [
         9,
-        2
+        1
        ],
        [
         14,
-        3.5
+        1.75
        ],
        [
         15,
-        6
+        3
        ],
        [
         16,
-        8.4
+        4.2
        ],
        [
         17,
-        18.3
+        9.15
        ]
       ]
      },
@@ -4274,31 +4273,31 @@
       "stops": [
        [
         4,
-        1.1
+        0.55
        ],
        [
         6,
-        1.4
+        0.7
        ],
        [
         9,
-        1.5
+        0.75
        ],
        [
         14,
-        3.2
+        1.6
        ],
        [
         15,
-        5.8
+        2.9
        ],
        [
         16,
-        8.3
+        4.15
        ],
        [
         17,
-        16.2
+        8.1
        ]
       ]
      }
@@ -4345,31 +4344,31 @@
       "stops": [
        [
         4,
-        0.4
+        0.2
        ],
        [
         6,
-        1.5
+        0.75
        ],
        [
         9,
-        2.3
+        1.15
        ],
        [
         14,
-        5
+        2.5
        ],
        [
         15,
-        8.1
+        4.05
        ],
        [
         16,
-        11.2
+        5.6
        ],
        [
         17,
-        22
+        11
        ]
       ]
      },
@@ -4405,31 +4404,31 @@
       "stops": [
        [
         4,
-        0.6
+        0.3
        ],
        [
         6,
-        1.8
+        0.9
        ],
        [
         9,
-        2.1
+        1.05
        ],
        [
         14,
-        4.4
+        2.2
        ],
        [
         15,
-        7.3
+        3.65
        ],
        [
         16,
-        10
+        5
        ],
        [
         17,
-        18.5
+        9.25
        ]
       ]
      }
@@ -4472,31 +4471,31 @@
       "stops": [
        [
         4,
-        0.5
+        0.25
        ],
        [
         6,
-        1.8
+        0.9
        ],
        [
         9,
-        2.7
+        1.35
        ],
        [
         14,
-        5.9
+        2.95
        ],
        [
         15,
-        9
+        4.5
        ],
        [
         16,
-        12.2
+        6.1
        ],
        [
         17,
-        22.5
+        11.25
        ]
       ]
      },
@@ -5863,23 +5862,23 @@
       "stops": [
        [
         14,
-        2.3
+        1.15
        ],
        [
         15,
-        4.1
+        2.05
        ],
        [
         16,
-        6.3
+        3.15
        ],
        [
         17,
-        13.5
+        6.75
        ],
        [
         18,
-        16.8
+        8.4
        ]
       ]
      }
@@ -5968,19 +5967,19 @@
       "stops": [
        [
         14,
-        2.3
+        1.15
        ],
        [
         15,
-        4.1
+        2.05
        ],
        [
         16,
-        6.3
+        3.15
        ],
        [
         17,
-        13.5
+        6.75
        ]
       ]
      }
@@ -6009,19 +6008,19 @@
       "stops": [
        [
         14,
-        2.3
+        1.15
        ],
        [
         15,
-        4.1
+        2.05
        ],
        [
         16,
-        6.3
+        3.15
        ],
        [
         17,
-        13.5
+        6.75
        ]
       ]
      }
@@ -6053,23 +6052,23 @@
       "stops": [
        [
         9,
-        1.3
+        0.65
        ],
        [
         14,
-        2.3
+        1.15
        ],
        [
         15,
-        4.1
+        2.05
        ],
        [
         16,
-        6.1
+        3.05
        ],
        [
         17,
-        13.1
+        6.55
        ]
       ]
      }
@@ -6113,23 +6112,23 @@
       "stops": [
        [
         9,
-        2
+        1
        ],
        [
         14,
-        3.5
+        1.75
        ],
        [
         15,
-        6
+        3
        ],
        [
         16,
-        8.4
+        4.2
        ],
        [
         17,
-        18.3
+        9.15
        ]
       ]
      },
@@ -6165,27 +6164,27 @@
       "stops": [
        [
         6,
-        1.4
+        0.7
        ],
        [
         9,
-        1.5
+        0.75
        ],
        [
         14,
-        3.2
+        1.6
        ],
        [
         15,
-        5.8
+        2.9
        ],
        [
         16,
-        8.3
+        4.15
        ],
        [
         17,
-        16.2
+        8.1
        ]
       ]
      }
@@ -6229,27 +6228,27 @@
       "stops": [
        [
         6,
-        1.5
+        0.75
        ],
        [
         9,
-        2.3
+        1.15
        ],
        [
         14,
-        5
+        2.5
        ],
        [
         15,
-        8.1
+        4.05
        ],
        [
         16,
-        11.2
+        5.6
        ],
        [
         17,
-        22
+        11
        ]
       ]
      },
@@ -6285,31 +6284,31 @@
       "stops": [
        [
         4,
-        0.5
+        0.25
        ],
        [
         6,
-        1.8
+        0.9
        ],
        [
         9,
-        2.1
+        1.05
        ],
        [
         14,
-        4.4
+        2.2
        ],
        [
         15,
-        7.3
+        3.65
        ],
        [
         16,
-        10
+        5
        ],
        [
         17,
-        18.5
+        9.25
        ]
       ]
      }
@@ -6349,27 +6348,27 @@
       "stops": [
        [
         6,
-        1.8
+        0.9
        ],
        [
         9,
-        2.7
+        1.35
        ],
        [
         14,
-        5.9
+        2.95
        ],
        [
         15,
-        9
+        4.5
        ],
        [
         16,
-        12.2
+        6.1
        ],
        [
         17,
-        22.5
+        11.25
        ]
       ]
      },
@@ -11523,9 +11522,8 @@
     },
     "paint": {
      "text-color": "#ece3d9",
-      "text-halo-width": 1,
+     "text-halo-width": 1,
      "text-halo-color": "#523535"
-
     }
    },
    {
@@ -11561,10 +11559,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme localite n0 typoA9",
@@ -11601,10 +11599,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme localite n0 typoA8 non commune",
@@ -11655,10 +11653,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme - limite militaire ponc 1 et 2",
@@ -11683,10 +11681,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme - limite parc marin",
@@ -11713,10 +11711,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme - limite parc ponc 1 et 2",
@@ -11785,10 +11783,10 @@
      "visibility": "visible"
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme - ocs ponc 2",
@@ -11824,10 +11822,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme - oro lineaire 2",
@@ -11857,10 +11855,10 @@
      "visibility": "visible"
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme - oro ponc 2",
@@ -11910,10 +11908,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme - oro ponc 2B",
@@ -11949,10 +11947,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme - hydro lineaire 2",
@@ -12135,10 +12133,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme localite n0 typoA7 non commune",
@@ -12189,10 +12187,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme localite n0 typoA5etA6 non commune",
@@ -12244,10 +12242,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme - oro lineaire 1",
@@ -12275,10 +12273,10 @@
      "visibility": "visible"
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme - oro ponc monde",
@@ -12318,10 +12316,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme localite n0 typoA4 non commune",
@@ -12361,10 +12359,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme - ocs lineaire 1",
@@ -12401,10 +12399,10 @@
      "visibility": "visible"
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme - ocs ponc 1",
@@ -12439,10 +12437,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme - oro ponc 1",
@@ -12470,10 +12468,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme - oro ponc 1B",
@@ -12510,10 +12508,10 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#214040",
-      "text-halo-width": 1
-     }
+     "text-color": "#ece3d9",
+     "text-halo-color": "#214040",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme - hydro lineaire glacier",
@@ -12539,10 +12537,10 @@
      "visibility": "visible"
     },
     "paint": {
-      "text-color": "#7a96a2",
-      "text-halo-width": 1,
-      "text-halo-color": "#214040"
-     }
+     "text-color": "#7a96a2",
+     "text-halo-width": 1,
+     "text-halo-color": "#214040"
+    }
    },
    {
     "id": "toponyme - hydro lineaire 1",
@@ -12576,10 +12574,10 @@
      "visibility": "visible"
     },
     "paint": {
-      "text-color": "#7a96a2",
-      "text-halo-width": 1,
-      "text-halo-color": "#214040"
-     }
+     "text-color": "#7a96a2",
+     "text-halo-width": 1,
+     "text-halo-color": "#214040"
+    }
    },
    {
     "id": "toponyme - hydro lineaire ocean",
@@ -12651,10 +12649,10 @@
      ]
     },
     "paint": {
-      "text-color": "#7a96a2",
-      "text-halo-width": 1,
-      "text-halo-color": "#214040"
-     }
+     "text-color": "#7a96a2",
+     "text-halo-width": 1,
+     "text-halo-color": "#214040"
+    }
    },
    {
     "id": "toponyme localite importance 2",
@@ -12722,10 +12720,10 @@
      }
     },
     "paint": {
-      "text-color": "rgba(236, 227, 217,0.5)",
-      "text-halo-color": "#523535",
-      "text-halo-width": 1
-     }
+     "text-color": "rgba(236, 227, 217,0.5)",
+     "text-halo-color": "#523535",
+     "text-halo-width": 1
+    }
    },
    {
     "id": "toponyme localite n0 typoA3 non commune",
@@ -12765,9 +12763,9 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#523535",
-      "text-halo-width": 1
+     "text-color": "#ece3d9",
+     "text-halo-color": "#523535",
+     "text-halo-width": 1
     }
    },
    {
@@ -12808,9 +12806,9 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#523535",
-      "text-halo-width": 1
+     "text-color": "#ece3d9",
+     "text-halo-color": "#523535",
+     "text-halo-width": 1
     }
    },
    {
@@ -12859,9 +12857,9 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#523535",
-      "text-halo-width": 1
+     "text-color": "#ece3d9",
+     "text-halo-color": "#523535",
+     "text-halo-width": 1
     }
    },
    {
@@ -12910,9 +12908,9 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#523535",
-      "text-halo-width": 1
+     "text-color": "#ece3d9",
+     "text-halo-color": "#523535",
+     "text-halo-width": 1
     }
    },
    {
@@ -12962,9 +12960,9 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#523535",
-      "text-halo-width": 1
+     "text-color": "#ece3d9",
+     "text-halo-color": "#523535",
+     "text-halo-width": 1
     }
    },
    {
@@ -13005,9 +13003,9 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#523535",
-      "text-halo-width": 1
+     "text-color": "#ece3d9",
+     "text-halo-color": "#523535",
+     "text-halo-width": 1
     }
    },
    {
@@ -13045,9 +13043,9 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#523535",
-      "text-halo-width": 1
+     "text-color": "#ece3d9",
+     "text-halo-color": "#523535",
+     "text-halo-width": 1
     }
    },
    {
@@ -13085,9 +13083,9 @@
      ]
     },
     "paint": {
-      "text-color": "#ece3d9",
-      "text-halo-color": "#523535",
-      "text-halo-width": 1
+     "text-color": "#ece3d9",
+     "text-halo-color": "#523535",
+     "text-halo-width": 1
     }
    },
    {
@@ -13125,9 +13123,9 @@
      ]
     },
     "paint": {
-      "text-color": "rgba(236, 227, 217,0.5)",
-      "text-halo-color": "#523535",
-      "text-halo-width": 1
+     "text-color": "rgba(236, 227, 217,0.5)",
+     "text-halo-color": "#523535",
+     "text-halo-width": 1
     }
    },
    {
@@ -13195,9 +13193,9 @@
      }
     },
     "paint": {
-      "text-color": "rgba(236, 227, 217,0.5)",
-      "text-halo-color": "#523535",
-      "text-halo-width": 2
+     "text-color": "rgba(236, 227, 217,0.5)",
+     "text-halo-color": "#523535",
+     "text-halo-width": 2
     }
    },
    {
