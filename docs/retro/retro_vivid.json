@@ -1,0 +1,268 @@
+{
+  "version": 8,
+  "name": "Retro Vivid",
+  "sources": {
+    "plan_ign": {
+      "type": "vector",
+      "name": "PLAN.IGN",
+      "description": "BDUni tuilée",
+      "attribution": "<a href=\"http://www.geoportail.gouv.fr/\">Géoportail</a> &copy; <a href=\"http://www.ign.fr/\">IGN-France</a>",
+      "minzoom": 0,
+      "maxzoom": 19,
+      "crs": "EPSG:3857",
+      "format": "pbf",
+      "tiles": [
+        "https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"
+      ]
+    }
+  },
+  "sprite": "",
+  "glyphs": "",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#1a1aff"
+      }
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "source": "plan_ign",
+      "source-layer": "hydro_surf",
+      "paint": {
+        "fill-color": "#00e6e6"
+      }
+    },
+    {
+      "id": "landcover",
+      "type": "fill",
+      "source": "plan_ign",
+      "source-layer": "ocs_vegetation_surf",
+      "paint": {
+        "fill-color": "#39ff14"
+      }
+    },
+    {
+      "id": "park",
+      "type": "fill",
+      "source": "plan_ign",
+      "source-layer": "ocs_vegetation_surf",
+      "paint": {
+        "fill-color": "#fffb00"
+      }
+    },
+    {
+      "id": "road-primary",
+      "type": "line",
+      "source": "plan_ign",
+      "source-layer": "routier_route",
+      "filter": ["==", "symbo", "PRINCIPALE_1"],
+      "paint": {
+        "line-color": "#ff0080",
+        "line-width": 3
+      }
+    },
+    {
+      "id": "road-secondary",
+      "type": "line",
+      "source": "plan_ign",
+      "source-layer": "routier_route",
+      "filter": ["==", "symbo", "REGIONALE_1"],
+      "paint": {
+        "line-color": "#ff6600",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "building",
+      "type": "fill",
+      "source": "plan_ign",
+      "source-layer": "bati_surf",
+      "paint": {
+        "fill-color": "#ff00ff",
+        "fill-opacity": 0.8
+      }
+    },
+    {
+      "id": "place-label",
+      "type": "symbol",
+      "source": "plan_ign",
+      "source-layer": "toponyme_localite_ponc",
+      "layout": {
+        "text-field": "{texte}",
+        "text-size": 14
+      },
+      "paint": {
+        "text-color": "#ffffff",
+        "text-halo-color": "#000000",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "relief-0m",
+      "type": "fill",
+      "source": "plan_ign",
+      "source-layer": "oro_relief",
+      "filter": ["==", "symbo", "HYPSO_0"],
+      "paint": {
+        "fill-color": "#00ffff",
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "relief-100m",
+      "type": "fill",
+      "source": "plan_ign",
+      "source-layer": "oro_relief",
+      "filter": ["==", "symbo", "HYPSO_100"],
+      "paint": {
+        "fill-color": "#00ffcc",
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "relief-200m",
+      "type": "fill",
+      "source": "plan_ign",
+      "source-layer": "oro_relief",
+      "filter": ["==", "symbo", "HYPSO_200"],
+      "paint": {
+        "fill-color": "#00ff99",
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "relief-1000m",
+      "type": "fill",
+      "source": "plan_ign",
+      "source-layer": "oro_relief",
+      "filter": ["==", "symbo", "HYPSO_1000"],
+      "paint": {
+        "fill-color": "#00ff66",
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "vegetation-boisee",
+      "type": "fill",
+      "source": "plan_ign",
+      "source-layer": "ocs_vegetation_surf",
+      "filter": [
+        "in",
+        "symbo",
+        "ZONE_BOISEE",
+        "ZONE_FORET_FERMEE_FEUIL",
+        "ZONE_FORET_FERMEE_CONI",
+        "ZONE_FORET_FERMEE_MIXTE",
+        "ZONE_PEUPLERAIE"
+      ],
+      "paint": {
+        "fill-color": "#00ff00",
+        "fill-outline-color": "#00ff00"
+      }
+    },
+    {
+      "id": "vegetation-lande",
+      "type": "fill",
+      "source": "plan_ign",
+      "source-layer": "ocs_vegetation_surf",
+      "filter": ["==", "symbo", "ZONE_LANDE_LIGNEUSE"],
+      "paint": {
+        "fill-color": "#ff00ff"
+      }
+    },
+    {
+      "id": "hydro-surface",
+      "type": "fill",
+      "source": "plan_ign",
+      "source-layer": "hydro_surf",
+      "filter": [
+        "in",
+        "symbo",
+        "SURFACE_D_EAU",
+        "BASSIN",
+        "ZONE_MARINE"
+      ],
+      "paint": {
+        "fill-color": "#0099ff",
+        "fill-outline-color": "#0099ff"
+      }
+    },
+    {
+      "id": "route-principale",
+      "type": "line",
+      "source": "plan_ign",
+      "source-layer": "routier_route",
+      "filter": [
+        "in",
+        "symbo",
+        "PRINCIPALE_1",
+        "PRINCIPALE_2",
+        "PRINCIPALE_3",
+        "PRINCIPALE_4"
+      ],
+      "paint": {
+        "line-color": "#ff0000",
+        "line-width": 3
+      }
+    },
+    {
+      "id": "route-regionale",
+      "type": "line",
+      "source": "plan_ign",
+      "source-layer": "routier_route",
+      "filter": [
+        "in",
+        "symbo",
+        "REGIONALE_1",
+        "REGIONALE_2",
+        "REGIONALE_3",
+        "REGIONALE_4"
+      ],
+      "paint": {
+        "line-color": "#ff9900",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "limite-commune",
+      "type": "line",
+      "source": "plan_ign",
+      "source-layer": "limite_lin",
+      "filter": [
+        "in",
+        "symbo",
+        "LIM_COMMUNE",
+        "LIM_CANTON",
+        "LIM_ARRONDISSEMENT"
+      ],
+      "paint": {
+        "line-color": "#ff00cc",
+        "line-width": 2,
+        "line-dasharray": [4, 2]
+      }
+    },
+    {
+      "id": "batiment-remarquable",
+      "type": "fill",
+      "source": "plan_ign",
+      "source-layer": "bati_surf",
+      "filter": [
+        "in",
+        "symbo",
+        "FORTIF_SURF",
+        "CHATEAU_SURF",
+        "TOUR_MOULIN_SURF",
+        "ARENE_THEATRE",
+        "ARC_TRIOMPHE_SURF",
+        "MONUMENT_SURF"
+      ],
+      "paint": {
+        "fill-color": "#ff33cc",
+        "fill-outline-color": "#ff33cc"
+      }
+    }
+  ]
+}
