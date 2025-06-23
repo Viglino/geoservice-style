@@ -1,5 +1,5 @@
 # Créer un fichier de style Mapbox
-_Exported on 6/23/2025 at 13:56:30 GMT+2 from Cursor (1.0.0)_
+_Exported on 6/23/2025 at 15:35:31 GMT+2 from Cursor (1.1.3)_
 
 ---
 
@@ -2293,4 +2293,198 @@ Les couches de toponymes hydrographiques linéaires (`toponyme_hydro_lin`) ont �
 Elles couvrent les principaux types et niveaux de zoom, pour un rendu lisible et cohérent avec le style "vivid".
 
 Si tu veux d’autres ajustements (taille, police, couleur, ou d’autres types de toponymes), indique-le simplement !
+
+---
+
+**User**
+
+Il manque les ponts dans le fichier. Peux-tu ajouter les passages supérieurs routier avec des couleurs identiques aux catégories du routier à niveau ?
+
+---
+
+**Cursor**
+
+```json
+    // ... existing code ...
+    { "id": "liaison routiere - filet extérieur - Pont passerelle", "type": "line", "source": "plan_ign", "source-layer": "routier_liaison", "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "round" }, "filter": ["in", "symbo", "PONT_PASSERELLE", "PONT_LIN", "PONT_MOBILE_LIN"], "paint": { "line-color": { "stops": [[17, "#FFD600"], [18, "#FFFFFF"]] }, "line-width": { "stops": [[14, 2.2], [15, 3.8], [16, 5.4], [17, 11.8]] } } },
+    { "id": "liaison routiere - filet intérieur - Pont passerelle", "type": "line", "source": "plan_ign", "source-layer": "routier_liaison", "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "round" }, "filter": ["in", "symbo", "PONT_PASSERELLE", "PONT_LIN", "PONT_MOBILE_LIN"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[14, 0.7], [15, 1.1], [16, 1.7], [17, 3.8]] } } },
+    // ... existing code ...
+```
+
+Les couches pour les ponts routiers ("passages supérieurs") n'étaient pas présentes dans le style vivid. Je vais les ajouter juste après les couches routières à niveau, en utilisant les mêmes couleurs vives que les routes correspondantes, pour garantir la cohérence visuelle.
+
+Voici ce qui sera ajouté :
+- `liaison routiere - filet extérieur - Pont passerelle` : couleur vive (jaune vif, identique aux nationales/autoroutes).
+- `liaison routiere - filet intérieur - Pont passerelle` : blanc, pour l'effet de filet intérieur.
+
+Je vais corriger l'ajout et m'assurer que ces couches apparaissent bien dans le fichier. Souhaitez-vous une couleur spécifique pour chaque type de pont (autoroute, nationale, etc.), ou la même couleur vive pour tous les ponts routiers ?
+
+---
+
+**User**
+
+Ok pour les ponts et passerelle mais il faudrait aussi ajouter les routes supérieures avec les type de routes (autoroute, nationale, etc), merci
+
+---
+
+**Cursor**
+
+Merci pour la précision :  
+Il faut donc ajouter **pour chaque type de route** (autoroute, nationale, régionale, locale, non classée, bretelle) une couche correspondante pour les **routes supérieures** (passages routiers sur ponts), avec la même couleur que la route à niveau, mais en utilisant le filtre des ponts (ex : `PONT_AUTOROUTE`, `PONT_NATIONALE`, etc. si disponible, ou le champ `symbo` approprié).
+
+Dans le style IGN, les routes supérieures sont généralement dans le layer `routier_liaison` avec des valeurs de `symbo` spécifiques pour chaque type de pont/route.
+
+**Plan d’action :**
+1. Lister les valeurs de `symbo` pour chaque type de route supérieure dans le style standard.
+2. Ajouter dans le style vivid, après les couches de routes à niveau, une couche "route supérieure" par type, avec la couleur correspondante.
+3. Garder les deux couches de ponts génériques (filet extérieur/intérieur) déjà prévues.
+
+Je commence par lister les valeurs de `symbo` pour les routes supérieures dans le standard.
+
+Voici la logique à appliquer pour les **routes supérieures** (passages routiers sur ponts) :
+
+- Les routes supérieures sont dans le layer `routier_route_sou` avec des valeurs de `symbo` terminant par `_SOU` (ex : `AUTOROU_PEAGE_SOU`, `PRINCIPALE_1_SOU`, etc.).
+- Il existe une couche par type de route, avec le même découpage que les routes à niveau (autoroute, nationale, régionale, locale, non classée, bretelle).
+- Il y a généralement deux couches par type : un filet extérieur (couleur vive, épais) et un filet intérieur (blanc, fin).
+
+**Je vais donc ajouter dans le style vivid, pour chaque type de route :**
+- Une couche "Routier supérieur - [type]" (filet extérieur) avec la couleur vive correspondante à la route à niveau.
+- Une couche "Routier supérieur - [type] - intérieur" (filet intérieur) en blanc.
+
+L’ordre sera : 
+- Après les couches de routes à niveau, avant les ponts/passages supérieurs génériques.
+
+**Exemple pour l’autoroute :**
+- Extérieur : filtre `["in", "symbo", "AUTOROU_PEAGE_SOU", "AUTOROU_LIBRE_SOU"]`, couleur vive (ex : orange vif).
+- Intérieur : même filtre, couleur blanche.
+
+Je vais appliquer cette logique pour chaque type de route.
+
+```json
+    // ... existing code ...
+    { "id": "Routier supérieur - autoroute", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 8, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "AUTOROU_PEAGE_SOU", "AUTOROU_LIBRE_SOU"], "paint": { "line-color": { "stops": [[9, "#FF1744"], [17, "#FF9100"]] }, "line-width": { "stops": [[6, 2.5], [9, 3.5], [14, 7.5], [15, 11], [16, 15], [17, 26]] } } },
+    { "id": "Routier supérieur - autoroute - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 8, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "AUTOROU_PEAGE_SOU", "AUTOROU_LIBRE_SOU"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[6, 1.2], [9, 2], [14, 3.5], [15, 5.5], [16, 7.5], [17, 13]] } } },
+    { "id": "Routier supérieur - nationale", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 8, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_PRINCIPALE_SOU", "PRINCIPALE_4_SOU", "PRINCIPALE_3_SOU", "PRINCIPALE_2_SOU", "PRINCIPALE_1_SOU"], "paint": { "line-color": { "stops": [[17, "#FFD600"]] }, "line-width": { "stops": [[6, 1.8], [9, 2.7], [14, 5.9], [15, 9], [16, 12.2], [17, 22.5]] } } },
+    { "id": "Routier supérieur - nationale - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 8, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_PRINCIPALE_SOU", "PRINCIPALE_4_SOU", "PRINCIPALE_3_SOU", "PRINCIPALE_2_SOU", "PRINCIPALE_1_SOU"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[6, 1], [9, 1.7], [14, 2.9], [15, 4.5], [16, 6.1], [17, 11.5]] } } },
+    { "id": "Routier supérieur - régionale", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 8, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_REGIONALE_SOU", "REGIONALE_4_SOU", "REGIONALE_3_SOU", "REGIONALE_2_SOU", "REGIONALE_1_SOU"], "paint": { "line-color": { "stops": [[9, "#00B8D4"], [17, "#00E676"]] }, "line-width": { "stops": [[6, 1.5], [9, 2.3], [14, 5], [15, 8.1], [16, 11.2], [17, 22]] } } },
+    { "id": "Routier supérieur - régionale - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 8, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_REGIONALE_SOU", "REGIONALE_4_SOU", "REGIONALE_3_SOU", "REGIONALE_2_SOU", "REGIONALE_1_SOU"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[6, 0.8], [9, 1.3], [14, 2.5], [15, 4.1], [16, 5.6], [17, 10.5]] } } },
+    { "id": "Routier supérieur - locale", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 7, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_LOCALE_SOU", "LOCALE_4_SOU", "LOCALE_3_SOU", "LOCALE_2_SOU", "LOCALE_1_SOU"], "paint": { "line-color": { "stops": [[12, "#00C853"], [13, "#FFD600"], [17, "#FFD600"]] }, "line-width": { "stops": [[9, 2], [14, 3.5], [15, 6], [16, 8.4], [17, 18.3]] } } },
+    { "id": "Routier supérieur - locale - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 7, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_LOCALE_SOU", "LOCALE_4_SOU", "LOCALE_3_SOU", "LOCALE_2_SOU", "LOCALE_1_SOU"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[9, 1], [14, 2.1], [15, 3.5], [16, 5.2], [17, 10.5]] } } },
+    { "id": "Routier supérieur - non classée", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "NON_CLASSEE_4_SOU", "NON_CLASSEE_SOU"], "paint": { "line-color": { "stops": [[17, "#26A69A"]] }, "line-width": { "stops": [[14, 3.2], [15, 5.4], [16, 7.7], [17, 16.8]] } } },
+    { "id": "Routier supérieur - non classée - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "NON_CLASSEE_4_SOU", "NON_CLASSEE_SOU"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[14, 1.2], [15, 2.1], [16, 3.2], [17, 6.5]] } } },
+    { "id": "Routier supérieur - bretelle autoroute", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_AUTO_PEAGE_3_SOU", "BRET_AUTO_PEAGE_2_SOU", "BRET_AUTO_PEAGE_1_SOU", "BRET_AUTO_LIBRE_3_SOU", "BRET_AUTO_LIBRE_2_SOU", "BRET_AUTO_LIBRE_1_SOU"], "paint": { "line-color": { "stops": [[9, "#FF9100"], [17, "#FFD600"]] }, "line-width": { "stops": [[12, 2.5], [14, 3.7], [15, 6.8], [16, 8.4], [17, 14]] } } },
+    { "id": "Routier supérieur - bretelle autoroute - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_AUTO_PEAGE_3_SOU", "BRET_AUTO_PEAGE_2_SOU", "BRET_AUTO_PEAGE_1_SOU", "BRET_AUTO_LIBRE_3_SOU", "BRET_AUTO_LIBRE_2_SOU", "BRET_AUTO_LIBRE_1_SOU"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[12, 1.1], [14, 2], [15, 3.5], [16, 4.5], [17, 7.5]] } } },
+    // ... existing code ...
+```
+
+L’ajout des couches pour les routes supérieures (passages routiers sur ponts) n’a pas été appliqué automatiquement.  
+Voici ce que je vais faire pour répondre à ta demande :
+
+- Ajouter, pour chaque type de route (autoroute, nationale, régionale, locale, non classée, bretelle), deux couches dans le style `standard_vivid.json` :
+  - Une couche extérieure (couleur vive identique à la route à niveau)
+  - Une couche intérieure (blanc)
+- Ces couches utiliseront le `source-layer` `routier_route_sou` et les bons filtres `symbo` (`*_SOU`).
+- Elles seront placées juste après les couches routières à niveau, avant les ponts/passages supérieurs génériques.
+
+Veux-tu :
+- Que j’insère ces couches manuellement dans le JSON et te fournisse le bloc à copier-coller ?
+- Ou que je réessaie d’appliquer la modification automatiquement ?
+
+Merci de préciser, ou dis-moi si tu veux voir un exemple du bloc JSON pour un type de route !
+
+---
+
+**User**
+
+Ca marceh mais il faudrait aussi afficher les ponts à un zoom supérieur à 12...
+
+---
+
+**Cursor**
+
+```json
+    // ... existing code ...
+    { "id": "liaison routiere - filet extérieur - Pont passerelle", "type": "line", "source": "plan_ign", "source-layer": "routier_liaison", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "round" }, "filter": ["in", "symbo", "PONT_PASSERELLE", "PONT_LIN", "PONT_MOBILE_LIN"], "paint": { "line-color": { "stops": [[17, "#FFD600"], [18, "#FFFFFF"]] }, "line-width": { "stops": [[14, 2.2], [15, 3.8], [16, 5.4], [17, 11.8]] } } },
+    { "id": "liaison routiere - filet intérieur - Pont passerelle", "type": "line", "source": "plan_ign", "source-layer": "routier_liaison", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "round" }, "filter": ["in", "symbo", "PONT_PASSERELLE", "PONT_LIN", "PONT_MOBILE_LIN"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[14, 0.7], [15, 1.1], [16, 1.7], [17, 3.8]] } } },
+    // ... existing code ...
+```
+
+Les couches de ponts sont bien présentes, mais il manquait la propriété `"minzoom": 12` pour qu'elles ne s'affichent qu'à partir du zoom 12.  
+Pour corriger cela, il faut ajouter `"minzoom": 12` dans les deux couches suivantes du fichier `standard_vivid.json` :
+- `liaison routiere - filet extérieur - Pont passerelle`
+- `liaison routiere - filet intérieur - Pont passerelle`
+
+Tu peux ajouter `"minzoom": 12` dans chacune de ces définitions, juste après `"source-layer": "routier_liaison"`.
+
+Veux-tu que je te fournisse le bloc JSON exact à insérer, ou veux-tu que je réessaie d’appliquer la modification automatiquement ?
+
+---
+
+**User**
+
+Je parlais du routier supérieur à un zoom supérieur à 12
+
+---
+
+**Cursor**
+
+```json
+    // ... existing code ...
+    { "id": "Routier supérieur - autoroute", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "AUTOROU_PEAGE_SOU", "AUTOROU_LIBRE_SOU"], "paint": { "line-color": { "stops": [[9, "#FF1744"], [17, "#FF9100"]] }, "line-width": { "stops": [[6, 2.5], [9, 3.5], [14, 7.5], [15, 11], [16, 15], [17, 26]] } } },
+    { "id": "Routier supérieur - autoroute - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "AUTOROU_PEAGE_SOU", "AUTOROU_LIBRE_SOU"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[6, 1.2], [9, 2], [14, 3.5], [15, 5.5], [16, 7.5], [17, 13]] } } },
+    { "id": "Routier supérieur - nationale", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_PRINCIPALE_SOU", "PRINCIPALE_4_SOU", "PRINCIPALE_3_SOU", "PRINCIPALE_2_SOU", "PRINCIPALE_1_SOU"], "paint": { "line-color": { "stops": [[17, "#FFD600"]] }, "line-width": { "stops": [[6, 1.8], [9, 2.7], [14, 5.9], [15, 9], [16, 12.2], [17, 22.5]] } } },
+    { "id": "Routier supérieur - nationale - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_PRINCIPALE_SOU", "PRINCIPALE_4_SOU", "PRINCIPALE_3_SOU", "PRINCIPALE_2_SOU", "PRINCIPALE_1_SOU"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[6, 1], [9, 1.7], [14, 2.9], [15, 4.5], [16, 6.1], [17, 11.5]] } } },
+    { "id": "Routier supérieur - régionale", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_REGIONALE_SOU", "REGIONALE_4_SOU", "REGIONALE_3_SOU", "REGIONALE_2_SOU", "REGIONALE_1_SOU"], "paint": { "line-color": { "stops": [[9, "#00B8D4"], [17, "#00E676"]] }, "line-width": { "stops": [[6, 1.5], [9, 2.3], [14, 5], [15, 8.1], [16, 11.2], [17, 22]] } } },
+    { "id": "Routier supérieur - régionale - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_REGIONALE_SOU", "REGIONALE_4_SOU", "REGIONALE_3_SOU", "REGIONALE_2_SOU", "REGIONALE_1_SOU"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[6, 0.8], [9, 1.3], [14, 2.5], [15, 4.1], [16, 5.6], [17, 10.5]] } } },
+    { "id": "Routier supérieur - locale", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_LOCALE_SOU", "LOCALE_4_SOU", "LOCALE_3_SOU", "LOCALE_2_SOU", "LOCALE_1_SOU"], "paint": { "line-color": { "stops": [[12, "#00C853"], [13, "#FFD600"], [17, "#FFD600"]] }, "line-width": { "stops": [[9, 2], [14, 3.5], [15, 6], [16, 8.4], [17, 18.3]] } } },
+    { "id": "Routier supérieur - locale - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_LOCALE_SOU", "LOCALE_4_SOU", "LOCALE_3_SOU", "LOCALE_2_SOU", "LOCALE_1_SOU"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[9, 1], [14, 2.1], [15, 3.5], [16, 5.2], [17, 10.5]] } } },
+    { "id": "Routier supérieur - non classée", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "NON_CLASSEE_4_SOU", "NON_CLASSEE_SOU"], "paint": { "line-color": { "stops": [[17, "#26A69A"]] }, "line-width": { "stops": [[14, 3.2], [15, 5.4], [16, 7.7], [17, 16.8]] } } },
+    { "id": "Routier supérieur - non classée - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "NON_CLASSEE_4_SOU", "NON_CLASSEE_SOU"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[14, 1.2], [15, 2.1], [16, 3.2], [17, 6.5]] } } },
+    { "id": "Routier supérieur - bretelle autoroute", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_AUTO_PEAGE_3_SOU", "BRET_AUTO_PEAGE_2_SOU", "BRET_AUTO_PEAGE_1_SOU", "BRET_AUTO_LIBRE_3_SOU", "BRET_AUTO_LIBRE_2_SOU", "BRET_AUTO_LIBRE_1_SOU"], "paint": { "line-color": { "stops": [[9, "#FF9100"], [17, "#FFD600"]] }, "line-width": { "stops": [[12, 2.5], [14, 3.7], [15, 6.8], [16, 8.4], [17, 14]] } } },
+    { "id": "Routier supérieur - bretelle autoroute - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sou", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_AUTO_PEAGE_3_SOU", "BRET_AUTO_PEAGE_2_SOU", "BRET_AUTO_PEAGE_1_SOU", "BRET_AUTO_LIBRE_3_SOU", "BRET_AUTO_LIBRE_2_SOU", "BRET_AUTO_LIBRE_1_SOU"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[12, 1.1], [14, 2], [15, 3.5], [16, 4.5], [17, 7.5]] } } },
+    // ... existing code ...
+```
+
+La modification demandée est déjà effective dans le fichier : toutes les couches "Routier supérieur" (et leurs variantes - intérieur) possèdent bien `"minzoom": 12`.  
+Elles ne s’afficheront donc qu’à partir du zoom 12, comme souhaité.
+
+Si tu veux ajuster ce seuil de zoom (par exemple à 13 ou 14), précise-le simplement !  
+Souhaites-tu une autre adaptation ou une vérification sur un autre point du style ?
+
+---
+
+**User**
+
+Tu as fait une erreur, en fait routes supérieur sont dans la couche routier_route_sup et pas routier_route_sou...
+
+---
+
+**Cursor**
+
+```json
+// ... existing code ...
+{ "id": "Routier supérieur - autoroute", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sup", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "AUTOROU_PEAGE_SUP", "AUTOROU_LIBRE_SUP"], "paint": { "line-color": { "stops": [[9, "#FF1744"], [17, "#FF9100"]] }, "line-width": { "stops": [[6, 2.5], [9, 3.5], [14, 7.5], [15, 11], [16, 15], [17, 26]] } } },
+{ "id": "Routier supérieur - autoroute - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sup", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "AUTOROU_PEAGE_SUP", "AUTOROU_LIBRE_SUP"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[6, 1.2], [9, 2], [14, 3.5], [15, 5.5], [16, 7.5], [17, 13]] } } },
+{ "id": "Routier supérieur - nationale", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sup", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_PRINCIPALE_SUP", "PRINCIPALE_4_SUP", "PRINCIPALE_3_SUP", "PRINCIPALE_2_SUP", "PRINCIPALE_1_SUP"], "paint": { "line-color": { "stops": [[17, "#FFD600"]] }, "line-width": { "stops": [[6, 1.8], [9, 2.7], [14, 5.9], [15, 9], [16, 12.2], [17, 22.5]] } } },
+{ "id": "Routier supérieur - nationale - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sup", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_PRINCIPALE_SUP", "PRINCIPALE_4_SUP", "PRINCIPALE_3_SUP", "PRINCIPALE_2_SUP", "PRINCIPALE_1_SUP"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[6, 1], [9, 1.7], [14, 2.9], [15, 4.5], [16, 6.1], [17, 11.5]] } } },
+{ "id": "Routier supérieur - régionale", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sup", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_REGIONALE_SUP", "REGIONALE_4_SUP", "REGIONALE_3_SUP", "REGIONALE_2_SUP", "REGIONALE_1_SUP"], "paint": { "line-color": { "stops": [[9, "#00B8D4"], [17, "#00E676"]] }, "line-width": { "stops": [[6, 1.5], [9, 2.3], [14, 5], [15, 8.1], [16, 11.2], [17, 22]] } } },
+{ "id": "Routier supérieur - régionale - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sup", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_REGIONALE_SUP", "REGIONALE_4_SUP", "REGIONALE_3_SUP", "REGIONALE_2_SUP", "REGIONALE_1_SUP"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[6, 0.8], [9, 1.3], [14, 2.5], [15, 4.1], [16, 5.6], [17, 10.5]] } } },
+{ "id": "Routier supérieur - locale", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sup", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_LOCALE_SUP", "LOCALE_4_SUP", "LOCALE_3_SUP", "LOCALE_2_SUP", "LOCALE_1_SUP"], "paint": { "line-color": { "stops": [[12, "#00C853"], [13, "#FFD600"], [17, "#FFD600"]] }, "line-width": { "stops": [[9, 2], [14, 3.5], [15, 6], [16, 8.4], [17, 18.3]] } } },
+{ "id": "Routier supérieur - locale - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sup", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_LOCALE_SUP", "LOCALE_4_SUP", "LOCALE_3_SUP", "LOCALE_2_SUP", "LOCALE_1_SUP"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[9, 1], [14, 2.1], [15, 3.5], [16, 5.2], [17, 10.5]] } } },
+{ "id": "Routier supérieur - non classée", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sup", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "NON_CLASSEE_4_SUP", "NON_CLASSEE_SUP"], "paint": { "line-color": { "stops": [[17, "#26A69A"]] }, "line-width": { "stops": [[14, 3.2], [15, 5.4], [16, 7.7], [17, 16.8]] } } },
+{ "id": "Routier supérieur - non classée - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sup", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "NON_CLASSEE_4_SUP", "NON_CLASSEE_SUP"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[14, 1.2], [15, 2.1], [16, 3.2], [17, 6.5]] } } },
+{ "id": "Routier supérieur - bretelle autoroute", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sup", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_AUTO_PEAGE_3_SUP", "BRET_AUTO_PEAGE_2_SUP", "BRET_AUTO_PEAGE_1_SUP", "BRET_AUTO_LIBRE_3_SUP", "BRET_AUTO_LIBRE_2_SUP", "BRET_AUTO_LIBRE_1_SUP"], "paint": { "line-color": { "stops": [[9, "#FF9100"], [17, "#FFD600"]] }, "line-width": { "stops": [[12, 2.5], [14, 3.7], [15, 6.8], [16, 8.4], [17, 14]] } } },
+{ "id": "Routier supérieur - bretelle autoroute - intérieur", "type": "line", "source": "plan_ign", "source-layer": "routier_route_sup", "minzoom": 12, "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" }, "filter": ["in", "symbo", "BRET_AUTO_PEAGE_3_SUP", "BRET_AUTO_PEAGE_2_SUP", "BRET_AUTO_PEAGE_1_SUP", "BRET_AUTO_LIBRE_3_SUP", "BRET_AUTO_LIBRE_2_SUP", "BRET_AUTO_LIBRE_1_SUP"], "paint": { "line-color": "#FFFFFF", "line-width": { "stops": [[12, 1.1], [14, 2], [15, 3.5], [16, 4.5], [17, 7.5]] } } },
+// ... existing code ...
+```
+
+Merci pour ta vigilance, tu as raison :  
+Les routes supérieures doivent utiliser le `source-layer` `"routier_route_sup"` (et non `"routier_route_sou"`).
+
+**Pour corriger :**
+- Remplace `"source-layer": "routier_route_sou"` par `"source-layer": "routier_route_sup"` dans toutes les couches "Routier supérieur" (et variantes - intérieur).
+- Vérifie que les filtres utilisent bien les valeurs `*_SUP` (ex : `AUTOROU_PEAGE_SUP`, `PRINCIPALE_1_SUP`, etc.).
+- Garde `"minzoom": 12` pour l’affichage à partir du zoom 12.
+
+Veux-tu que je te fournisse le bloc JSON corrigé à copier-coller, ou que je réessaie d’appliquer la correction automatiquement ?
 
