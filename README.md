@@ -81,6 +81,16 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 * [JSON style](https://viglino.github.io/geoservice-style/guidebook/guidebook.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=2.361318&lat=48.840633&z=17&layer=guidebook)
 
+
+## Coffee
+*Couleur café*
+
+[<img src="https://github.com/user-attachments/assets/470d954b-9ce3-43fe-9809-ad7f5f27be21" width=500 />](https://viglino.github.io/geoservice-style/?lon=-4.470705&lat=48.385316&z=15&layer=coffee)
+
+* [JSON style](https://viglino.github.io/geoservice-style/coffee/coffee.json)
+* [View online](https://viglino.github.io/geoservice-style/?lon=-4.470705&lat=48.385316&z=15&layer=coffee)
+
+
 ## Mondrian
 
 *Map in a style of Piet Mondrian*
@@ -107,6 +117,14 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 
 * [JSON style](https://viglino.github.io/geoservice-style/halloween/halloween.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=1.808723&lat=49.089790&z=15.2&layer=halloween)
+
+## Christmas
+*🎅🏼 Christmas map*
+
+[<img src="https://github.com/user-attachments/assets/01fade17-60d6-4714-995c-a5d74f18a1ba" width=500 />](https://viglino.github.io/geoservice-style/?lon=2.495393&lat=48.980459&z=13.4&layer=christmas)
+
+* [JSON style](https://viglino.github.io/geoservice-style/christmas/christmas.json)
+* [View online](https://viglino.github.io/geoservice-style/?lon=2.495393&lat=48.980459&z=13.4&layer=christmas)
 
 <!--
 ## Space
