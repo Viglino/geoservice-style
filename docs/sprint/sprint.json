@@ -1,8 +1,8 @@
 {
  "version": 8,
- "name": "PLAN IGN",
+ "name": "Sprint map",
  "glyphs": "https://data.geopf.fr/annexes/ressources/vectorTiles/fonts/{fontstack}/{range}.pbf",
- "sprite": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sprite/PlanIgn",
+ "sprite": "./sprint/sprite",
  "sources": {
   "plan_ign": {
    "type": "vector",
@@ -1570,7 +1570,7 @@
     "VF_FERRO_ROUTIER_SOU"
    ],
    "paint": {
-    "line-color": "#585858",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -1610,7 +1610,7 @@
     "VF_FERRO_ROUTIER_SOU"
    ],
    "paint": {
-    "line-color": "#585858",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -1648,7 +1648,7 @@
     "VF_ETROITE_SOU"
    ],
    "paint": {
-    "line-color": "#585858",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -1682,7 +1682,7 @@
     "VF_ETROITE_SOU"
    ],
    "paint": {
-    "line-color": "#585858",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -1719,7 +1719,7 @@
     "VF_NON_EXPLOITEE_SOU"
    ],
    "paint": {
-    "line-color": "#585858",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -1757,7 +1757,7 @@
     "TRANSPORT_URBAIN_SOU"
    ],
    "paint": {
-    "line-color": "#585858",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -1789,7 +1789,7 @@
     "TRANSPORT_URBAIN_SOU"
    ],
    "paint": {
-    "line-color": "#585858",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -4968,7 +4968,7 @@
     "LOCALE_CONSTR"
    ],
    "paint": {
-    "line-color": "#000",
+    "line-color": "#C8C8C8",
     "line-width": {
      "stops": [
       [
@@ -6036,16 +6036,55 @@
     "VF_ELEC_4"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
        10,
-       0.8
+       3
       ],
       [
        17,
-       2.5
+       11
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Ferre a niveau - intérieur - voie normale",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "ferre",
+   "minzoom": 10,
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "filter": [
+    "in",
+    "symbo",
+    "VF_1",
+    "VF_2",
+    "VF_3",
+    "VF_4",
+    "VF_ELEC_1",
+    "VF_ELEC_2",
+    "VF_ELEC_3",
+    "VF_ELEC_4"
+   ],
+   "paint": {
+    "line-color": "#000",
+    "line-width": {
+     "stops": [
+      [
+       10,
+       1.5
+      ],
+      [
+       17,
+       6
       ]
      ]
     }
@@ -6075,22 +6114,22 @@
     "VF_ELEC_4"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#fff",
     "line-width": {
      "stops": [
       [
        10,
-       3.5
+       2
       ],
       [
        17,
-       14.7
+       8
       ]
      ]
     },
     "line-dasharray": [
-     0.1,
-     10
+     3,
+     3
     ]
    }
   },
@@ -6113,7 +6152,7 @@
     "VF_ETROITE"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -6147,7 +6186,7 @@
     "VF_ETROITE"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -6184,7 +6223,7 @@
     "VF_NON_EXPLOITEE"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -6211,6 +6250,7 @@
    "source": "plan_ign",
    "source-layer": "ferre",
    "minzoom": 10,
+   "maxzoom": 18,
    "layout": {
     "visibility": "visible",
     "line-cap": "round",
@@ -6222,7 +6262,7 @@
     "VF_EN_CONSTR"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -6247,6 +6287,7 @@
    "source": "plan_ign",
    "source-layer": "ferre",
    "minzoom": 10,
+   "maxzoom": 18,
    "layout": {
     "visibility": "visible",
     "line-cap": "butt",
@@ -6258,7 +6299,7 @@
     "VF_EN_CONSTR"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -6294,16 +6335,16 @@
     "TRANSPORT_URBAIN"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
        10,
-       0.2
+       0.3
       ],
       [
        17,
-       1.6
+       1.8
       ]
      ]
     }
@@ -6326,7 +6367,7 @@
     "TRANSPORT_URBAIN"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -8484,16 +8525,55 @@
     "VF_ELEC_4_SUP"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
        10,
-       0.8
+       2
       ],
       [
        17,
-       2.5
+       11
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Ferre superieur - interieur - voie normale",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "ferre_sup",
+   "minzoom": 10,
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "filter": [
+    "in",
+    "symbo",
+    "VF_1_SUP",
+    "VF_2_SUP",
+    "VF_3_SUP",
+    "VF_4_SUP",
+    "VF_ELEC_1_SUP",
+    "VF_ELEC_2_SUP",
+    "VF_ELEC_3_SUP",
+    "VF_ELEC_4_SUP"
+   ],
+   "paint": {
+    "line-color": "#000",
+    "line-width": {
+     "stops": [
+      [
+       10,
+       1.5
+      ],
+      [
+       17,
+       6
       ]
      ]
     }
@@ -8523,22 +8603,22 @@
     "VF_ELEC_4_SUP"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#fff",
     "line-width": {
      "stops": [
       [
        10,
-       3.5
+       2
       ],
       [
        17,
-       14.7
+       8
       ]
      ]
     },
     "line-dasharray": [
-     0.1,
-     10
+     3,
+     3
     ]
    }
   },
@@ -8561,7 +8641,7 @@
     "VF_ETROITE_SUP"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -8595,7 +8675,7 @@
     "VF_ETROITE_SUP"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -8632,7 +8712,7 @@
     "VF_NON_EXPLOITEE_SUP"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -8659,6 +8739,7 @@
    "source": "plan_ign",
    "source-layer": "ferre_sup",
    "minzoom": 10,
+   "maxzoom": 18,
    "layout": {
     "visibility": "visible",
     "line-cap": "round",
@@ -8670,7 +8751,7 @@
     "VF_EN_CONSTR_SUP"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -8695,6 +8776,7 @@
    "source": "plan_ign",
    "source-layer": "ferre_sup",
    "minzoom": 10,
+   "maxzoom": 18,
    "layout": {
     "visibility": "visible",
     "line-cap": "butt",
@@ -8706,7 +8788,7 @@
     "VF_EN_CONSTR_SUP"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -8742,16 +8824,16 @@
     "TRANSPORT_URBAIN_SUP"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
        10,
-       0.2
+       0.3
       ],
       [
        17,
-       1.6
+       1.8
       ]
      ]
     }
@@ -8774,7 +8856,7 @@
     "TRANSPORT_URBAIN_SUP"
    ],
    "paint": {
-    "line-color": "#242424",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
@@ -11671,6 +11753,5 @@
     "text-halo-width": 4
    }
   }
- ],
- "id": 2
+ ]
 }

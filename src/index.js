@@ -39,9 +39,43 @@ window.api = {
     mvt._glStyle.layers = nlayers;
     mvt.applyStyle(mvt._glStyle)
   },
+  /** Copy layers from an other json
+   */
+  copy: function(from) {
+    // lut
+    var layer0 = {}
+    from.layers.forEach(l => layer0[l.id] = l)
+    // Replace
+    var layers = mvt._glStyle.layers;
+    layers.forEach((l,i) => {
+      if (layer0[l.id]) {
+        layers[i] = layer0[l.id]
+        delete(layer0[l.id])
+      }
+    })
+    // Find missing
+    if (Object.keys(layer0).length !== 0) {
+      var tmp = []
+      Object.keys(layer0).forEach(k => tmp.push(layer0[k]))
+      console.log(JSON.stringify(tmp, null, ' '))
+    }
+    // Apply
+    mvt.applyStyle(mvt._glStyle)
+  },
+  /** Save to local storage
+   */
+  save: () => {
+    localStorage.mvt = JSON.stringify(mvt._glStyle)
+  },
+  /** Load from local storage
+   */
+  load: () => {
+    return JSON.parse(localStorage.mvt)
+  },
   /** Export style in console
    */
-  export: () => {
+  export: (json) => {
+    if (json) return mvt._glStyle;
     console.log(JSON.stringify(mvt._glStyle, null, ' '))
   }
 }
