@@ -26,7 +26,20 @@ window.api = {
     })
     mvt.applyStyle(mvt._glStyle)
   },
-  /** Export style
+  /** Remove invisible layers
+   * @param {function} filter a function that takes a layer and return true to keep it
+   */
+  clean: (filter) => {
+    if (!filter) filter = function(l) { return l.layout.visibility === "visible" }
+    var layers = mvt._glStyle.layers;
+    var nlayers = []
+    layers.forEach(l => {
+      if (filter(l)) nlayers.push(l)
+    })
+    mvt._glStyle.layers = nlayers;
+    mvt.applyStyle(mvt._glStyle)
+  },
+  /** Export style in console
    */
   export: () => {
     console.log(JSON.stringify(mvt._glStyle, null, ' '))
