@@ -32,6 +32,7 @@ const layer = plink.getUrlParam('layer') || 'cyanotype'
 const mvt = new MVT({
   url: './' + layer.split('_').shift() + '/' + layer + '.json'
 })
+plink.setUrlParam('layer', layer)
 
 map.addLayer(new Geoportail({ layer: 'GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2', visible: /^erp/.test(layer) }))
 map.addLayer(mvt)
@@ -73,7 +74,7 @@ hover.on('leave', () => {
 hover.on('hover', e => {
   const f = e.feature
   if (f) {
-    popup.show(e.coordinate, f.get('layer')+ ' ' + (f.get('type_principal') || '') + '<br/>'+(f.get('symbo') || f.get('libelle') || f.get('class') || ''))
+    popup.show(e.coordinate, f.get('layer')+ ' ' + (f.get('type_principal') || '') + '<br/>'+(f.get('symbo') || f.get('libelle') || f.get('class') || f.get('nature') || ''))
   } else {
     popup.hide()
   }
