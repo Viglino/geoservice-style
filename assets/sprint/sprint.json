@@ -2,7 +2,7 @@
  "version": 8,
  "name": "Sprint map",
  "glyphs": "https://data.geopf.fr/annexes/ressources/vectorTiles/fonts/{fontstack}/{range}.pbf",
- "sprite": "./sprint/sprite",
+ "sprite": "https://viglino.github.io/geoservice-style/sprint/sprite",
  "sources": {
   "plan_ign": {
    "type": "vector",
