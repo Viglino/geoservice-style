@@ -1,0 +1,643 @@
+﻿{
+ "version": 8,
+ "name": "PLAN IGN",
+ "glyphs": "https://data.geopf.fr/annexes/ressources/vectorTiles/fonts/{fontstack}/{range}.pbf",
+ "sprite": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sprite/PlanIgn",
+ "sprite": "./standard/water",
+ "sources": {
+  "plan_ign": {
+   "type": "vector",
+   "tiles": [
+    "https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"
+   ]
+  }
+ },
+ "transition": {
+  "duration": 300,
+  "delay": 0
+ },
+ "layers": [
+  {
+   "id": "hydro surfacique - Estran",
+   "type": "fill",
+   "source": "plan_ign",
+   "source-layer": "hydro_surf",
+   "layout": {
+    "visibility": "visible"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "ZONE_D_ESTRAN"
+   ],
+   "paint": {
+    "fill-color": "#bfd9f2",
+    "fill-outline-color": "#bfd9f2"
+   }
+  },
+  {
+   "id": "hydro surfacique - marais",
+   "type": "fill",
+   "source": "plan_ign",
+   "source-layer": "hydro_surf",
+   "layout": {
+    "visibility": "visible"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "ZONE_MARAIS"
+   ],
+   "paint": {
+    "fill-pattern": "Marais"
+   }
+  },
+  {
+   "id": "hydro surfacique",
+   "type": "fill",
+   "source": "plan_ign",
+   "source-layer": "hydro_surf",
+   "layout": {
+    "visibility": "visible"
+   },
+   "filter": [
+    "in",
+    "symbo",
+    "SURFACE_D_EAU",
+    "BASSIN",
+    "ZONE_MARINE"
+   ],
+   "paint": {
+    "fill-pattern": "Ocean"
+   }
+  },
+  {
+   "id": "hydro surfacique temporaire",
+   "type": "fill",
+   "source": "plan_ign",
+   "source-layer": "hydro_surf",
+   "layout": {
+    "visibility": "visible"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "SURFACE_D_EAU_TEMP"
+   ],
+   "paint": {
+    "fill-color": "rgba(168, 203, 220, 0.5)"
+   }
+  },
+  {
+   "id": "réseau hydro  - cours d'eau souterrain",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_reseau_sou",
+   "minzoom": 18,
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "butt",
+    "line-join": "round"
+   },
+   "filter": [
+    "in",
+    "symbo",
+    "COURS_D_EAU_SOU",
+    "COURS_D_EAU_MOY_SOU"
+   ],
+   "paint": {
+    "line-color": "#AAD5E9",
+    "line-width": {
+     "stops": [
+      [
+       12,
+       1.5
+      ],
+      [
+       17,
+       6.5
+      ]
+     ]
+    },
+    "line-dasharray": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "id": "réseau hydro - filet interieur - aqueduc souterrain",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_reseau_sou",
+   "minzoom": 18,
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "butt",
+    "line-join": "round"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "AQUEDUC_SOU"
+   ],
+   "paint": {
+    "line-color": "#AAD5E9",
+    "line-width": {
+     "stops": [
+      [
+       12,
+       1.4
+      ],
+      [
+       16,
+       3.5
+      ],
+      [
+       17,
+       5.9
+      ]
+     ]
+    },
+    "line-dasharray": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "id": "réseau hydro - carre - aqueduc souterrain",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_reseau_sou",
+   "minzoom": 18,
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "butt",
+    "line-join": "round"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "AQUEDUC_SOU"
+   ],
+   "paint": {
+    "line-color": "#AAD5E9",
+    "line-width": {
+     "stops": [
+      [
+       12,
+       3.5
+      ],
+      [
+       16,
+       8.7
+      ],
+      [
+       17,
+       14.7
+      ]
+     ]
+    },
+    "line-dasharray": [
+     1,
+     5
+    ]
+   }
+  },
+  {
+   "id": "réseau hydro - cours d'eau temporaire",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_reseau",
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "butt",
+    "line-join": "round"
+   },
+   "filter": [
+    "in",
+    "symbo",
+    "COURS_D_EAU_TEMP",
+    "COURS_D_EAU_TEMP_MOY"
+   ],
+   "paint": {
+    "line-color": "#AAD5E9",
+    "line-width": {
+     "stops": [
+      [
+       12,
+       1.5
+      ],
+      [
+       17,
+       4
+      ]
+     ]
+    },
+    "line-dasharray": [
+     6,
+     2
+    ]
+   }
+  },
+  {
+   "id": "réseau hydro - cours d'eau",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_reseau",
+   "minzoom": 3,
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "COURS_D_EAU"
+   ],
+   "paint": {
+    "line-color": "#AAD5E9",
+    "line-width": {
+     "stops": [
+      [
+       4,
+       0.3
+      ],
+      [
+       7,
+       1.5
+      ],
+      [
+       12,
+       1.5
+      ],
+      [
+       17,
+       6.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "réseau hydro - canal",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_reseau",
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "CANAL"
+   ],
+   "paint": {
+    "line-color": "#AAD5E9",
+    "line-width": {
+     "stops": [
+      [
+       12,
+       1.4
+      ],
+      [
+       17,
+       5.9
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "réseau hydro - filet interieur - aqueduc",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_reseau",
+   "minzoom": 12,
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "AQUEDUC_AU_SOL"
+   ],
+   "paint": {
+    "line-color": "#AAD5E9",
+    "line-width": {
+     "stops": [
+      [
+       12,
+       1.4
+      ],
+      [
+       16,
+       3.5
+      ],
+      [
+       17,
+       5.9
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "réseau hydro - carre - aqueduc",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_reseau",
+   "minzoom": 12,
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "butt",
+    "line-join": "round"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "AQUEDUC_AU_SOL"
+   ],
+   "paint": {
+    "line-color": "#AAD5E9",
+    "line-width": {
+     "stops": [
+      [
+       12,
+       3.5
+      ],
+      [
+       16,
+       8.7
+      ],
+      [
+       17,
+       14.7
+      ]
+     ]
+    },
+    "line-dasharray": [
+     1,
+     5
+    ]
+   }
+  },
+  {
+   "id": "réseau hydro - cours d'eau moyen ",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_reseau",
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "COURS_D_EAU_MOY"
+   ],
+   "paint": {
+    "line-color": "#AAD5E9",
+    "line-width": {
+     "stops": [
+      [
+       7,
+       2
+      ],
+      [
+       12,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "réseau hydro - cours d'eau large ",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_reseau",
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "COURS_D_EAU_LAR"
+   ],
+   "paint": {
+    "line-color": "#AAD5E9",
+    "line-width": {
+     "stops": [
+      [
+       7,
+       3
+      ],
+      [
+       11,
+       5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "réseau hydro  - cours d'eau superieur",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_reseau_sup",
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "filter": [
+    "in",
+    "symbo",
+    "COURS_D_EAU_SUP",
+    "COURS_D_EAU_MOY_SUP"
+   ],
+   "paint": {
+    "line-color": "#AAD5E9",
+    "line-width": {
+     "stops": [
+      [
+       12,
+       1.5
+      ],
+      [
+       17,
+       6.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "réseau hydro - canal superieur",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_reseau_sup",
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "CANAL_SUP"
+   ],
+   "paint": {
+    "line-color": "#AAD5E9",
+    "line-width": {
+     "stops": [
+      [
+       12,
+       1.4
+      ],
+      [
+       17,
+       5.9
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "réseau hydro - filet interieur - aqueduc superieur",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_reseau_sup",
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "AQUEDUC_SUP"
+   ],
+   "paint": {
+    "line-color": "#AAD5E9",
+    "line-width": {
+     "stops": [
+      [
+       12,
+       1.4
+      ],
+      [
+       16,
+       3.5
+      ],
+      [
+       17,
+       5.9
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "réseau hydro - carre - aqueduc superieur",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_reseau_sup",
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "butt",
+    "line-join": "round"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "AQUEDUC_SUP"
+   ],
+   "paint": {
+    "line-color": "#AAD5E9",
+    "line-width": {
+     "stops": [
+      [
+       12,
+       3.5
+      ],
+      [
+       16,
+       8.7
+      ],
+      [
+       17,
+       14.7
+      ]
+     ]
+    },
+    "line-dasharray": [
+     1,
+     5
+    ]
+   }
+  },
+  {
+   "id": "hydro ponctuel",
+   "type": "circle",
+   "source": "plan_ign",
+   "source-layer": "hydro_ponc",
+   "minzoom": 15,
+   "layout": {
+    "visibility": "visible"
+   },
+   "filter": [
+    "in",
+    "symbo",
+    "FONTAINE",
+    "POINT_D_EAU",
+    "SOURCE",
+    "SOURCE_CAPTEE",
+    "PERTE",
+    "RESURGENCE",
+    "CASCADE",
+    "AUTRE_HYDRO_PONC"
+   ],
+   "paint": {
+    "circle-radius": {
+     "stops": [
+      [
+       14,
+       3
+      ],
+      [
+       17,
+       7
+      ]
+     ]
+    },
+    "circle-color": "#FFFFFF",
+    "circle-opacity": 1,
+    "circle-stroke-width": {
+     "stops": [
+      [
+       14,
+       2
+      ],
+      [
+       17,
+       5
+      ]
+     ]
+    },
+    "circle-stroke-color": "#1466B2"
+   }
+  }
+ ],
+ "id": null
+}
