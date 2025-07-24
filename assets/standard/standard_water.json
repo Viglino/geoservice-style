@@ -2,8 +2,8 @@
  "version": 8,
  "name": "PLAN IGN",
  "glyphs": "https://data.geopf.fr/annexes/ressources/vectorTiles/fonts/{fontstack}/{range}.pbf",
- "sprite": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sprite/PlanIgn",
  "sprite": "./standard/water",
+ "sprite": "https://viglino.github.io/geoservice-style/standard/water",
  "sources": {
   "plan_ign": {
    "type": "vector",
