@@ -1,20 +1,21 @@
 ﻿{
  "version": 8,
  "name": "PLAN IGN",
- "glyphs": "https://data.geopf.fr/annexes/ressources/vectorTiles/fonts/{fontstack}/{range}.pbf",
- "sprite": "./space/space_sprite",
+ "glyphs": "https://viglino.github.io/geoservice-style/fonts/{fontstack}/{range}.pbf",
  "sprite": "https://viglino.github.io/geoservice-style/space/space_sprite",
  "sources": {
   "plan_ign": {
-    "type":"vector",
-    "name": "PLAN.IGN",
-    "description": "BDUni tuilée",
-    "attribution": "<a href=\"http://www.geoportail.gouv.fr/\">Géoportail</a> &copy; <a href=\"http://www.ign.fr/\">IGN-France</a>",
-    "minzoom": 0,
-    "maxzoom": 19,
-    "crs": "EPSG:3857",
-    "format": "pbf",
-    "tiles":["https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"]
+   "type": "vector",
+   "name": "PLAN.IGN",
+   "description": "BDUni tuilée",
+   "attribution": "<a href=\"http://www.geoportail.gouv.fr/\">Géoportail</a> &copy; <a href=\"http://www.ign.fr/\">IGN-France</a>",
+   "minzoom": 0,
+   "maxzoom": 19,
+   "crs": "EPSG:3857",
+   "format": "pbf",
+   "tiles": [
+    "https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"
+   ]
   }
  },
  "transition": {
@@ -449,24 +450,24 @@
    }
   },
   {
-    "id": "ocs - Zone sable humide",
-    "type": "fill",
-    "source": "plan_ign",
-    "source-layer": "ocs_nature_sol_surf",
-    "layout": {
-     "visibility": "visible"
-    },
-    "filter": [
-     "in",
-     "symbo",
-     "ZONE_SABLE_HUMIDE",
-     "FOND_CUVETTE_HUMIDE"
-    ],
-    "paint": {
-     "fill-pattern": "SableHumide"
-    }
+   "id": "ocs - Zone sable humide",
+   "type": "fill",
+   "source": "plan_ign",
+   "source-layer": "ocs_nature_sol_surf",
+   "layout": {
+    "visibility": "visible"
    },
-   {
+   "filter": [
+    "in",
+    "symbo",
+    "ZONE_SABLE_HUMIDE",
+    "FOND_CUVETTE_HUMIDE"
+   ],
+   "paint": {
+    "fill-pattern": "SableHumide"
+   }
+  },
+  {
    "id": "ocs - Zone graviers galets secs",
    "type": "fill",
    "source": "plan_ign",
@@ -617,9 +618,9 @@
     "line-color": "#ff0",
     "line-width": 5,
     "line-dasharray": [
-      1.5,
-      1.5
-     ]
+     1.5,
+     1.5
+    ]
    }
   },
   {
@@ -4256,75 +4257,75 @@
    }
   },
   {
-    "id": "construction hydrographique linéaire - Quai",
-    "type": "line",
-    "source": "plan_ign",
-    "source-layer": "bati_lin",
-    "minzoom": 12,
-    "layout": {
-     "visibility": "visible",
-     "line-cap": "butt",
-     "line-join": "round"
-    },
-    "filter": [
-     "in",
-     "symbo",
-     "QUAI",
-     "DIGUE"
-    ],
-    "paint": {
-     "line-color": "#000",
-     "line-width": {
-      "stops": [
-       [
-        14,
-        3
-       ],
-       [
-        17,
-        5
-       ]
+   "id": "construction hydrographique linéaire - Quai",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "bati_lin",
+   "minzoom": 12,
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "butt",
+    "line-join": "round"
+   },
+   "filter": [
+    "in",
+    "symbo",
+    "QUAI",
+    "DIGUE"
+   ],
+   "paint": {
+    "line-color": "#000",
+    "line-width": {
+     "stops": [
+      [
+       14,
+       3
+      ],
+      [
+       17,
+       5
       ]
-     }
+     ]
     }
+   }
   },
   {
-    "id": "construction hydrographique linéaire - Quai - dash",
-    "type": "line",
-    "source": "plan_ign",
-    "source-layer": "bati_lin",
-    "minzoom": 12,
-    "layout": {
-     "visibility": "visible",
-     "line-cap": "butt",
-     "line-join": "round"
-    },
-    "filter": [
-     "in",
-     "symbo",
-     "QUAI",
-     "DIGUE"
-    ],
-    "paint": {
-     "line-color": "#ff0",
-     "line-dasharray": [
-       2,
-       2
-     ], 
-     "line-width": {
-      "stops": [
-       [
-        14,
-        3
-       ],
-       [
-        17,
-        5
-       ]
-      ]
-     }
-    }
+   "id": "construction hydrographique linéaire - Quai - dash",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "bati_lin",
+   "minzoom": 12,
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "butt",
+    "line-join": "round"
    },
+   "filter": [
+    "in",
+    "symbo",
+    "QUAI",
+    "DIGUE"
+   ],
+   "paint": {
+    "line-color": "#ff0",
+    "line-dasharray": [
+     2,
+     2
+    ],
+    "line-width": {
+     "stops": [
+      [
+       14,
+       3
+      ],
+      [
+       17,
+       5
+      ]
+     ]
+    }
+   }
+  },
   {
    "id": "construction hydrographique linéaire - Pecherie",
    "type": "line",
@@ -6569,8 +6570,8 @@
    "paint": {
     "line-color": "#ff0",
     "line-dasharray": [
-      2,
-      2
+     2,
+     2
     ],
     "line-width": {
      "stops": [
@@ -10911,8 +10912,7 @@
      "FXX"
     ]
    ],
-   "paint": {
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel transport aerien - Aerodrome FXX",
@@ -12940,7 +12940,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -13051,7 +13051,7 @@
     ],
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -13097,7 +13097,7 @@
     ],
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -13609,7 +13609,7 @@
     ],
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -13649,7 +13649,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -13689,7 +13689,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -14031,11 +14031,11 @@
     ],
     "visibility": "visible"
    },
-   "paint": {    
-      "text-color": "rgba(50, 150, 255, 0.3)",
-      "text-halo-width": 2,
-      "text-halo-color": "rgba(0, 128, 255, 0.4)"
-    }
+   "paint": {
+    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-halo-width": 2,
+    "text-halo-color": "rgba(0, 128, 255, 0.4)"
+   }
   },
   {
    "id": "toponyme - hydro ponc 2",
@@ -14170,7 +14170,7 @@
     ],
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -14223,7 +14223,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -14276,7 +14276,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -14393,7 +14393,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -14734,28 +14734,9 @@
     ],
     "text-padding": 1,
     "text-transform": "uppercase",
-    "text-font": {
-     "stops": [
-      [
-       1,
-       [
-        "Source Sans Pro Regular"
-       ]
-      ],
-      [
-       7,
-       [
-        "Source Sans Pro Bold"
-       ]
-      ],
-      [
-       10,
-       [
-        "Source Sans Pro Regular"
-       ]
-      ]
-     ]
-    }
+    "text-font": [
+     "Borg 9 Regular"
+    ]
    },
    "paint": {
     "text-color": "#000000",
@@ -14797,7 +14778,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -14840,7 +14821,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -14890,7 +14871,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -14940,7 +14921,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -14983,7 +14964,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -15023,7 +15004,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -15063,7 +15044,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -15103,7 +15084,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {
@@ -15153,28 +15134,9 @@
     ],
     "text-padding": 1,
     "text-transform": "uppercase",
-    "text-font": {
-     "stops": [
-      [
-       1,
-       [
-        "Source Sans Pro Regular"
-       ]
-      ],
-      [
-       7,
-       [
-        "Source Sans Pro Bold"
-       ]
-      ],
-      [
-       10,
-       [
-        "Source Sans Pro Regular"
-       ]
-      ]
-     ]
-    }
+    "text-font": [
+     "Borg 9 Regular"
+    ]
    },
    "paint": {
     "text-color": "#000000",
@@ -15213,7 +15175,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Borg 9 Regular"
     ]
    },
    "paint": {

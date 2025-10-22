@@ -26,6 +26,19 @@ window.api = {
     })
     mvt.applyStyle(mvt._glStyle)
   },
+  
+  layout: function (lut, filter){
+    var layers = mvt._glStyle.layers;
+    layers.forEach(l => {
+      if (filter(l)) {
+        Object.keys(lut).forEach(k => {
+          if (l.layout[k]) l.layout[k] = lut[k]
+        })
+      }
+    })
+    mvt.applyStyle(mvt._glStyle)
+  },
+  
   /** Remove invisible layers
    * @param {function} filter a function that takes a layer and return true to keep it
    */
@@ -79,3 +92,25 @@ window.api = {
     console.log(JSON.stringify(mvt._glStyle, null, ' '))
   }
 }
+
+/*
+api.layout({
+    "text-font": [ "Bakbak One" ],
+}, l => {
+    if (/^toponyme num/i.test(l.id)) console.log(l.id)
+    return /^toponyme/i.test(l.id)
+})
+
+api.layout({
+    "text-font": [ "Audiowide" ],
+}, l => {
+    return /^toponyme locali/i.test(l.id)
+})
+
+api.layout({
+    "text-font": [ "Wallpoet" ],
+}, l => {
+    if (/^toponyme hydro/i.test(l.id)) console.log(l.id)
+    return /^toponyme hydro/i.test(l.id)
+})
+*/
