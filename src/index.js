@@ -82,8 +82,13 @@ window.api = {
   },
   /** Load from local storage
    */
-  load: () => {
-    return JSON.parse(localStorage.mvt)
+  load: (b) => {
+    var localMvt = JSON.parse(localStorage.mvt);
+    if (b) {
+      mvt._glStyle = localMvt;
+      mvt.applyStyle(mvt._glStyle)
+    }
+    return localMvt;
   },
   /** Export style in console
    */

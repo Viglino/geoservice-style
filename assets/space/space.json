@@ -3,6 +3,7 @@
  "name": "PLAN IGN",
  "glyphs": "https://viglino.github.io/geoservice-style/fonts/{fontstack}/{range}.pbf",
  "sprite": "https://viglino.github.io/geoservice-style/space/space_sprite",
+ "sprite": "./space/space_sprite",
  "sources": {
   "plan_ign": {
    "type": "vector",
@@ -1015,7 +1016,7 @@
     "text-max-angle": 20,
     "text-max-width": 100,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -1073,7 +1074,7 @@
     "text-max-angle": 20,
     "text-max-width": 100,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -1131,7 +1132,7 @@
     "text-max-angle": 20,
     "text-max-width": 100,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -4105,8 +4106,32 @@
     "PISTE_HERBE"
    ],
    "paint": {
-    "fill-color": "#DBDBDB",
-    "fill-outline-color": "#808080"
+    "fill-color": "#555555",
+    "fill-outline-color": "#555555",
+    "fill-outline-width": 2,
+    "fill-opacity": 0.8,
+    "fill-pattern": "Piste"
+   }
+  },
+  {
+   "id": "bati transport surfacique - piste - bord",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "bati_surf",
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "filter": [
+    "in",
+    "symbo",
+    "PISTE_DUR",
+    "PISTE_HERBE"
+   ],
+   "paint": {
+    "line-color": "rgba(85, 0, 0, 0.5)",
+    "line-width": 2
    }
   },
   {
@@ -9613,7 +9638,7 @@
     "text-keep-upright": true,
     "text-max-angle": 45,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -9639,7 +9664,7 @@
     "text-keep-upright": true,
     "text-max-angle": 45,
     "text-font": [
-     "Source Sans Pro Bold"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -9667,7 +9692,7 @@
     "text-keep-upright": true,
     "text-max-angle": 45,
     "text-font": [
-     "Source Sans Pro Bold"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -10897,7 +10922,8 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Aeroport",
-    "icon-size": 0.8
+    "icon-size": 0.8,
+    "icon-allow-overlap": true
    },
    "filter": [
     "all",
@@ -10922,7 +10948,8 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Aerodrome",
-    "icon-size": 0.4
+    "icon-size": 0.8,
+    "icon-allow-overlap": true
    },
    "filter": [
     "all",
@@ -10938,9 +10965,7 @@
      "FXX"
     ]
    ],
-   "paint": {
-    "icon-color": "#646464"
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel transport aerien - Aeroport DOM",
@@ -10951,7 +10976,8 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Aeroport",
-    "icon-size": 0.5
+    "icon-size": 0.5,
+    "icon-allow-overlap": true
    },
    "filter": [
     "all",
@@ -10966,9 +10992,7 @@
      "FXX"
     ]
    ],
-   "paint": {
-    "icon-color": "#646464"
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel transport aerien - Aerodrome DOM",
@@ -10979,7 +11003,8 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Aerodrome",
-    "icon-size": 0.4
+    "icon-size": 0.8,
+    "icon-allow-overlap": true
    },
    "filter": [
     "all",
@@ -10994,9 +11019,7 @@
      "FXX"
     ]
    ],
-   "paint": {
-    "icon-color": "#646464"
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel transport ferroviaire",
@@ -11053,7 +11076,7 @@
      -1
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11094,7 +11117,7 @@
      -1.3
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11140,7 +11163,7 @@
      -1.4
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11184,7 +11207,7 @@
      -1.5
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11229,7 +11252,7 @@
      -1.6
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11275,7 +11298,7 @@
      1
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11316,7 +11339,7 @@
      1.3
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11362,7 +11385,7 @@
      1.4
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11406,7 +11429,7 @@
      1.5
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11451,7 +11474,7 @@
      1.6
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11483,7 +11506,7 @@
      "property": "rotation"
     },
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11514,7 +11537,7 @@
      "property": "rotation"
     },
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11545,7 +11568,7 @@
      "property": "rotation"
     },
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11576,7 +11599,7 @@
     "text-max-angle": 45,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11618,7 +11641,7 @@
     "text-padding": 3,
     "text-anchor": "bottom-left",
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ],
     "icon-image": "Metro",
     "icon-size": {
@@ -11661,7 +11684,7 @@
      -1
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11691,7 +11714,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11717,7 +11740,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11752,7 +11775,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11786,7 +11809,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11823,7 +11846,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11859,7 +11882,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11895,7 +11918,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11930,7 +11953,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11961,7 +11984,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11987,7 +12010,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12018,7 +12041,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12045,7 +12068,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12098,7 +12121,7 @@
     ],
     "text-padding": 3,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12127,7 +12150,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12174,7 +12197,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12208,7 +12231,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12242,7 +12265,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12291,7 +12314,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12325,7 +12348,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12360,7 +12383,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12409,7 +12432,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12449,11 +12472,11 @@
     "text-allow-overlap": true,
     "text-padding": 5,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ]
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 1,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -12476,12 +12499,12 @@
     "text-allow-overlap": true,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Wallpoet"
     ],
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 2,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -12505,7 +12528,7 @@
     "text-allow-overlap": false,
     "text-padding": 2,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12534,7 +12557,7 @@
     "text-allow-overlap": false,
     "text-padding": 2,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12564,7 +12587,7 @@
     "text-padding": 2,
     "text-anchor": "center",
     "text-font": [
-     "Source Sans Pro Semibold"
+     "Bakbak One"
     ],
     "text-rotation-alignment": "viewport"
    },
@@ -12595,7 +12618,7 @@
     "text-padding": 0,
     "text-anchor": "center",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "icon-image": "Ecluse",
     "icon-rotation-alignment": "viewport",
@@ -12631,7 +12654,7 @@
     "text-padding": 0,
     "text-anchor": "center",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "icon-image": "Ecluse",
     "icon-rotation-alignment": "viewport",
@@ -12660,7 +12683,7 @@
     "text-anchor": "center",
     "text-max-angle": 30,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -12683,7 +12706,7 @@
     "text-anchor": "center",
     "text-max-angle": 30,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -12720,7 +12743,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12756,7 +12779,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12785,7 +12808,7 @@
     "text-max-angle": 45,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -12829,7 +12852,7 @@
     "text-allow-overlap": true,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12872,11 +12895,11 @@
     "text-allow-overlap": true,
     "text-padding": 5,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ]
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 1,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -12900,7 +12923,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12940,7 +12963,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -12977,7 +13000,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13014,7 +13037,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13051,7 +13074,7 @@
     ],
     "text-padding": 1,
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -13097,7 +13120,7 @@
     ],
     "text-padding": 1,
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -13136,7 +13159,7 @@
     "text-max-angle": 45,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -13173,7 +13196,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13209,7 +13232,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13245,7 +13268,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13284,7 +13307,7 @@
     "text-padding": 1,
     "text-anchor": "center",
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13322,7 +13345,7 @@
     "text-max-angle": 45,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -13373,7 +13396,7 @@
     "text-allow-overlap": true,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13424,12 +13447,12 @@
     "text-max-angle": 45,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ],
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 1.5,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -13468,12 +13491,12 @@
     "text-max-angle": 45,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ],
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 1.5,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -13518,11 +13541,11 @@
     "text-allow-overlap": true,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ]
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 2,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -13547,7 +13570,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13573,7 +13596,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13609,7 +13632,7 @@
     ],
     "text-padding": 1,
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -13649,7 +13672,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -13689,7 +13712,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -13717,7 +13740,7 @@
     "text-allow-overlap": false,
     "text-padding": 5,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13747,7 +13770,7 @@
     "text-padding": 10,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13779,7 +13802,7 @@
     "text-padding": 10,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13818,7 +13841,7 @@
     "text-max-angle": 45,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -13858,7 +13881,7 @@
     "text-padding": 1,
     "text-anchor": "center",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13890,7 +13913,7 @@
     "text-padding": 10,
     "text-max-angle": 45,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -13945,7 +13968,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13984,7 +14007,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -14027,12 +14050,12 @@
     "text-max-angle": 45,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ],
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 2,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -14077,11 +14100,11 @@
     "text-allow-overlap": false,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ]
    },
    "paint": {
-    "text-color": "#447FB3",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-color": "#FFFFFF",
     "text-halo-width": 2
    }
@@ -14120,11 +14143,11 @@
     "text-allow-overlap": false,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ]
    },
    "paint": {
-    "text-color": "#447FB3",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-color": "#FFFFFF",
     "text-halo-width": 2
    }
@@ -14170,7 +14193,7 @@
     ],
     "text-padding": 1,
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14223,7 +14246,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14276,7 +14299,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14306,7 +14329,7 @@
     "text-padding": 5,
     "text-max-angle": 45,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -14350,7 +14373,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -14393,7 +14416,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14432,7 +14455,7 @@
     "text-padding": 1,
     "text-max-angle": 45,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -14471,7 +14494,7 @@
     "text-allow-overlap": true,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -14502,7 +14525,7 @@
     "text-allow-overlap": true,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -14542,7 +14565,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -14570,12 +14593,12 @@
     "text-keep-upright": true,
     "text-max-angle": 45,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Wallpoet"
     ],
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "#447FB3",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 2,
     "text-halo-color": "rgba(255, 255, 255, 0.5)"
    }
@@ -14607,12 +14630,12 @@
     "text-max-angle": 45,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ],
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 2,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -14636,12 +14659,12 @@
     "text-max-angle": 45,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ],
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 4,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -14683,11 +14706,11 @@
     "text-allow-overlap": true,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ]
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 2,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -14735,7 +14758,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14778,7 +14801,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14821,7 +14844,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14871,7 +14894,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14921,7 +14944,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14964,7 +14987,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -15004,7 +15027,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -15044,7 +15067,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -15084,7 +15107,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -15135,7 +15158,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -15175,7 +15198,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Borg 9 Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -15215,11 +15238,11 @@
     "text-anchor": "center",
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ]
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 4,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -15245,7 +15268,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -15275,7 +15298,7 @@
     "text-padding": 2,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -15305,7 +15328,7 @@
     "text-padding": 2,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -15334,7 +15357,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Bold"
+     "Bakbak One"
     ]
    },
    "paint": {
