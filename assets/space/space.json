@@ -228,7 +228,9 @@
    ],
    "paint": {
     "fill-color": "#EDF2D9",
-    "fill-outline-color": "#EDF2D9"
+    "fill-outline-color": "#EDF2D9",
+    "fill-pattern": "Rust",
+    "fill-opacity": 0.5
    }
   },
   {
@@ -245,7 +247,8 @@
     "ZONE_LANDE_LIGNEUSE"
    ],
    "paint": {
-    "fill-color": "#F2EECD"
+    "fill-color": "#F2EECD",
+    "fill-opacity": 0.5
    }
   },
   {
@@ -2129,7 +2132,7 @@
     "LOCALE_CONSTR_SOU"
    ],
    "paint": {
-    "line-color": "#C8C8C8",
+    "line-color": "rgba(0,0,0, 0.3)",
     "line-width": {
      "stops": [
       [
@@ -2226,7 +2229,7 @@
     "REGIONALE_CONSTR_SOU"
    ],
    "paint": {
-    "line-color": "#C8C8C8",
+    "line-color": "rgba(0,0,0, 0.3)",
     "line-width": {
      "stops": [
       [
@@ -2328,7 +2331,7 @@
     "PRINCIPALE_CONSTR_SOU"
    ],
    "paint": {
-    "line-color": "#C8C8C8",
+    "line-color": "rgba(0,0,0, 0.3)",
     "line-width": {
      "stops": [
       [
@@ -2427,7 +2430,7 @@
     "AUTOROU_CONSTR_SOU"
    ],
    "paint": {
-    "line-color": "#C8C8C8",
+    "line-color": "rgba(0,0,0, 0.3)",
     "line-width": {
      "stops": [
       [
@@ -4012,7 +4015,7 @@
     "RELIGIEUX_QQUE"
    ],
    "paint": {
-    "fill-color": "#F7CBCB"
+    "fill-color": "rgba(255,0,0,0.5)"
    }
   },
   {
@@ -4036,30 +4039,10 @@
     "RELIGIEUX_QQUE"
    ],
    "paint": {
-    "fill-color": {
-     "stops": [
-      [
-       14,
-       "#F7CBCB"
-      ],
-      [
-       15,
-       "#F7E1E1"
-      ]
-     ]
-    },
-    "fill-outline-color": {
-     "stops": [
-      [
-       14,
-       "#F7A8A8"
-      ],
-      [
-       15,
-       "#F7B7B7"
-      ]
-     ]
-    }
+    "fill-color": "rgba(255,0,0,0.5)",
+    "fill-outline-color": "yellow",
+    "fill-outline-width": 2,
+    "fill-opacity": 0.8
    }
   },
   {
@@ -4131,7 +4114,7 @@
     "NATATION_SURF"
    ],
    "paint": {
-    "fill-color": "#FFFFFF",
+    "fill-color": "#666",
     "fill-outline-color": "#FFFFFF"
    }
   },
@@ -4780,61 +4763,6 @@
    }
   },
   {
-   "id": "Routier a niveau - filet extérieur - route non revetu carrosable",
-   "type": "line",
-   "source": "plan_ign",
-   "source-layer": "routier_route",
-   "maxzoom": 18,
-   "layout": {
-    "visibility": "visible",
-    "line-cap": "round",
-    "line-join": "round"
-   },
-   "filter": [
-    "==",
-    "symbo",
-    "NON_REVETUE_CARRO"
-   ],
-   "paint": {
-    "line-color": {
-     "stops": [
-      [
-       12,
-       "#646464"
-      ],
-      [
-       17,
-       "#8C8C8C"
-      ]
-     ]
-    },
-    "line-width": {
-     "stops": [
-      [
-       14,
-       3.2
-      ],
-      [
-       15,
-       5.4
-      ],
-      [
-       16,
-       7.7
-      ],
-      [
-       17,
-       16.8
-      ]
-     ]
-    },
-    "line-dasharray": [
-     2,
-     2
-    ]
-   }
-  },
-  {
    "id": "Routier a niveau - filet interieur - route non revetu carrosable",
    "type": "line",
    "source": "plan_ign",
@@ -4850,28 +4778,28 @@
     "NON_REVETUE_CARRO"
    ],
    "paint": {
-    "line-color": "#FFFFFF",
+    "line-color": "#000",
     "line-width": {
      "stops": [
       [
        14,
-       2.3
+       2
       ],
       [
        15,
-       4.1
+       3
       ],
       [
        16,
-       6.3
+       4
       ],
       [
        17,
-       13.5
+       6
       ],
       [
        18,
-       16.8
+       8
       ]
      ]
     }
@@ -4957,18 +4885,7 @@
     "NON_CLASSEE_RESTREINT"
    ],
    "paint": {
-    "line-color": {
-     "stops": [
-      [
-       17,
-       "#969696"
-      ],
-      [
-       18,
-       "#FFFFFF"
-      ]
-     ]
-    },
+    "line-color": "rgba(255,255,255, 0.3)",
     "line-width": {
      "stops": [
       [
@@ -4997,7 +4914,7 @@
    "source": "plan_ign",
    "source-layer": "routier_route",
    "layout": {
-    "visibility": "visible",
+    "visibility": "hidden",
     "line-cap": "round",
     "line-join": "round"
    },
@@ -5008,18 +4925,7 @@
     "NON_CLASSEE"
    ],
    "paint": {
-    "line-color": {
-     "stops": [
-      [
-       17,
-       "#969696"
-      ],
-      [
-       18,
-       "#FFFFFF"
-      ]
-     ]
-    },
+    "line-color": "rgba(255,255,255,0.3)",
     "line-width": {
      "stops": [
       [
@@ -5063,26 +4969,7 @@
     "LOCALE_1"
    ],
    "paint": {
-    "line-color": {
-     "stops": [
-      [
-       12,
-       "#8C8C8C"
-      ],
-      [
-       13,
-       "#B4B4B4"
-      ],
-      [
-       17,
-       "#B4B4B4"
-      ],
-      [
-       18,
-       "#FFFFFF"
-      ]
-     ]
-    },
+    "line-color": "rgba(255,255,255,0.3)",
     "line-width": {
      "stops": [
       [
@@ -5127,7 +5014,7 @@
     "LOCALE_CONSTR"
    ],
    "paint": {
-    "line-color": "#C8C8C8",
+    "line-color": "rgba(255,255,255,0.3)",
     "line-width": {
      "stops": [
       [
@@ -5175,26 +5062,7 @@
     "REGIONALE_1"
    ],
    "paint": {
-    "line-color": {
-     "stops": [
-      [
-       9,
-       "#828282"
-      ],
-      [
-       10,
-       "#B4B4B4"
-      ],
-      [
-       17,
-       "#B4B4B4"
-      ],
-      [
-       18,
-       "#FFFFFF"
-      ]
-     ]
-    },
+    "line-color": "rgba(255,255,255,0.3)",
     "line-width": {
      "stops": [
       [
@@ -5243,7 +5111,7 @@
     "REGIONALE_CONSTR"
    ],
    "paint": {
-    "line-color": "#C8C8C8",
+    "line-color": "rgba(255,255,255,0.3)",
     "line-width": {
      "stops": [
       [
@@ -5295,18 +5163,7 @@
     "PRINCIPALE_1"
    ],
    "paint": {
-    "line-color": {
-     "stops": [
-      [
-       17,
-       "#E2A52A"
-      ],
-      [
-       18,
-       "#FFFFFF"
-      ]
-     ]
-    },
+    "line-color": "rgba(255,255,255,0.3)",
     "line-width": {
      "stops": [
       [
@@ -5355,7 +5212,7 @@
     "PRINCIPALE_CONSTR"
    ],
    "paint": {
-    "line-color": "#C8C8C8",
+    "line-color": "rgba(255,255,255,0.3)",
     "line-width": {
      "stops": [
       [
@@ -5404,22 +5261,7 @@
     "AUTOROU_LIBRE"
    ],
    "paint": {
-    "line-color": {
-     "stops": [
-      [
-       9,
-       "#DE460E"
-      ],
-      [
-       17,
-       "#F18800"
-      ],
-      [
-       18,
-       "#FFFFFF"
-      ]
-     ]
-    },
+    "line-color": "rgba(242,178,48,0.5)",
     "line-width": {
      "stops": [
       [
@@ -5468,7 +5310,7 @@
     "AUTOROU_CONSTR"
    ],
    "paint": {
-    "line-color": "#C8C8C8",
+    "line-color": "rgba(0,0,0,0.3)",
     "line-width": {
      "stops": [
       [
@@ -5577,24 +5419,24 @@
     "NON_CLASSEE_RESTREINT"
    ],
    "paint": {
-    "line-color": "#EDF1FF",
+    "line-color": "#666",
     "line-width": {
      "stops": [
       [
        14,
-       2.3
+       2
       ],
       [
        15,
-       4.1
+       3
       ],
       [
        16,
-       6.3
+       4
       ],
       [
        17,
-       13.5
+       6
       ]
      ]
     }
@@ -5618,24 +5460,24 @@
     "NON_CLASSEE"
    ],
    "paint": {
-    "line-color": "#FFFFFF",
+    "line-color": "#555",
     "line-width": {
      "stops": [
       [
        14,
-       2.3
+       2
       ],
       [
        15,
-       4.1
+       3
       ],
       [
        16,
-       6.3
+       4
       ],
       [
        17,
-       13.5
+       6
       ]
      ]
     }
@@ -8024,22 +7866,7 @@
     "AUTOROU_LIBRE_SUP"
    ],
    "paint": {
-    "line-color": {
-     "stops": [
-      [
-       9,
-       "#DE460E"
-      ],
-      [
-       17,
-       "#F18800"
-      ],
-      [
-       18,
-       "#FFFFFF"
-      ]
-     ]
-    },
+    "line-color": "rgba(242,178,48,0.5)",
     "line-width": {
      "stops": [
       [
@@ -14146,9 +13973,9 @@
    },
    "paint": {
     "text-color": "rgba(255, 255, 255, 0.7)",
-    "text-halo-color": "#FFFFFF",
-    "text-halo-width": 2
-   }
+    "text-halo-width": 2,
+    "text-halo-color": "rgba(0, 128, 255, 0.4)"
+    }
   },
   {
    "id": "toponyme - hydro ponc 2B",
