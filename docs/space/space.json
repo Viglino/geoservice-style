@@ -1,20 +1,22 @@
 ﻿{
  "version": 8,
  "name": "PLAN IGN",
- "glyphs": "https://data.geopf.fr/annexes/ressources/vectorTiles/fonts/{fontstack}/{range}.pbf",
- "sprite": "./space/space_sprite",
+ "glyphs": "https://viglino.github.io/geoservice-style/fonts/{fontstack}/{range}.pbf",
  "sprite": "https://viglino.github.io/geoservice-style/space/space_sprite",
+ "sprite": "./space/space_sprite",
  "sources": {
   "plan_ign": {
-    "type":"vector",
-    "name": "PLAN.IGN",
-    "description": "BDUni tuilée",
-    "attribution": "<a href=\"http://www.geoportail.gouv.fr/\">Géoportail</a> &copy; <a href=\"http://www.ign.fr/\">IGN-France</a>",
-    "minzoom": 0,
-    "maxzoom": 19,
-    "crs": "EPSG:3857",
-    "format": "pbf",
-    "tiles":["https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"]
+   "type": "vector",
+   "name": "PLAN.IGN",
+   "description": "BDUni tuilée",
+   "attribution": "<a href=\"http://www.geoportail.gouv.fr/\">Géoportail</a> &copy; <a href=\"http://www.ign.fr/\">IGN-France</a>",
+   "minzoom": 0,
+   "maxzoom": 19,
+   "crs": "EPSG:3857",
+   "format": "pbf",
+   "tiles": [
+    "https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"
+   ]
   }
  },
  "transition": {
@@ -207,7 +209,8 @@
    ],
    "paint": {
     "fill-color": "#DFE8D5",
-    "fill-outline-color": "#DFE8D5"
+    "fill-outline-color": "#DFE8D5",
+    "fill-pattern": "Rust"
    }
   },
   {
@@ -449,24 +452,24 @@
    }
   },
   {
-    "id": "ocs - Zone sable humide",
-    "type": "fill",
-    "source": "plan_ign",
-    "source-layer": "ocs_nature_sol_surf",
-    "layout": {
-     "visibility": "visible"
-    },
-    "filter": [
-     "in",
-     "symbo",
-     "ZONE_SABLE_HUMIDE",
-     "FOND_CUVETTE_HUMIDE"
-    ],
-    "paint": {
-     "fill-pattern": "SableHumide"
-    }
+   "id": "ocs - Zone sable humide",
+   "type": "fill",
+   "source": "plan_ign",
+   "source-layer": "ocs_nature_sol_surf",
+   "layout": {
+    "visibility": "visible"
    },
-   {
+   "filter": [
+    "in",
+    "symbo",
+    "ZONE_SABLE_HUMIDE",
+    "FOND_CUVETTE_HUMIDE"
+   ],
+   "paint": {
+    "fill-pattern": "SableHumide"
+   }
+  },
+  {
    "id": "ocs - Zone graviers galets secs",
    "type": "fill",
    "source": "plan_ign",
@@ -563,6 +566,7 @@
    ],
    "paint": {
     "fill-color": "#E8E2D1",
+    "fill-pattern": "Struct",
     "fill-opacity": {
      "stops": [
       [
@@ -617,9 +621,9 @@
     "line-color": "#ff0",
     "line-width": 5,
     "line-dasharray": [
-      1.5,
-      1.5
-     ]
+     1.5,
+     1.5
+    ]
    }
   },
   {
@@ -1014,7 +1018,7 @@
     "text-max-angle": 20,
     "text-max-width": 100,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -1072,7 +1076,7 @@
     "text-max-angle": 20,
     "text-max-width": 100,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -1130,7 +1134,7 @@
     "text-max-angle": 20,
     "text-max-width": 100,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -1179,6 +1183,41 @@
     "fill-outline-color": "#000",
     "fill-pattern": "Eau"
    }
+  },
+  {
+   "id": "hydro surfacique - bordure",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_surf",
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "butt",
+    "line-join": "round"
+   },
+   "filter": [
+    "in",
+    "symbo",
+    "BASSIN"
+   ],
+   "paint": {
+    "line-color": "#fe1100",
+    "line-dasharray": [
+     2,
+     2
+    ],
+    "line-width": {
+     "stops": [
+      [
+       14,
+       3
+      ],
+      [
+       17,
+       5
+      ]
+     ]
+    }
+  }
   },
   {
    "id": "hydro surfacique temporaire",
@@ -3481,7 +3520,8 @@
     "MAIRIE_ANNEXE"
    ],
    "paint": {
-    "fill-color": "#FFA6A6"
+    "fill-color": "#FFA6A6",
+    "fill-pattern": "Rust2"
    }
   },
   {
@@ -3512,7 +3552,8 @@
       ]
      ]
     },
-    "fill-outline-color": "#FF7C7C"
+    "fill-outline-color": "#FF7C7C",
+    "fill-pattern": "Rust2"
    }
   },
   {
@@ -3587,7 +3628,8 @@
     "HANGAR_PUBLIC"
    ],
    "paint": {
-    "fill-color": "#B9B6D6"
+    "fill-color": "#B9B6D6",
+    "fill-pattern": "Metal"
    }
   },
   {
@@ -3618,6 +3660,7 @@
       ]
      ]
     },
+    "fill-pattern": "Metal",
     "fill-outline-color": "#A6A1D6"
    }
   },
@@ -3735,7 +3778,8 @@
     "BATI_QQUE"
    ],
    "paint": {
-    "fill-color": "#D6C6B8"
+    "fill-color": "#D6C6B8",
+    "fill-pattern": "Struct"
    }
   },
   {
@@ -3753,6 +3797,7 @@
     "BATI_QQUE"
    ],
    "paint": {
+    "fill-pattern": "Struct",
     "fill-color": {
      "stops": [
       [
@@ -4038,7 +4083,33 @@
    ],
    "paint": {
     "fill-color": "#9B9B9B",
-    "fill-outline-color": "#6E6E6E"
+    "fill-pattern": "Construct"
+   }
+  },
+  {
+   "id": "bati remarquable surfacique - bord",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "bati_surf",
+   "minzoom": 13,
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "filter": [
+    "in",
+    "symbo",
+    "FORTIF_SURF",
+    "CHATEAU_SURF",
+    "TOUR_MOULIN_SURF",
+    "ARENE_THEATRE",
+    "ARC_TRIOMPHE_SURF",
+    "MONUMENT_SURF"
+   ],
+   "paint": {
+    "line-color": "#f00",
+    "line-width": 2
    }
   },
   {
@@ -4104,8 +4175,32 @@
     "PISTE_HERBE"
    ],
    "paint": {
-    "fill-color": "#DBDBDB",
-    "fill-outline-color": "#808080"
+    "fill-color": "#555555",
+    "fill-outline-color": "#555555",
+    "fill-outline-width": 2,
+    "fill-opacity": 0.8,
+    "fill-pattern": "Piste"
+   }
+  },
+  {
+   "id": "bati transport surfacique - piste - bord",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "bati_surf",
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "filter": [
+    "in",
+    "symbo",
+    "PISTE_DUR",
+    "PISTE_HERBE"
+   ],
+   "paint": {
+    "line-color": "rgba(85, 0, 0, 0.5)",
+    "line-width": 2
    }
   },
   {
@@ -4256,75 +4351,75 @@
    }
   },
   {
-    "id": "construction hydrographique linéaire - Quai",
-    "type": "line",
-    "source": "plan_ign",
-    "source-layer": "bati_lin",
-    "minzoom": 12,
-    "layout": {
-     "visibility": "visible",
-     "line-cap": "butt",
-     "line-join": "round"
-    },
-    "filter": [
-     "in",
-     "symbo",
-     "QUAI",
-     "DIGUE"
-    ],
-    "paint": {
-     "line-color": "#000",
-     "line-width": {
-      "stops": [
-       [
-        14,
-        3
-       ],
-       [
-        17,
-        5
-       ]
+   "id": "construction hydrographique linéaire - Quai",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "bati_lin",
+   "minzoom": 12,
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "butt",
+    "line-join": "round"
+   },
+   "filter": [
+    "in",
+    "symbo",
+    "QUAI",
+    "DIGUE"
+   ],
+   "paint": {
+    "line-color": "#000",
+    "line-width": {
+     "stops": [
+      [
+       14,
+       3
+      ],
+      [
+       17,
+       5
       ]
-     }
+     ]
     }
+   }
   },
   {
-    "id": "construction hydrographique linéaire - Quai - dash",
-    "type": "line",
-    "source": "plan_ign",
-    "source-layer": "bati_lin",
-    "minzoom": 12,
-    "layout": {
-     "visibility": "visible",
-     "line-cap": "butt",
-     "line-join": "round"
-    },
-    "filter": [
-     "in",
-     "symbo",
-     "QUAI",
-     "DIGUE"
-    ],
-    "paint": {
-     "line-color": "#ff0",
-     "line-dasharray": [
-       2,
-       2
-     ], 
-     "line-width": {
-      "stops": [
-       [
-        14,
-        3
-       ],
-       [
-        17,
-        5
-       ]
-      ]
-     }
-    }
+   "id": "construction hydrographique linéaire - Quai - dash",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "bati_lin",
+   "minzoom": 12,
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "butt",
+    "line-join": "round"
    },
+   "filter": [
+    "in",
+    "symbo",
+    "QUAI",
+    "DIGUE"
+   ],
+   "paint": {
+    "line-color": "#ff0",
+    "line-dasharray": [
+     2,
+     2
+    ],
+    "line-width": {
+     "stops": [
+      [
+       14,
+       3
+      ],
+      [
+       17,
+       5
+      ]
+     ]
+    }
+   }
+  },
   {
    "id": "construction hydrographique linéaire - Pecherie",
    "type": "line",
@@ -4437,11 +4532,11 @@
      "stops": [
       [
        17,
-       "#8C7274"
+       "#f00"
       ],
       [
        18,
-       "#C8C8C8"
+       "#f00"
       ]
      ]
     },
@@ -4532,11 +4627,11 @@
      "stops": [
       [
        17,
-       "#8C7274"
+       "#ffe"
       ],
       [
        18,
-       "#F8E5D5"
+       "#ffe"
       ]
      ]
     },
@@ -6569,8 +6664,8 @@
    "paint": {
     "line-color": "#ff0",
     "line-dasharray": [
-      2,
-      2
+     2,
+     2
     ],
     "line-width": {
      "stops": [
@@ -9612,7 +9707,7 @@
     "text-keep-upright": true,
     "text-max-angle": 45,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -9638,7 +9733,7 @@
     "text-keep-upright": true,
     "text-max-angle": 45,
     "text-font": [
-     "Source Sans Pro Bold"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -9666,7 +9761,7 @@
     "text-keep-upright": true,
     "text-max-angle": 45,
     "text-font": [
-     "Source Sans Pro Bold"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -10246,29 +10341,29 @@
      "stops": [
       [
        14,
-       3
+       10
       ],
       [
        17,
-       7
+       15
       ]
      ]
     },
-    "circle-color": "#FFFFFF",
+    "circle-color": "rgba(200,255,255,0.8)",
     "circle-opacity": 1,
     "circle-stroke-width": {
      "stops": [
       [
        14,
-       2
+       15
       ],
       [
        17,
-       5
+       20
       ]
      ]
     },
-    "circle-stroke-color": "#1466B2"
+    "circle-stroke-color": "rgba(200,255,255,0.5)"
    }
   },
   {
@@ -10316,16 +10411,14 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Hopital",
-    "icon-size": 0.33
+    "icon-size": 1
    },
    "filter": [
     "==",
     "symbo",
     "HOPITAL_PONC"
    ],
-   "paint": {
-    "icon-color": "#646464"
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel hydrographique",
@@ -10629,6 +10722,7 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "ConstrSpeciale",
+    "icon-allow-overlap": true,
     "icon-size": {
      "stops": [
       [
@@ -10657,9 +10751,7 @@
     "TOUR_GUET",
     "TOUR_HERTZIENNE"
    ],
-   "paint": {
-    "icon-color": "#646464"
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel infrastructure - Silo",
@@ -10896,7 +10988,8 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Aeroport",
-    "icon-size": 0.8
+    "icon-size": 0.8,
+    "icon-allow-overlap": true
    },
    "filter": [
     "all",
@@ -10911,8 +11004,7 @@
      "FXX"
     ]
    ],
-   "paint": {
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel transport aerien - Aerodrome FXX",
@@ -10922,7 +11014,8 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Aerodrome",
-    "icon-size": 0.4
+    "icon-size": 0.8,
+    "icon-allow-overlap": true
    },
    "filter": [
     "all",
@@ -10938,9 +11031,7 @@
      "FXX"
     ]
    ],
-   "paint": {
-    "icon-color": "#646464"
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel transport aerien - Aeroport DOM",
@@ -10951,7 +11042,8 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Aeroport",
-    "icon-size": 0.5
+    "icon-size": 0.5,
+    "icon-allow-overlap": true
    },
    "filter": [
     "all",
@@ -10966,9 +11058,7 @@
      "FXX"
     ]
    ],
-   "paint": {
-    "icon-color": "#646464"
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel transport aerien - Aerodrome DOM",
@@ -10979,7 +11069,8 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Aerodrome",
-    "icon-size": 0.4
+    "icon-size": 0.8,
+    "icon-allow-overlap": true
    },
    "filter": [
     "all",
@@ -10994,9 +11085,7 @@
      "FXX"
     ]
    ],
-   "paint": {
-    "icon-color": "#646464"
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel transport ferroviaire",
@@ -11053,7 +11142,7 @@
      -1
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11094,7 +11183,7 @@
      -1.3
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11140,7 +11229,7 @@
      -1.4
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11184,7 +11273,7 @@
      -1.5
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11229,7 +11318,7 @@
      -1.6
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11275,7 +11364,7 @@
      1
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11316,7 +11405,7 @@
      1.3
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11362,7 +11451,7 @@
      1.4
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11406,7 +11495,7 @@
      1.5
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11451,7 +11540,7 @@
      1.6
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11483,7 +11572,7 @@
      "property": "rotation"
     },
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11514,7 +11603,7 @@
      "property": "rotation"
     },
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11545,7 +11634,7 @@
      "property": "rotation"
     },
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11576,7 +11665,7 @@
     "text-max-angle": 45,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11587,57 +11676,32 @@
    }
   },
   {
-   "id": "toponyme bati station de métro + bati ponctuel metro",
-   "type": "symbol",
-   "source": "plan_ign",
-   "source-layer": "toponyme_bati_ponc",
-   "minzoom": 14,
-   "filter": [
-    "all",
-    [
-     "==",
-     "txt_typo",
-     "TYPO_E_1"
+    "id": "toponyme bati station de métro + bati ponctuel metro",
+    "type": "symbol",
+    "source": "plan_ign",
+    "source-layer": "toponyme_bati_ponc",
+    "minzoom":14,
+    "filter": ["all",
+      ["==","txt_typo","TYPO_E_GE"],
+      ["==","symbo","STATION_METRO"]
     ],
-    [
-     "==",
-     "symbo",
-     "STATION_METRO"
-    ]
-   ],
-   "layout": {
-    "visibility": "visible",
-    "symbol-placement": "point",
-    "text-field": "{texte}",
-    "text-size": 11,
-    "text-allow-overlap": false,
-    "text-offset": [
-     0.3,
-     -0.25
-    ],
-    "text-padding": 3,
-    "text-anchor": "bottom-left",
-    "text-font": [
-     "Source Sans Pro"
-    ],
-    "icon-image": "Metro",
-    "icon-size": {
-     "stops": [
-      [
-       15,
-       0.33
-      ],
-      [
-       17,
-       0.6
-      ]
-     ]
+    "layout": {
+      "visibility": "visible",
+      "symbol-placement": "point",
+      "text-field": "{texte}",
+      "text-size": 11,
+      "text-allow-overlap": false,
+      "text-offset": [0.30, -0.25],
+      "text-padding": 3,
+      "text-anchor": "bottom-left",
+      "text-font": ["Bakbak One"],
+      "icon-image": "Metro",
+      "icon-allow-overlap": true,
+      "icon-size": { "stops": [[15, 0.5], [17, 0.6]] }
+    },
+    "paint": {
+      "text-color": "#3C3C3C"
     }
-   },
-   "paint": {
-    "text-color": "#3C3C3C",
-    "icon-color": "#646464"
-   }
   },
   {
    "id": "toponyme ferre lineaire",
@@ -11661,7 +11725,7 @@
      -1
     ],
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -11691,7 +11755,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11717,7 +11781,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11752,7 +11816,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11786,7 +11850,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11823,7 +11887,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11859,7 +11923,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11895,7 +11959,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11930,7 +11994,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11961,7 +12025,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -11987,7 +12051,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12018,7 +12082,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12045,7 +12109,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12098,7 +12162,7 @@
     ],
     "text-padding": 3,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12127,7 +12191,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12174,7 +12238,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12208,7 +12272,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12242,7 +12306,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12291,7 +12355,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12325,7 +12389,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12360,7 +12424,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12409,7 +12473,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12449,11 +12513,11 @@
     "text-allow-overlap": true,
     "text-padding": 5,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ]
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 1,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -12476,12 +12540,12 @@
     "text-allow-overlap": true,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Wallpoet"
     ],
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 2,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -12505,7 +12569,7 @@
     "text-allow-overlap": false,
     "text-padding": 2,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12534,7 +12598,7 @@
     "text-allow-overlap": false,
     "text-padding": 2,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12564,7 +12628,7 @@
     "text-padding": 2,
     "text-anchor": "center",
     "text-font": [
-     "Source Sans Pro Semibold"
+     "Bakbak One"
     ],
     "text-rotation-alignment": "viewport"
    },
@@ -12595,7 +12659,7 @@
     "text-padding": 0,
     "text-anchor": "center",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "icon-image": "Ecluse",
     "icon-rotation-alignment": "viewport",
@@ -12631,7 +12695,7 @@
     "text-padding": 0,
     "text-anchor": "center",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "icon-image": "Ecluse",
     "icon-rotation-alignment": "viewport",
@@ -12660,7 +12724,7 @@
     "text-anchor": "center",
     "text-max-angle": 30,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -12683,7 +12747,7 @@
     "text-anchor": "center",
     "text-max-angle": 30,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -12720,7 +12784,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12756,7 +12820,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12785,7 +12849,7 @@
     "text-max-angle": 45,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -12829,7 +12893,7 @@
     "text-allow-overlap": true,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12872,11 +12936,11 @@
     "text-allow-overlap": true,
     "text-padding": 5,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ]
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 1,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -12900,7 +12964,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -12940,7 +13004,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -12977,7 +13041,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13014,7 +13078,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13051,7 +13115,7 @@
     ],
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -13097,7 +13161,7 @@
     ],
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -13136,7 +13200,7 @@
     "text-max-angle": 45,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -13173,7 +13237,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13209,7 +13273,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13245,7 +13309,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13284,7 +13348,7 @@
     "text-padding": 1,
     "text-anchor": "center",
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13322,7 +13386,7 @@
     "text-max-angle": 45,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -13373,7 +13437,7 @@
     "text-allow-overlap": true,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13424,12 +13488,12 @@
     "text-max-angle": 45,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ],
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 1.5,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -13468,12 +13532,12 @@
     "text-max-angle": 45,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ],
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 1.5,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -13518,11 +13582,11 @@
     "text-allow-overlap": true,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ]
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 2,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -13547,7 +13611,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13573,7 +13637,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13609,7 +13673,7 @@
     ],
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -13649,7 +13713,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -13689,7 +13753,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -13717,7 +13781,7 @@
     "text-allow-overlap": false,
     "text-padding": 5,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13747,7 +13811,7 @@
     "text-padding": 10,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13779,7 +13843,7 @@
     "text-padding": 10,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13818,7 +13882,7 @@
     "text-max-angle": 45,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -13858,7 +13922,7 @@
     "text-padding": 1,
     "text-anchor": "center",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13890,7 +13954,7 @@
     "text-padding": 10,
     "text-max-angle": 45,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -13945,7 +14009,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -13984,7 +14048,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -14027,15 +14091,15 @@
     "text-max-angle": 45,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ],
     "visibility": "visible"
    },
-   "paint": {    
-      "text-color": "rgba(50, 150, 255, 0.3)",
-      "text-halo-width": 2,
-      "text-halo-color": "rgba(0, 128, 255, 0.4)"
-    }
+   "paint": {
+    "text-color": "rgba(255, 255, 255, 0.7)",
+    "text-halo-width": 2,
+    "text-halo-color": "rgba(0, 128, 255, 0.4)"
+   }
   },
   {
    "id": "toponyme - hydro ponc 2",
@@ -14077,11 +14141,11 @@
     "text-allow-overlap": false,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ]
    },
    "paint": {
-    "text-color": "#447FB3",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-color": "#FFFFFF",
     "text-halo-width": 2
    }
@@ -14120,11 +14184,11 @@
     "text-allow-overlap": false,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ]
    },
    "paint": {
-    "text-color": "#447FB3",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-color": "#FFFFFF",
     "text-halo-width": 2
    }
@@ -14170,7 +14234,7 @@
     ],
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14223,7 +14287,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14276,7 +14340,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14306,7 +14370,7 @@
     "text-padding": 5,
     "text-max-angle": 45,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -14350,7 +14414,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -14393,7 +14457,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14432,7 +14496,7 @@
     "text-padding": 1,
     "text-max-angle": 45,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ],
     "visibility": "visible"
    },
@@ -14471,7 +14535,7 @@
     "text-allow-overlap": true,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -14502,7 +14566,7 @@
     "text-allow-overlap": true,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -14542,7 +14606,7 @@
     "text-allow-overlap": false,
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -14570,12 +14634,12 @@
     "text-keep-upright": true,
     "text-max-angle": 45,
     "text-font": [
-     "Source Sans Pro Italic"
+     "Wallpoet"
     ],
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "#447FB3",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 2,
     "text-halo-color": "rgba(255, 255, 255, 0.5)"
    }
@@ -14607,12 +14671,12 @@
     "text-max-angle": 45,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ],
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 2,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -14636,12 +14700,12 @@
     "text-max-angle": 45,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ],
     "visibility": "visible"
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 4,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -14683,11 +14747,11 @@
     "text-allow-overlap": true,
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ]
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 2,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -14734,28 +14798,9 @@
     ],
     "text-padding": 1,
     "text-transform": "uppercase",
-    "text-font": {
-     "stops": [
-      [
-       1,
-       [
-        "Source Sans Pro Regular"
-       ]
-      ],
-      [
-       7,
-       [
-        "Source Sans Pro Bold"
-       ]
-      ],
-      [
-       10,
-       [
-        "Source Sans Pro Regular"
-       ]
-      ]
-     ]
-    }
+    "text-font": [
+     "Audiowide"
+    ]
    },
    "paint": {
     "text-color": "#000000",
@@ -14797,7 +14842,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14840,7 +14885,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14890,7 +14935,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14940,7 +14985,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -14983,7 +15028,7 @@
     "text-anchor": "center",
     "text-padding": 1,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -15023,7 +15068,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -15063,7 +15108,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -15103,7 +15148,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -15153,28 +15198,9 @@
     ],
     "text-padding": 1,
     "text-transform": "uppercase",
-    "text-font": {
-     "stops": [
-      [
-       1,
-       [
-        "Source Sans Pro Regular"
-       ]
-      ],
-      [
-       7,
-       [
-        "Source Sans Pro Bold"
-       ]
-      ],
-      [
-       10,
-       [
-        "Source Sans Pro Regular"
-       ]
-      ]
-     ]
-    }
+    "text-font": [
+     "Audiowide"
+    ]
    },
    "paint": {
     "text-color": "#000000",
@@ -15213,7 +15239,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Audiowide"
     ]
    },
    "paint": {
@@ -15253,11 +15279,11 @@
     "text-anchor": "center",
     "text-padding": 10,
     "text-font": [
-     "Source Sans Pro Regular"
+     "Wallpoet"
     ]
    },
    "paint": {
-    "text-color": "rgba(50, 150, 255, 0.3)",
+    "text-color": "rgba(255, 255, 255, 0.7)",
     "text-halo-width": 4,
     "text-halo-color": "rgba(0, 128, 255, 0.4)"
    }
@@ -15283,7 +15309,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -15313,7 +15339,7 @@
     "text-padding": 2,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -15343,7 +15369,7 @@
     "text-padding": 2,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Regular"
+     "Bakbak One"
     ]
    },
    "paint": {
@@ -15372,7 +15398,7 @@
     "text-padding": 1,
     "text-transform": "uppercase",
     "text-font": [
-     "Source Sans Pro Bold"
+     "Bakbak One"
     ]
    },
    "paint": {

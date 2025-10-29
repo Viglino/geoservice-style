@@ -1,0 +1,119 @@
+﻿{
+ "version": 8,
+ "name": "PLAN IGN",
+ "glyphs": "https://data.geopf.fr/annexes/ressources/vectorTiles/fonts/{fontstack}/{range}.pbf",
+ "sprite": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sprite/PlanIgn",
+ "sources": {
+  "plan_ign": {
+   "type": "vector",
+   "tiles": [
+    "https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"
+   ]
+  }
+ },
+ "transition": {
+  "duration": 300,
+  "delay": 0
+ },
+ "layers": [
+  {
+   "id": "toponyme - golfe ponc",
+   "type": "symbol",
+   "source": "plan_ign",
+   "source-layer": "toponyme_hydro_ponc",
+   "minzoom": 1,
+   "filter": [
+      "any", [
+        ">=",[
+          "index-of",
+          "GOLFE",
+          ["get", "texte"]
+        ], 
+        0
+      ],[
+        ">=",[
+          "index-of",
+          "Golfe",
+          ["get", "texte"]
+        ], 
+        0
+      ],[
+        ">=",[
+          "index-of",
+          "golfe",
+          ["get", "texte"]
+        ], 
+        0
+      ]
+      
+   ],
+   "layout": {
+    "visibility": "visible",
+    "symbol-placement": "point",
+    "text-field": "{texte}",
+    "text-size": 20,
+    "text-allow-overlap": true,
+    "text-anchor": "center",
+    "text-padding": 10,
+    "text-font": [
+     "Source Sans Pro Regular"
+    ]
+   },
+   "paint": {
+    "text-color": "#447FB3",
+    "text-halo-color": "rgba(255, 255, 255, 0.5)",
+    "text-halo-width": 4
+   }
+  },
+  {
+   "id": "toponyme - lineaire Golfe",
+   "type": "symbol",
+   "source": "plan_ign",
+   "source-layer": "toponyme_hydro_lin",
+   "filter": [
+      "any", [
+        ">=",[
+          "index-of",
+          "GOLFE",
+          ["get", "texte"]
+        ], 
+        0
+      ],[
+        ">=",[
+          "index-of",
+          "Golfe",
+          ["get", "texte"]
+        ], 
+        0
+      ],[
+        ">=",[
+          "index-of",
+          "golfe",
+          ["get", "texte"]
+        ], 
+        0
+      ]
+      
+   ],
+   "layout": {
+    "symbol-placement": "line",
+    "text-field": "{texte}",
+    "text-size": 30,
+    "text-anchor": "center",
+    "text-keep-upright": true,
+    "text-max-angle": 45,
+    "text-padding": 10,
+    "text-font": [
+     "Source Sans Pro Regular"
+    ],
+    "visibility": "visible"
+   },
+   "paint": {
+    "text-color": "#447FB3",
+    "text-halo-width": 4,
+    "text-halo-color": "rgba(255, 255, 255, 0.5)"
+   }
+  }
+ ],
+ "id": null
+}
