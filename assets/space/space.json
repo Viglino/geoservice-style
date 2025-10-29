@@ -209,7 +209,8 @@
    ],
    "paint": {
     "fill-color": "#DFE8D5",
-    "fill-outline-color": "#DFE8D5"
+    "fill-outline-color": "#DFE8D5",
+    "fill-pattern": "Rust"
    }
   },
   {
@@ -565,6 +566,7 @@
    ],
    "paint": {
     "fill-color": "#E8E2D1",
+    "fill-pattern": "Struct",
     "fill-opacity": {
      "stops": [
       [
@@ -1181,6 +1183,41 @@
     "fill-outline-color": "#000",
     "fill-pattern": "Eau"
    }
+  },
+  {
+   "id": "hydro surfacique - bordure",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "hydro_surf",
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "butt",
+    "line-join": "round"
+   },
+   "filter": [
+    "in",
+    "symbo",
+    "BASSIN"
+   ],
+   "paint": {
+    "line-color": "#fe1100",
+    "line-dasharray": [
+     2,
+     2
+    ],
+    "line-width": {
+     "stops": [
+      [
+       14,
+       3
+      ],
+      [
+       17,
+       5
+      ]
+     ]
+    }
+  }
   },
   {
    "id": "hydro surfacique temporaire",
@@ -3483,7 +3520,8 @@
     "MAIRIE_ANNEXE"
    ],
    "paint": {
-    "fill-color": "#FFA6A6"
+    "fill-color": "#FFA6A6",
+    "fill-pattern": "Rust2"
    }
   },
   {
@@ -3514,7 +3552,8 @@
       ]
      ]
     },
-    "fill-outline-color": "#FF7C7C"
+    "fill-outline-color": "#FF7C7C",
+    "fill-pattern": "Rust2"
    }
   },
   {
@@ -3589,7 +3628,8 @@
     "HANGAR_PUBLIC"
    ],
    "paint": {
-    "fill-color": "#B9B6D6"
+    "fill-color": "#B9B6D6",
+    "fill-pattern": "Metal"
    }
   },
   {
@@ -3620,6 +3660,7 @@
       ]
      ]
     },
+    "fill-pattern": "Metal",
     "fill-outline-color": "#A6A1D6"
    }
   },
@@ -3737,7 +3778,8 @@
     "BATI_QQUE"
    ],
    "paint": {
-    "fill-color": "#D6C6B8"
+    "fill-color": "#D6C6B8",
+    "fill-pattern": "Struct"
    }
   },
   {
@@ -3755,6 +3797,7 @@
     "BATI_QQUE"
    ],
    "paint": {
+    "fill-pattern": "Struct",
     "fill-color": {
      "stops": [
       [
@@ -4040,7 +4083,33 @@
    ],
    "paint": {
     "fill-color": "#9B9B9B",
-    "fill-outline-color": "#6E6E6E"
+    "fill-pattern": "Construct"
+   }
+  },
+  {
+   "id": "bati remarquable surfacique - bord",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "bati_surf",
+   "minzoom": 13,
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "filter": [
+    "in",
+    "symbo",
+    "FORTIF_SURF",
+    "CHATEAU_SURF",
+    "TOUR_MOULIN_SURF",
+    "ARENE_THEATRE",
+    "ARC_TRIOMPHE_SURF",
+    "MONUMENT_SURF"
+   ],
+   "paint": {
+    "line-color": "#f00",
+    "line-width": 2
    }
   },
   {
@@ -4463,11 +4532,11 @@
      "stops": [
       [
        17,
-       "#8C7274"
+       "#f00"
       ],
       [
        18,
-       "#C8C8C8"
+       "#f00"
       ]
      ]
     },
@@ -4558,11 +4627,11 @@
      "stops": [
       [
        17,
-       "#8C7274"
+       "#ffe"
       ],
       [
        18,
-       "#F8E5D5"
+       "#ffe"
       ]
      ]
     },
@@ -10272,29 +10341,29 @@
      "stops": [
       [
        14,
-       3
+       10
       ],
       [
        17,
-       7
+       15
       ]
      ]
     },
-    "circle-color": "#FFFFFF",
+    "circle-color": "rgba(200,255,255,0.8)",
     "circle-opacity": 1,
     "circle-stroke-width": {
      "stops": [
       [
        14,
-       2
+       15
       ],
       [
        17,
-       5
+       20
       ]
      ]
     },
-    "circle-stroke-color": "#1466B2"
+    "circle-stroke-color": "rgba(200,255,255,0.5)"
    }
   },
   {
@@ -10342,16 +10411,14 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Hopital",
-    "icon-size": 0.33
+    "icon-size": 1
    },
    "filter": [
     "==",
     "symbo",
     "HOPITAL_PONC"
    ],
-   "paint": {
-    "icon-color": "#646464"
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel hydrographique",
@@ -10655,6 +10722,7 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "ConstrSpeciale",
+    "icon-allow-overlap": true,
     "icon-size": {
      "stops": [
       [
@@ -10683,9 +10751,7 @@
     "TOUR_GUET",
     "TOUR_HERTZIENNE"
    ],
-   "paint": {
-    "icon-color": "#646464"
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel infrastructure - Silo",
@@ -11610,57 +11676,32 @@
    }
   },
   {
-   "id": "toponyme bati station de métro + bati ponctuel metro",
-   "type": "symbol",
-   "source": "plan_ign",
-   "source-layer": "toponyme_bati_ponc",
-   "minzoom": 14,
-   "filter": [
-    "all",
-    [
-     "==",
-     "txt_typo",
-     "TYPO_E_1"
+    "id": "toponyme bati station de métro + bati ponctuel metro",
+    "type": "symbol",
+    "source": "plan_ign",
+    "source-layer": "toponyme_bati_ponc",
+    "minzoom":14,
+    "filter": ["all",
+      ["==","txt_typo","TYPO_E_GE"],
+      ["==","symbo","STATION_METRO"]
     ],
-    [
-     "==",
-     "symbo",
-     "STATION_METRO"
-    ]
-   ],
-   "layout": {
-    "visibility": "visible",
-    "symbol-placement": "point",
-    "text-field": "{texte}",
-    "text-size": 11,
-    "text-allow-overlap": false,
-    "text-offset": [
-     0.3,
-     -0.25
-    ],
-    "text-padding": 3,
-    "text-anchor": "bottom-left",
-    "text-font": [
-     "Bakbak One"
-    ],
-    "icon-image": "Metro",
-    "icon-size": {
-     "stops": [
-      [
-       15,
-       0.33
-      ],
-      [
-       17,
-       0.6
-      ]
-     ]
+    "layout": {
+      "visibility": "visible",
+      "symbol-placement": "point",
+      "text-field": "{texte}",
+      "text-size": 11,
+      "text-allow-overlap": false,
+      "text-offset": [0.30, -0.25],
+      "text-padding": 3,
+      "text-anchor": "bottom-left",
+      "text-font": ["Bakbak One"],
+      "icon-image": "Metro",
+      "icon-allow-overlap": true,
+      "icon-size": { "stops": [[15, 0.5], [17, 0.6]] }
+    },
+    "paint": {
+      "text-color": "#3C3C3C"
     }
-   },
-   "paint": {
-    "text-color": "#3C3C3C",
-    "icon-color": "#646464"
-   }
   },
   {
    "id": "toponyme ferre lineaire",
