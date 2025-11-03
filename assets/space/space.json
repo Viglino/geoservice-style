@@ -2,8 +2,8 @@
  "version": 8,
  "name": "PLAN IGN",
  "glyphs": "https://viglino.github.io/geoservice-style/fonts/{fontstack}/{range}.pbf",
- "sprite": "./space/space_sprite",
  "sprite": "https://viglino.github.io/geoservice-style/space/space_sprite",
+ "sprite": "./space/space_sprite",
  "sources": {
   "plan_ign": {
    "type": "vector",
@@ -316,8 +316,8 @@
     "ZONE_D_ESTRAN"
    ],
    "paint": {
-    "fill-color": "#C3DDE9",
-    "fill-outline-color": "#C3DDE9"
+    "fill-color": "#444",
+    "fill-outline-color": "#444"
    }
   },
   {
@@ -947,8 +947,8 @@
     "TALUS"
    ],
    "paint": {
-    "line-color": "#D9C8A9",
-    "line-width": 1
+    "line-color": "#800",
+    "line-width": 2
    }
   },
   {
@@ -969,7 +969,7 @@
     "TALUS"
    ],
    "paint": {
-    "line-color": "#D9C8A9",
+    "line-color": "#800",
     "line-width": {
      "stops": [
       [
@@ -983,7 +983,7 @@
      ]
     },
     "line-dasharray": [
-     0.1,
+     0.2,
      1
     ],
     "line-translate": [
@@ -3817,6 +3817,27 @@
    }
   },
   {
+   "id": "bati surfacique quelconque - bord - Zoom 16,17,18",
+   "type": "line",
+   "source": "plan_ign",
+   "source-layer": "bati_surf",
+   "minzoom": 15,
+   "layout": {
+    "visibility": "visible",
+    "line-cap": "square",
+    "line-join": "square"
+   },
+   "filter": [
+    "==",
+    "symbo",
+    "BATI_QQUE"
+   ],
+   "paint": {
+      "line-color": "#666",
+      "line-width": 4
+   }
+  },
+  {
    "id": "bati hydro surfacique - Autre",
    "type": "fill",
    "source": "plan_ign",
@@ -6171,7 +6192,7 @@
     "VF_ELEC_4"
    ],
    "paint": {
-    "line-color": "#787878",
+    "line-color": "#800",
     "line-width": {
      "stops": [
       [
@@ -6210,7 +6231,7 @@
     "VF_ELEC_4"
    ],
    "paint": {
-    "line-color": "#787878",
+    "line-color": "#800",
     "line-width": {
      "stops": [
       [
@@ -6248,7 +6269,7 @@
     "VF_ETROITE"
    ],
    "paint": {
-    "line-color": "#787878",
+    "line-color": "#800",
     "line-width": {
      "stops": [
       [
@@ -6282,7 +6303,7 @@
     "VF_ETROITE"
    ],
    "paint": {
-    "line-color": "#787878",
+    "line-color": "#800",
     "line-width": {
      "stops": [
       [
@@ -6319,7 +6340,7 @@
     "VF_NON_EXPLOITEE"
    ],
    "paint": {
-    "line-color": "#787878",
+    "line-color": "#800",
     "line-width": {
      "stops": [
       [
@@ -6358,7 +6379,7 @@
     "VF_EN_CONSTR"
    ],
    "paint": {
-    "line-color": "#787878",
+    "line-color": "#800",
     "line-width": {
      "stops": [
       [
@@ -6395,7 +6416,7 @@
     "VF_EN_CONSTR"
    ],
    "paint": {
-    "line-color": "#787878",
+    "line-color": "#800",
     "line-width": {
      "stops": [
       [
@@ -6431,7 +6452,7 @@
     "TRANSPORT_URBAIN"
    ],
    "paint": {
-    "line-color": "#787878",
+    "line-color": "#800",
     "line-width": {
      "stops": [
       [
@@ -6463,7 +6484,7 @@
     "TRANSPORT_URBAIN"
    ],
    "paint": {
-    "line-color": "#787878",
+    "line-color": "#800",
     "line-width": {
      "stops": [
       [
@@ -10138,9 +10159,7 @@
     "symbo",
     "BARRIERE"
    ],
-   "paint": {
-    "icon-color": "#969696"
-   }
+   "paint": {}
   },
   {
    "id": "hydro ponctuel",
@@ -10238,6 +10257,7 @@
    "layout": {
     "visibility": "visible",
     "icon-image": "Hopital",
+    "icon-allow-overlap": true,
     "icon-size": 1
    },
    "filter": [
@@ -10336,6 +10356,7 @@
    "source-layer": "bati_ponc",
    "minzoom": 13,
    "layout": {
+     "icon-allow-overlap": true,
     "visibility": "visible",
     "icon-image": "Phare",
     "icon-size": {
@@ -10356,9 +10377,7 @@
     "symbo",
     "PHARE"
    ],
-   "paint": {
-    "icon-color": "#646464"
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel hydrographique - Amer-Feu",
@@ -10367,17 +10386,18 @@
    "source-layer": "bati_ponc",
    "minzoom": 13,
    "layout": {
-    "visibility": "visible",
+     "icon-allow-overlap": true,
+     "visibility": "visible",
     "icon-image": "Feu",
     "icon-size": {
      "stops": [
       [
        13,
-       0.7
+       1.3
       ],
       [
        17,
-       1.3
+       2
       ]
      ]
     }
@@ -10391,7 +10411,7 @@
     "TOURELLE_LUMINEUSE"
    ],
    "paint": {
-    "icon-color": "#646464"
+    "icon-color": "#f00"
    }
   },
   {
@@ -10474,6 +10494,7 @@
    "source": "plan_ign",
    "source-layer": "bati_ponc",
    "layout": {
+     "icon-allow-overlap": true,
     "visibility": "visible"
    },
    "filter": [
@@ -10486,15 +10507,29 @@
      "stops": [
       [
        14,
-       3
+       10
       ],
       [
        17,
-       8
+       20
       ]
      ]
     },
-    "circle-color": "#1466B2"
+    "circle-color": "rgba(119,56,24,0.5)",
+    "circle-opacity": 1,
+    "circle-stroke-width": {
+     "stops": [
+      [
+       14,
+       10
+      ],
+      [
+       17,
+       10
+      ]
+     ]
+    },
+    "circle-stroke-color": "rgba(20,102,178,0.5)"
    }
   },
   {
@@ -10504,6 +10539,7 @@
    "source-layer": "bati_ponc",
    "maxzoom": 15,
    "layout": {
+     "icon-allow-overlap": true,
     "visibility": "visible"
    },
    "filter": [
@@ -10516,29 +10552,29 @@
      "stops": [
       [
        14,
-       3
+       10
       ],
       [
        17,
-       8
+       20
       ]
      ]
     },
-    "circle-color": "#AAD5E9",
+    "circle-color": "#dff7f7",
     "circle-opacity": 1,
     "circle-stroke-width": {
      "stops": [
       [
        14,
-       1
+       10
       ],
       [
        17,
-       2.5
+       10
       ]
      ]
     },
-    "circle-stroke-color": "#1466B2"
+    "circle-stroke-color": "rgba(119,56,24,0.5)"
    }
   },
   {
@@ -10650,6 +10686,7 @@
    "type": "symbol",
    "source": "plan_ign",
    "source-layer": "bati_ponc",
+   "icon-allow-overlap": true,
    "maxzoom": 15,
    "layout": {
     "visibility": "visible",
@@ -11498,8 +11535,7 @@
    },
    "paint": {
     "text-color": "#5792C2",
-    "text-halo-width": 5,
-    "text-halo-color": "#AAD5E9"
+    "text-halo-width": 5
    }
   },
   {
@@ -11929,6 +11965,9 @@
    ],
    "layout": {
     "visibility": "visible",
+    "icon-allow-overlap": true,
+     "icon-image": "Phare",
+     "icon-size": 0.8,
     "symbol-placement": "point",
     "text-field": "{texte}",
     "text-anchor": "right",
@@ -14015,8 +14054,7 @@
     ]
    },
    "paint": {
-    "text-color": "rgba(255, 255, 255, 0.7)",
-    "text-halo-color": "#FFFFFF",
+    "text-color": "rgba(255, 255, 255, 0.8)",
     "text-halo-width": 2
    }
   },
