@@ -126,14 +126,11 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 * [JSON style](https://viglino.github.io/geoservice-style/christmas/christmas.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=2.495393&lat=48.980459&z=13.4&layer=christmas)
 
-<!--
 ## Space
 
 *Spacestation style*
 * [JSON style](https://viglino.github.io/geoservice-style/space/space.json)
 * [View online](https://viglino.github.io/geoservice-style/?lon=4.844&lat=45.75&z=16&layer=space)
-
--->
 
 # Open Free Map
 
