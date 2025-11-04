@@ -3824,8 +3824,8 @@
    "minzoom": 15,
    "layout": {
     "visibility": "visible",
-    "line-cap": "square",
-    "line-join": "square"
+    "line-cap": "miter",
+    "line-join": "miter"
    },
    "filter": [
     "==",
@@ -4062,7 +4062,6 @@
    "paint": {
     "fill-color": "rgba(255,0,0,0.5)",
     "fill-outline-color": "yellow",
-    "fill-outline-width": 2,
     "fill-opacity": 0.8
    }
   },
@@ -4181,7 +4180,6 @@
    "paint": {
     "fill-color": "#555555",
     "fill-outline-color": "#555555",
-    "fill-outline-width": 2,
     "fill-opacity": 0.8,
     "fill-pattern": "Piste"
    }
@@ -4935,7 +4933,7 @@
    "source": "plan_ign",
    "source-layer": "routier_route",
    "layout": {
-    "visibility": "hidden",
+    "visibility": "none",
     "line-cap": "round",
     "line-join": "round"
    },
@@ -10490,8 +10488,7 @@
    "source": "plan_ign",
    "source-layer": "bati_ponc",
    "layout": {
-     "icon-allow-overlap": true,
-    "visibility": "visible"
+     "visibility": "visible"
    },
    "filter": [
     "==",
@@ -10535,7 +10532,6 @@
    "source-layer": "bati_ponc",
    "maxzoom": 15,
    "layout": {
-     "icon-allow-overlap": true,
     "visibility": "visible"
    },
    "filter": [
