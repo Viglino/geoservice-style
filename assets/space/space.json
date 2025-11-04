@@ -3824,7 +3824,7 @@
    "minzoom": 15,
    "layout": {
     "visibility": "visible",
-    "line-cap": "miter",
+    "line-cap": "square",
     "line-join": "miter"
    },
    "filter": [
