@@ -10393,11 +10393,11 @@
      "stops": [
       [
        13,
-       1.3
+       1
       ],
       [
        17,
-       2
+       1.5
       ]
      ]
     }
@@ -10410,9 +10410,7 @@
     "FEU_PONC",
     "TOURELLE_LUMINEUSE"
    ],
-   "paint": {
-    "icon-color": "#f00"
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel hydrographique - Balise",
@@ -10442,9 +10440,7 @@
     "BALISE",
     "TOURELLE"
    ],
-   "paint": {
-    "icon-color": "#646464"
-   }
+   "paint": {}
   },
   {
    "id": "bati ponctuel hydrographique - Ecluse",
