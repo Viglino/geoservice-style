@@ -24,8 +24,10 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 <img src="https://placehold.co/15x15/583c77/583c77.png" />  [Mono purple](https://viglino.github.io/geoservice-style/?lon=8.741828&lat=41.932591&z=16.3&layer=mono_purple) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_purple.json)   
 <img src="https://placehold.co/15x15/c26518/c26518.png" />  [Mono orange](https://viglino.github.io/geoservice-style/?lon=4.805819&lat=44.135443&z=15.9&layer=mono_orange) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_orange.json)   
 <img src="https://placehold.co/15x15/ff0/ff0.png" />  [Mono yellow](https://viglino.github.io/geoservice-style/?lon=6.175476&lat=48.685832&z=16.7&layer=mono_yellow) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_yellow.json)  
+<img src="https://placehold.co/15x15/962/962.png" />  [Mono brown](https://viglino.github.io/geoservice-style/?lon=3.044646&lat=50.640889&z=15.9&layer=mono_brown) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_brown.json)  
 <img src="https://placehold.co/15x15/111/111.png" /> [Mono black](https://viglino.github.io/geoservice-style/?lon=7.746699&lat=48.582777&z=15.7&layer=mono_black) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_black.json)   
-<img src="https://placehold.co/15x15/333/333.png" />  [Mono gray](https://viglino.github.io/geoservice-style/?lon=3.044646&lat=50.640889&z=15.9&layer=mono_gray) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_gray.json)   
+<img src="https://placehold.co/15x15/333/333.png" />  [Mono gray](https://viglino.github.io/geoservice-style/?lon=3.044646&lat=50.640889&z=15.9&layer=mono_gray) - [JSON style](https://viglino.github.io/geoservice-style/mono/mono_gray.json)  
+
 
 ## ERP
 
