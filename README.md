@@ -129,8 +129,10 @@ Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr
 ## Space
 
 *Spacestation style*
+
+[<img alt="github" src="https://github.com/user-attachments/assets/0211a57f-48fe-4e79-b140-eb73278e1da6" width=500 />](https://viglino.github.io/geoservice-style/?lon=4.867955&lat=43.401585&z=14.1&layer=space)
 * [JSON style](https://viglino.github.io/geoservice-style/space/space.json)
-* [View online](https://viglino.github.io/geoservice-style/?lon=4.844&lat=45.75&z=16&layer=space)
+* [View online](https://viglino.github.io/geoservice-style/?lon=4.88&lat=43.419&z=14&layer=space)
 
 # Open Free Map
 

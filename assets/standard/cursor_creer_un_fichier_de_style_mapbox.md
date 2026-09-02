@@ -37,6 +37,8 @@ Peux-tu générer le fichier svp ?
 ---
 
 **Cursor**
+<details>
+<summary>standard_vivid.json</summary>
 
 ```json
 {
@@ -683,6 +685,7 @@ Peux-tu générer le fichier svp ?
 }
 
 ```
+</details>
 
 Le fichier `assets/standard/standard_vivid.json` a été généré avec une vingtaine de couches types, utilisant des couleurs vives et contrastées pour chaque grande catégorie d’objets (relief, végétation, hydro, bâtiments, textes, etc.), tout en gardant la structure Mapbox d’origine.
 
@@ -927,6 +930,10 @@ Voici le contenu complet du fichier `assets/standard/standard_vivid.json` enrich
 - Les pistes cyclables et voies vertes
 - Les bâtiments principaux (zones bâties, industriels, espaces publics, sportifs, etc.)
 - Toutes les autres couches vives déjà présentes
+
+<details>
+<summary>standard_vivid.json</summary>
+
 
 ```json
 {
@@ -1915,6 +1922,7 @@ N’hésite pas à demander si tu veux d’autres ajouts ou une adaptation de la
   ]
 }
 ```
+</details>
 
 ---
 
@@ -2065,6 +2073,9 @@ donne moi le fichier complet svp
 
 **Cursor**
 
+<details>
+<summary>standard_vivid.json</summary>
+
 ```json
 {
   "version": 8,
@@ -2190,6 +2201,7 @@ Tu peux copier/coller ce contenu dans `assets/standard/standard_vivid.json` :
   ]
 }
 ```
+</details>
 
 ---
 
