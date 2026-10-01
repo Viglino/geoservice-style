@@ -1,4 +1,4 @@
-# <img align="left" height=50 src="https://geoservices.ign.fr/themes/custom/ignpro/logo.svg" /> style
+# 🖌️ style
 
 Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts)
 
