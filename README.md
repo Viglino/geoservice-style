@@ -1,4 +1,4 @@
-# 🖌️ style
+# 🖌️ Geoservice styles
 
 Style for [IGN's Géoservice vector tiles (TMS/WMTS)](https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts)
 
